@@ -1,0 +1,734 @@
+{
+  "trunk": {
+    "openai": {
+      "2": "ok",
+      "0": "ok",
+      "1": "ok",
+      "4": "ok",
+      "3": "ok",
+      "7": "ok",
+      "8": "ok",
+      "5": "ok",
+      "9": "ok",
+      "6": "ok"
+    },
+    "qwen": {
+      "0": "error: Error code: 429 - {'id': 'oiDenUx-2kFHot-9f85a2ed0c6b07d9-SEA', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 50 RPM (0.8333333333333334 QPS) and 0 TPM (0 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}",
+      "1": "ok",
+      "2": "ok",
+      "7": "ok",
+      "3": "error: Error code: 429 - {'id': 'oiDenV8-2kFHot-9f85a2ed1b574078-SEA', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 50 RPM (0.8333333333333334 QPS) and 0 TPM (0 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}",
+      "4": "ok",
+      "6": "ok",
+      "8": "ok",
+      "5": "ok",
+      "9": "ok"
+    },
+    "flux": {
+      "0": "ok",
+      "2": "ok",
+      "4": "ok",
+      "7": "error: Error code: 429 - {'id': 'oiDeycw-2kFHot-9f85a3d72ba3983a-SEA', 'error': {'message': 'Request was rejected due to request rate limiting. Your rate limits are 50 RPM (0.8333333333333334 QPS) and 0 TPM (0 TPS). See details: https://docs.together.ai/docs/rate-limits', 'type': 'rate_limit', 'param': None, 'code': None}}",
+      "1": "ok",
+      "3": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "jordan": {
+    "gemini": {
+      "2": "error: Gemini returned no image for 'jordan'",
+      "1": "error: Gemini returned no image for 'jordan'",
+      "9": "error: Gemini returned no image for 'jordan'",
+      "8": "ok",
+      "3": "ok",
+      "7": "ok"
+    },
+    "openai": {
+      "2": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_6fe5b632156845f69741247a808724c9.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "4": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_da696e47916940c8994ff07421d6ba4d.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "1": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_b7971a53d9b649bbbe2be8c9306999e6.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "3": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_55162ea4de2d4ac1ad12823331b8be31.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "0": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_40aef42dc5274453ac4e2f391bd99bd0.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "9": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_34c4e6b1a97e47368e20b7f330dd0e60.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "5": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_52b47b0f9e9644ebbf9ccd06373bcd3d.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "8": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_9b2474a088014f9b9e3dbfbfa685bab5.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "7": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_3e83db998edb469f95f0a5b9c8b71e07.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "6": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_8dbf6564789d4967b2d6d00a8a46c54c.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}"
+    }
+  },
+  "bolt": {
+    "openai": {
+      "2": "ok",
+      "3": "ok",
+      "4": "ok",
+      "5": "ok",
+      "0": "ok",
+      "1": "ok",
+      "6": "ok",
+      "7": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "bank": {
+    "openai": {
+      "3": "ok",
+      "0": "ok",
+      "1": "ok",
+      "4": "ok",
+      "2": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "pitch": {
+    "openai": {
+      "3": "ok",
+      "0": "ok",
+      "2": "ok",
+      "4": "ok",
+      "1": "ok",
+      "5": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "bow": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "0": "ok",
+      "1": "ok",
+      "6": "ok",
+      "8": "ok",
+      "5": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "spring": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "0": "ok",
+      "1": "ok",
+      "5": "ok",
+      "9": "ok",
+      "8": "ok",
+      "6": "ok",
+      "7": "ok"
+    }
+  },
+  "crane": {
+    "openai": {
+      "4": "ok",
+      "2": "ok",
+      "0": "ok",
+      "1": "ok",
+      "3": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "club": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "4": "ok",
+      "6": "ok",
+      "5": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "turkey": {
+    "openai": {
+      "2": "ok",
+      "1": "ok",
+      "4": "ok",
+      "3": "ok",
+      "0": "ok",
+      "5": "ok",
+      "8": "ok",
+      "6": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "shot": {
+    "openai": {
+      "4": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "0": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "bar": {
+    "openai": {
+      "4": "ok",
+      "1": "ok",
+      "2": "ok",
+      "3": "ok",
+      "0": "ok",
+      "6": "ok",
+      "5": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "mercury": {
+    "openai": {
+      "4": "ok",
+      "0": "ok",
+      "3": "ok",
+      "1": "ok",
+      "2": "ok",
+      "5": "ok",
+      "6": "ok",
+      "7": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "jack": {
+    "openai": {
+      "4": "ok",
+      "2": "ok",
+      "3": "ok",
+      "0": "ok",
+      "1": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok",
+      "7": "ok"
+    }
+  },
+  "mole": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "4": "ok",
+      "1": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "charge": {
+    "openai": {
+      "3": "ok",
+      "2": "ok",
+      "4": "ok",
+      "1": "ok",
+      "0": "ok",
+      "9": "ok",
+      "5": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok"
+    }
+  },
+  "key": {
+    "openai": {
+      "4": "ok",
+      "1": "ok",
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok",
+      "5": "ok"
+    }
+  },
+  "watch": {
+    "openai": {
+      "1": "ok",
+      "4": "ok",
+      "0": "ok",
+      "3": "ok",
+      "2": "ok",
+      "7": "ok",
+      "5": "ok",
+      "8": "ok",
+      "9": "ok",
+      "6": "ok"
+    }
+  },
+  "ring": {
+    "openai": {
+      "3": "ok",
+      "2": "ok",
+      "1": "ok",
+      "0": "ok",
+      "4": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok",
+      "7": "ok"
+    }
+  },
+  "nail": {
+    "openai": {
+      "0": "ok",
+      "4": "ok",
+      "1": "ok",
+      "3": "ok",
+      "2": "ok",
+      "5": "ok",
+      "8": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "chip": {
+    "openai": {
+      "1": "ok",
+      "2": "ok",
+      "0": "ok",
+      "4": "ok",
+      "3": "ok",
+      "7": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok",
+      "5": "ok"
+    }
+  },
+  "cell": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "0": "ok",
+      "2": "ok",
+      "1": "ok",
+      "5": "ok",
+      "8": "ok",
+      "6": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "toast": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "4": "ok",
+      "6": "ok",
+      "5": "ok",
+      "8": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "track": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "0": "ok",
+      "2": "ok",
+      "1": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "wave": {
+    "openai": {
+      "4": "ok",
+      "2": "ok",
+      "3": "ok",
+      "0": "ok",
+      "1": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "train": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "1": "ok",
+      "3": "ok",
+      "4": "ok",
+      "7": "ok",
+      "5": "ok",
+      "8": "ok",
+      "9": "ok",
+      "6": "ok"
+    }
+  },
+  "anchor": {
+    "openai": {
+      "4": "ok",
+      "1": "ok",
+      "0": "ok",
+      "3": "ok",
+      "2": "ok",
+      "5": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "ash": {
+    "openai": {
+      "2": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_12bf1b3308cb40a0ad01928200c6c41c.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "0": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_6b13b15755634feeb6a6b3641aa82638.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "3": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_3ffe2adba4934eecaf6b43db4cefe641.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "4": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_507503d388714d29ab8886b17da081c1.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "1": "ok",
+      "7": "ok",
+      "8": "ok",
+      "6": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_9e42fe3a407e4b74aa96da153a160de2.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "5": "error: Error code: 400 - {'error': {'message': 'Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_148a2bd100824ee2b2bf39db78046117.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}",
+      "9": "ok"
+    }
+  },
+  "ball": {
+    "openai": {
+      "3": "ok",
+      "2": "ok",
+      "4": "ok",
+      "0": "ok",
+      "1": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "band": {
+    "openai": {
+      "1": "ok",
+      "3": "ok",
+      "2": "ok",
+      "0": "ok",
+      "6": "ok",
+      "7": "ok",
+      "5": "ok",
+      "8": "ok",
+      "4": "ok",
+      "9": "ok"
+    }
+  },
+  "bark": {
+    "openai": {
+      "2": "ok",
+      "0": "ok",
+      "4": "ok",
+      "3": "ok",
+      "1": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "barrel": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "4": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "basket": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "4": "ok",
+      "7": "ok",
+      "8": "ok",
+      "5": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "bass": {
+    "openai": {
+      "2": "ok",
+      "4": "ok",
+      "0": "ok",
+      "3": "ok",
+      "1": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  },
+  "batter": {
+    "openai": {
+      "1": "ok",
+      "3": "ok",
+      "2": "ok",
+      "0": "ok",
+      "4": "ok",
+      "5": "ok",
+      "8": "ok",
+      "6": "ok",
+      "9": "ok",
+      "7": "ok"
+    }
+  },
+  "beam": {
+    "openai": {
+      "1": "ok",
+      "4": "ok",
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "5": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "bench": {
+    "openai": {
+      "0": "ok",
+      "2": "ok",
+      "3": "ok",
+      "1": "ok",
+      "4": "ok",
+      "5": "ok",
+      "7": "ok",
+      "8": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "block": {
+    "openai": {
+      "4": "ok",
+      "0": "ok",
+      "1": "ok",
+      "2": "ok",
+      "3": "ok",
+      "6": "ok",
+      "5": "ok",
+      "7": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "bowl": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "1": "ok",
+      "0": "ok",
+      "9": "ok",
+      "5": "ok",
+      "8": "ok",
+      "6": "ok",
+      "7": "ok"
+    }
+  },
+  "box": {
+    "openai": {
+      "3": "ok",
+      "0": "ok",
+      "2": "ok",
+      "1": "ok",
+      "4": "ok",
+      "8": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "brush": {
+    "openai": {
+      "1": "ok",
+      "2": "ok",
+      "4": "ok",
+      "0": "ok",
+      "3": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "buck": {
+    "openai": {
+      "1": "ok",
+      "3": "ok",
+      "0": "ok",
+      "2": "ok",
+      "4": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "9": "ok",
+      "8": "ok"
+    }
+  },
+  "button": {
+    "openai": {
+      "1": "ok",
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "5": "ok",
+      "0": "ok",
+      "6": "ok",
+      "7": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "cane": {
+    "openai": {
+      "1": "ok",
+      "3": "ok",
+      "2": "ok",
+      "0": "ok",
+      "4": "ok",
+      "8": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "cape": {
+    "openai": {
+      "1": "ok",
+      "0": "ok",
+      "4": "ok",
+      "3": "ok",
+      "2": "ok",
+      "9": "ok",
+      "7": "ok",
+      "8": "ok",
+      "6": "ok",
+      "5": "ok"
+    }
+  },
+  "capital": {
+    "openai": {
+      "3": "ok",
+      "2": "ok",
+      "0": "ok",
+      "4": "ok",
+      "1": "ok",
+      "5": "ok",
+      "7": "ok",
+      "6": "ok",
+      "8": "ok",
+      "9": "ok"
+    }
+  },
+  "case": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "0": "ok",
+      "1": "ok",
+      "9": "ok",
+      "7": "ok",
+      "5": "ok",
+      "6": "ok",
+      "8": "ok"
+    }
+  },
+  "chest": {
+    "openai": {
+      "3": "ok",
+      "4": "ok",
+      "2": "ok",
+      "1": "ok",
+      "0": "ok",
+      "5": "ok",
+      "8": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "coach": {
+    "openai": {
+      "2": "ok",
+      "4": "ok",
+      "1": "ok",
+      "3": "ok",
+      "0": "ok",
+      "5": "ok",
+      "8": "ok",
+      "7": "ok",
+      "6": "ok",
+      "9": "ok"
+    }
+  },
+  "cobbler": {
+    "openai": {
+      "2": "ok",
+      "4": "ok",
+      "1": "ok",
+      "3": "ok",
+      "0": "ok",
+      "6": "ok",
+      "5": "ok",
+      "8": "ok",
+      "7": "ok",
+      "9": "ok"
+    }
+  }
+}
