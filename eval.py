@@ -14,6 +14,8 @@ import threading
 import time
 from pathlib import Path
 
+from tqdm import tqdm
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -33,7 +35,6 @@ MODELS = {
     "grok":        "grok-imagine-image-quality",  # grok-imagine-image-pro deprecated May 15 2026
     "grok_base":   "grok-imagine-image",
     "grok_pro":    "grok-imagine-image-pro",
-    "grok_v2":     "grok-2-image-1212",
     # ── Google Gemini ─────────────────────────────────────────────────────────
     "gemini":      "gemini-3.1-flash-image-preview",
     "gemini_25":   "gemini-2.5-flash-image",
@@ -46,7 +47,7 @@ MODELS = {
     "flux":        "black-forest-labs/FLUX.2-pro",
     "flux_max":    "black-forest-labs/FLUX.2-max",
     "flux_flex":   "black-forest-labs/FLUX.2-flex",
-    "flux_1pro":   "black-forest-labs/FLUX.1-pro",
+    "flux_1pro":   "black-forest-labs/FLUX.1.1-pro",
 }
 
 
@@ -79,10 +80,35 @@ def _gather_keys(prefix: str) -> list[str]:
 _POOL_OPENAI   = _KeyPool(_gather_keys("openai_api_key"), "openai")
 _POOL_GROK     = _KeyPool(_gather_keys("xai_api_key"),    "xai")
 _POOL_GEMINI   = _KeyPool(_gather_keys("gemini_api_key"), "gemini")
-_POOL_TOGETHER = _KeyPool(_gather_keys("together_api_key"), "together")  # all Together keys shared
+_POOL_QWEN     = _KeyPool(_gather_keys("together_api_key_qwen"), "qwen")
+_POOL_FLUX     = _KeyPool(_gather_keys("together_api_key_bf"),   "flux")
 
-# One concurrent slot per key; image generation is slow so 1× is conservative enough.
-_CONCURRENCY = len(_POOL_OPENAI) + len(_POOL_GROK) + len(_POOL_GEMINI) + len(_POOL_TOGETHER)
+# Per-family semaphores so each provider gets exactly its own key-count of slots.
+_SEM_OPENAI = None  # initialised in main() (must be inside an event loop)
+_SEM_GROK   = None
+_SEM_GEMINI = None
+_SEM_QWEN   = None
+_SEM_FLUX   = None
+
+_FAMILY = {
+    "openai":      "openai",
+    "openai_15":   "openai",
+    "openai_1":    "openai",
+    "openai_mini": "openai",
+    "grok":        "grok",
+    "grok_base":   "grok",
+    "grok_pro":    "grok",
+    "gemini":      "gemini",
+    "gemini_25":   "gemini",
+    "gemini_pro":  "gemini",
+    "qwen":        "qwen",
+    "qwen_20":     "qwen",
+    "qwen_1":      "qwen",
+    "flux":        "flux",
+    "flux_max":    "flux",
+    "flux_flex":   "flux",
+    "flux_1pro":   "flux",
+}
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -199,70 +225,89 @@ GENERATORS = {
     "grok":        lambda w: _grok_generate(w, MODELS["grok"]),
     "grok_base":   lambda w: _grok_generate(w, MODELS["grok_base"]),
     "grok_pro":    lambda w: _grok_generate(w, MODELS["grok_pro"]),
-    "grok_v2":     lambda w: _grok_generate(w, MODELS["grok_v2"]),
     "gemini":      lambda w: _gemini_generate(w, MODELS["gemini"]),
     "gemini_25":   lambda w: _gemini_generate(w, MODELS["gemini_25"]),
     "gemini_pro":  lambda w: _gemini_generate(w, MODELS["gemini_pro"]),
-    "qwen":        lambda w: _together_generate(w, MODELS["qwen"],      _POOL_TOGETHER),
-    "qwen_20":     lambda w: _together_generate(w, MODELS["qwen_20"],   _POOL_TOGETHER),
-    "qwen_1":      lambda w: _together_generate(w, MODELS["qwen_1"],    _POOL_TOGETHER),
-    "flux":        lambda w: _together_generate(w, MODELS["flux"],      _POOL_TOGETHER),
-    "flux_max":    lambda w: _together_generate(w, MODELS["flux_max"],  _POOL_TOGETHER),
-    "flux_flex":   lambda w: _together_generate(w, MODELS["flux_flex"], _POOL_TOGETHER),
-    "flux_1pro":   lambda w: _together_generate(w, MODELS["flux_1pro"], _POOL_TOGETHER),
+    "qwen":        lambda w: _together_generate(w, MODELS["qwen"],      _POOL_QWEN),
+    "qwen_20":     lambda w: _together_generate(w, MODELS["qwen_20"],   _POOL_QWEN),
+    "qwen_1":      lambda w: _together_generate(w, MODELS["qwen_1"],    _POOL_QWEN),
+    "flux":        lambda w: _together_generate(w, MODELS["flux"],      _POOL_FLUX),
+    "flux_max":    lambda w: _together_generate(w, MODELS["flux_max"],  _POOL_FLUX),
+    "flux_flex":   lambda w: _together_generate(w, MODELS["flux_flex"], _POOL_FLUX),
+    "flux_1pro":   lambda w: _together_generate(w, MODELS["flux_1pro"], _POOL_FLUX),
 }
 
 
 # ── Runner ────────────────────────────────────────────────────────────────────
 
-async def run_one(model_key: str, word: str, idx: int, results: dict, sem: asyncio.Semaphore):
+def _sem_for(model_key: str) -> asyncio.Semaphore:
+    return {"openai": _SEM_OPENAI, "grok": _SEM_GROK,
+            "gemini": _SEM_GEMINI, "qwen": _SEM_QWEN, "flux": _SEM_FLUX}[_FAMILY[model_key]]
+
+
+async def run_one(model_key: str, word: str, idx: int, results: dict, bar: tqdm):
     key = f"{model_key}/{word}/{idx:02d}"
-    async with sem:
-        for attempt in range(5):
+    async with _sem_for(model_key):
+        for attempt in range(3):
             try:
                 t0 = time.time()
                 data = await asyncio.to_thread(GENERATORS[model_key], word)
                 save_image(model_key, word, idx, data)
                 elapsed = time.time() - t0
-                print(f"  [ ok ] {key}  ({elapsed:.1f}s)")
+                tqdm.write(f"  [ ok ] {key}  ({elapsed:.1f}s)")
                 results.setdefault(word, {}).setdefault(model_key, {})[str(idx)] = "ok"
+                bar.update(1)
                 return
             except Exception as exc:
                 retryable = "429" in str(exc) or "no image" in str(exc)
-                if retryable and attempt < 4:
-                    wait = 2 ** attempt * 2  # 2, 4, 8, 16s
-                    print(f"  [rty ] {key}  retry {attempt+1}/4 in {wait}s")
+                if retryable and attempt < 2:
+                    wait = 2 ** attempt * 2  # 2, 4s
+                    tqdm.write(f"  [rty ] {key}  retry {attempt+1}/2 in {wait}s")
                     await asyncio.sleep(wait)
                 else:
-                    print(f"  [err ] {key}: {exc}")
+                    tqdm.write(f"  [err ] {key}: {exc}")
                     results.setdefault(word, {}).setdefault(model_key, {})[str(idx)] = f"error: {exc}"
+                    bar.update(1)
                     return
 
 
+async def run_model(model_key: str, words: list[str], results: dict, bar: tqdm):
+    for word in words:
+        todo = pending_indices(model_key, word)
+        bar.update(N_PER_WORD - len(todo))
+        tasks = [run_one(model_key, word, i, results, bar) for i in todo]
+        if tasks:
+            await asyncio.gather(*tasks)
+        RESULTS_FILE.write_text(json.dumps(results, indent=2))
+
+
 async def main(model_keys: list[str]):
-    words = load_words()
+    words = load_words()[:100]
     results: dict = {}
     if RESULTS_FILE.exists():
         results = json.loads(RESULTS_FILE.read_text())
 
-    print(f"\nConcurrency: {_CONCURRENCY} slots ({len(model_keys)} models × up to {N_PER_WORD} images)")
-    sem = asyncio.Semaphore(_CONCURRENCY)
+    global _SEM_OPENAI, _SEM_GROK, _SEM_GEMINI, _SEM_QWEN, _SEM_FLUX
+    _SEM_OPENAI = asyncio.Semaphore(len(_POOL_OPENAI))
+    _SEM_GROK   = asyncio.Semaphore(len(_POOL_GROK))
+    _SEM_GEMINI = asyncio.Semaphore(len(_POOL_GEMINI))
+    _SEM_QWEN   = asyncio.Semaphore(len(_POOL_QWEN))
+    _SEM_FLUX   = asyncio.Semaphore(len(_POOL_FLUX))
+    total_slots = len(_POOL_OPENAI) + len(_POOL_GROK) + len(_POOL_GEMINI) + len(_POOL_QWEN) + len(_POOL_FLUX)
+    tqdm.write(f"\nConcurrency: openai={len(_POOL_OPENAI)} grok={len(_POOL_GROK)} gemini={len(_POOL_GEMINI)} qwen={len(_POOL_QWEN)} flux={len(_POOL_FLUX)} (total={total_slots})")
 
-    for word in words:
-        tasks = []
-        skipped = 0
-        for mk in model_keys:
-            todo = pending_indices(mk, word)
-            skipped += N_PER_WORD - len(todo)
-            tasks.extend(run_one(mk, word, i, results, sem) for i in todo)
+    bars = {
+        mk: tqdm(total=len(words) * N_PER_WORD, desc=mk, position=i, leave=True)
+        for i, mk in enumerate(model_keys)
+    }
 
-        label = f"=== {word} === ({len(tasks)} to generate"
-        if skipped:
-            label += f", {skipped} already done"
-        print(f"\n{label})")
+    await asyncio.gather(*(
+        run_model(mk, words, results, bars[mk])
+        for mk in model_keys
+    ))
 
-        await asyncio.gather(*tasks)
-        RESULTS_FILE.write_text(json.dumps(results, indent=2))
+    for bar in bars.values():
+        bar.close()
 
     total = sum(
         1 for w in results.values()
@@ -276,7 +321,7 @@ async def main(model_keys: list[str]):
         for s in m.values()
         if s.startswith("error")
     )
-    print(f"\nDone. {total} images saved, {errors} errors. Results -> {RESULTS_FILE}")
+    tqdm.write(f"\nDone. {total} images saved, {errors} errors. Results -> {RESULTS_FILE}")
 
 
 if __name__ == "__main__":
