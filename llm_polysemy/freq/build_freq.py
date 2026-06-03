@@ -2,8 +2,18 @@
 Self-estimated textual frequency distributions: when an English speaker
 encounters WORD in isolation, how likely is each sense?
 Estimates drawn from Claude's training on internet-scale text.
+
+Writes the manual prior to freq_manual.json and validates each entry against the
+senses listed in meanings.json (warns on any word/sense mismatch).
+
+    python -m llm_polysemy.freq.build_freq
 """
 import json
+from pathlib import Path
+
+from ..meanings import load_meanings
+
+OUT_FILE = Path("freq_manual.json")
 
 # fmt: off
 PRIORS = {
@@ -110,13 +120,31 @@ PRIORS = {
 }
 # fmt: on
 
-# Sanity check: all distributions should sum to ~1
-for word, dist in PRIORS.items():
-    s = sum(dist.values())
-    if abs(s - 1.0) > 0.01:
-        print(f"WARNING {word} sums to {s:.3f}")
+def main():
+    # Sanity check: all distributions should sum to ~1
+    for word, dist in PRIORS.items():
+        s = sum(dist.values())
+        if abs(s - 1.0) > 0.01:
+            print(f"WARNING {word} sums to {s:.3f}")
 
-with open("text_frequencies.json", "w") as f:
-    json.dump(PRIORS, f, indent=2)
+    # Validate every prior word/sense against meanings.json
+    meanings = load_meanings()
+    for word, dist in PRIORS.items():
+        if word not in meanings:
+            print(f"WARNING prior word {word!r} not in meanings.json")
+            continue
+        listed = {s["sense"] for s in meanings[word]}
+        for sense in dist:
+            if sense not in listed:
+                print(f"WARNING {word}: prior sense {sense!r} not in meanings.json senses {sorted(listed)}")
+    missing = [w for w in meanings if w not in PRIORS]
+    if missing:
+        print(f"NOTE {len(missing)} meanings words have no manual prior: {', '.join(missing[:10])}"
+              + (" ..." if len(missing) > 10 else ""))
 
-print(f"Saved text_frequencies.json ({len(PRIORS)} words)")
+    OUT_FILE.write_text(json.dumps(PRIORS, indent=2))
+    print(f"Saved {OUT_FILE} ({len(PRIORS)} words)")
+
+
+if __name__ == "__main__":
+    main()
