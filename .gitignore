@@ -1,5 +1,5 @@
 .env
-outputs/
-outputs_text/
+data/outputs_image/
+data/outputs_text/
 *.log
 __pycache__/

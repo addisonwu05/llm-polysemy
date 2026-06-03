@@ -39,7 +39,7 @@ def collect(class_file: Path) -> dict[str, list]:
     return by_model
 
 
-def report(class_file: Path = Path("classifications.json")) -> None:
+def report(class_file: Path = Path("data/classifications_image.json")) -> None:
     by_model = collect(class_file)
     all_pairs = [p for pairs in by_model.values() for p in pairs]
 

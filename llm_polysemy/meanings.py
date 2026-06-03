@@ -6,7 +6,7 @@ from pathlib import Path
 
 from .registry import EXTRA_LABELS
 
-DEFAULT_MEANINGS_FILE = Path("meanings.json")
+DEFAULT_MEANINGS_FILE = Path("data/meanings.json")
 
 
 def load_meanings(path: Path = DEFAULT_MEANINGS_FILE) -> dict:

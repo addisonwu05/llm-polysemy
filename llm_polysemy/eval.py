@@ -16,7 +16,7 @@ from dotenv import load_dotenv
 from . import config, runner
 from .registry import models_for
 
-WORDS_FILE = Path("synonyms.txt")
+WORDS_FILE = Path("data/synonyms.txt")
 
 
 def load_words() -> list[str]:

@@ -56,21 +56,23 @@ class ClassifyModality:
 
 # ── Instances ──────────────────────────────────────────────────────────────────
 
+DATA = Path("data")
+
 IMAGE_GEN = GenModality(
-    name="image", output_dir=Path("outputs"), results_file=Path("results.json"),
+    name="image", output_dir=DATA / "outputs_image", results_file=DATA / "results_image.json",
     ext="png", retry_token="no image", artifact_word="images",
     save=lambda path, data: path.write_bytes(data),
 )
 
 TEXT_GEN = GenModality(
-    name="text", output_dir=Path("outputs_text"), results_file=Path("results_text.json"),
+    name="text", output_dir=DATA / "outputs_text", results_file=DATA / "results_text.json",
     ext="txt", retry_token="no text", artifact_word="sentences",
     save=lambda path, data: path.write_text(data), temperature=TEXT_TEMPERATURE,
 )
 
 IMAGE_CLS = ClassifyModality(
-    name="image", output_dir=Path("outputs"),
-    class_file=Path("classifications.json"), hist_file=Path("histograms.json"),
+    name="image", output_dir=DATA / "outputs_image",
+    class_file=DATA / "classifications_image.json", hist_file=DATA / "histograms_image.json",
     ext="png", load_artifact=lambda p: p.read_bytes(),
     build_prompt=lambda meanings, word, artifact: prompts.image_prompt(meanings, word),
     build_multiple_prompt=lambda meanings, word, artifact: prompts.image_multi(meanings, word),
@@ -78,8 +80,8 @@ IMAGE_CLS = ClassifyModality(
 )
 
 TEXT_CLS = ClassifyModality(
-    name="text", output_dir=Path("outputs_text"),
-    class_file=Path("classifications_text.json"), hist_file=Path("histograms_text.json"),
+    name="text", output_dir=DATA / "outputs_text",
+    class_file=DATA / "classifications_text.json", hist_file=DATA / "histograms_text.json",
     ext="txt", load_artifact=lambda p: p.read_text().strip(),
     build_prompt=lambda meanings, word, artifact: prompts.text_prompt(meanings, word, artifact),
     build_multiple_prompt=lambda meanings, word, artifact: prompts.text_multi(meanings, word, artifact),

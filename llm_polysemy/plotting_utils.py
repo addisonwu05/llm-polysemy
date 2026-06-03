@@ -97,9 +97,9 @@ FIG_ROOT = Path("figures")
 # Text-frequency prior files (word-level, shared across modalities). Updated by the
 # freq-script consolidation / data migration steps.
 PRIOR_FILES = {
-    "manual": Path("freq_manual.json"),
-    "wiki":   Path("freq_wiki.json"),
-    "trends": Path("freq_trends.json"),
+    "manual": Path("data/freq_manual.json"),
+    "wiki":   Path("data/freq_wiki.json"),
+    "trends": Path("data/freq_trends.json"),
 }
 
 
