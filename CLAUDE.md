@@ -2,70 +2,106 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this project is
 
-A benchmark probing how text-to-image models resolve **polysemous words** (words with
-multiple meanings, e.g. "bank", "trunk", "bolt"). For each word, the bare word alone is
-sent as the prompt — no disambiguating context — and the model's chosen meaning is observed
-across many samples. `meanings.json` enumerates the candidate senses per word so generated
-images can later be classified/histogrammed by which sense the model picked.
+A benchmark probing how **text-to-image** and **text** models resolve **polysemous words**
+(words with multiple meanings, e.g. "bank", "trunk", "bolt"). For each word the bare word
+alone is sent as the prompt — no disambiguating context — and the model's chosen meaning is
+observed across many samples. `data/meanings.json` enumerates the candidate senses per word
+so outputs can be classified/histogrammed by which sense the model picked.
+
+The same structure runs for both modalities: **image** (a text-to-image model renders the
+word → which sense is depicted) and **text** (an LLM is asked to use the word in one
+sentence → which sense it uses). The two are scored by the *same* judges so their sense
+distributions are directly comparable.
+
+## Maintenance
+
+**Keep `README.md` in sync.** Whenever a change alters how a user runs or interacts with this
+codebase — a new/renamed command or flag, changed inputs/outputs/file locations, a new
+pipeline stage, an added model, or changed env/key setup — update `README.md` in the same
+change. README is the user-facing source of truth for usage; keep it current.
+
+## Architecture
+
+Everything lives in the **`llm_polysemy/` package**; root scripts (`eval.py`, `eval_text.py`,
+`classify.py`, `classify_text.py`, `agreement.py`) are thin shims kept for muscle memory.
+
+- **`registry.py` is the single source of truth** — one `ModelSpec` per model_key (all image
+  + text models, with family, api_id, modality, display label, generation_index). Pools,
+  concurrency, dispatch, plot model lists, family grouping, colors, and gen-order all derive
+  from it.
+- **`config.py`** holds the `Modality` objects (`IMAGE_GEN`/`TEXT_GEN`/`IMAGE_CLS`/`TEXT_CLS`)
+  that capture every image-vs-text difference (paths, file ext, retry token, generate→bytes
+  vs str, judge-input image vs text), plus `JUDGES = {"gpt":"gpt-5.4","gemini":"gemini-3.5-flash"}`.
+- **shared core**: `keys.py` (KeyPool + prefix gathering), `meanings.py`, `schemas.py`,
+  `prompts.py`, `histograms.py`, `agreement.py`, `plotting_utils.py`.
+- **`providers/`** (`openai_sdk.py`, `google_genai.py`) wrap generation + judging; dispatch is
+  by `registry.spec(key).provider` (the old `GENERATORS` lambda table is gone).
+- **`runner.py`** is the generic async engine — `run_generation` and `run_classify`.
+- **entrypoints** `eval.py` / `classify.py` take `--modality {image,text}`; `plots/` and
+  `freq/` are runnable modules.
 
 ## Commands
 
+See `README.md` for the full list. Canonical form is `python -m llm_polysemy.<module>`:
+
 ```bash
-# Generate images for ALL models (resumes automatically; skips images already on disk)
-python eval.py
-
-# Generate for a single model (keys from the MODELS dict in eval.py)
-python eval.py --model flux
-python eval.py --model gemini_pro
-
-# Publish the outputs/ image corpus to Hugging Face (requires `hf` CLI auth)
-./upload_dataset.sh
+python -m llm_polysemy.eval --modality {image,text} [--model KEY]
+python -m llm_polysemy.classify --modality {image,text} [--judge gpt|gemini] [--word W] [--n N]
+python -m llm_polysemy.classify --modality {image,text} --histograms
+python -m llm_polysemy.agreement --modality {image,text}
+python -m llm_polysemy.plots.<name> --modality {image,text} [--judge gpt|gemini|consensus]
+python -m llm_polysemy.freq.build_freq          # manual prior -> data/freq_manual.json
+python -m llm_polysemy.freq.fetch_freq --source {wiki,trends}
+./upload_dataset.sh {image,text}
 ```
 
 There is no test suite, linter, or build step — this is a research/eval repo.
 
-## How `eval.py` works
+## How generation works
 
-- **Words** come from `synonyms.txt` (one per line); `main()` uses the first 100.
-- **30 samples per word per model** (`N_PER_WORD`). The prompt sent to the model is the
-  raw word string, nothing else.
-- **Output layout**: `outputs/<word>/<model_key>/<NN>.png` (word first, then model).
-  Note the module docstring says `<model>/<word>` — that is stale; trust `image_path()`.
-- **Resume is filesystem-driven**: `pending_indices()` regenerates only images whose PNG
-  is missing. Deleting a PNG re-queues it; `results.json` is a status log, not the source
-  of truth for what gets regenerated.
-- **`results.json`** records per-image `"ok"` / `"error: ..."` status, keyed
-  `[word][model_key][idx]`. Rewritten after each word completes.
+- **Words** come from `data/synonyms.txt`; `main()` uses the first 100.
+- **30 samples per word per model** (`N_PER_WORD` in `config.py`). Image prompt = the bare
+  word; text prompt = the one-sentence instruction (`prompts.gen_prompt_text`).
+- **Output layout**: `data/outputs_<modality>/<word>/<model_key>/<NN>.{png,txt}` (word first,
+  then model).
+- **Resume is filesystem-driven**: `runner.pending_indices()` regenerates only outputs whose
+  file is missing. Deleting one re-queues it; `data/results_<modality>.json` is a status log,
+  not the source of truth.
 
 ### Concurrency / API key model
 
-This is the trickiest part of the architecture:
-
-- Each provider family (openai, grok, gemini, qwen, flux) has its own **`_KeyPool`** of API
-  keys gathered from environment variables by **prefix match** (`_gather_keys`). Any env var
-  whose name starts with the prefix is included, so multiple keys are added by suffixing:
+- Each provider family (openai, grok, gemini, qwen, flux) has its own **`KeyPool`** of keys
+  gathered from env vars by **prefix match** (`keys.gather_keys`). Add capacity by suffixing:
   `OPENAI_API_KEY`, `OPENAI_API_KEY_7`, etc.
-- Prefixes → pools: `openai_api_key` → OpenAI, `xai_api_key` → Grok, `gemini_api_key` →
-  Gemini, `together_api_key_qwen` → Qwen, `together_api_key_bf` → FLUX (Black Forest Labs).
-  **Qwen and FLUX both run on Together.ai but draw from separate key pools.**
-- Per-family `asyncio.Semaphore` sized to `len(pool)` — so a family runs exactly as many
-  concurrent requests as it has keys. Keys are handed out round-robin per request.
-- Blocking SDK calls are pushed to threads via `asyncio.to_thread`. Retries: up to 3
-  attempts, only on `429` or `"no image"` errors, with 2s/4s backoff.
+- Prefixes → pools (in `registry.FAMILY_PROVIDER`): `openai_api_key`→OpenAI, `xai_api_key`→Grok,
+  `gemini_api_key`→Gemini, `together_api_key_qwen`→Qwen, `together_api_key_bf`→FLUX.
+  **Qwen and FLUX both run on Together.ai but draw from separate pools — never collapse the two
+  prefixes.** Pools are built lazily per run, so a text run never needs FLUX keys.
+- Per-family `asyncio.Semaphore` sized to `len(pool)`; keys round-robin per request. Blocking
+  SDK calls go through `asyncio.to_thread`. Retries: 3 attempts, only on `429` or the modality's
+  retry token (`"no image"` / `"no text"`), 2s/4s backoff.
 
-### Provider integration
+### Classification
 
-All providers except Gemini use the **OpenAI SDK** pointed at different `base_url`s
-(`api.x.ai`, `api.together.xyz`). Gemini uses `google.genai`. Each has a `_*_generate`
-function returning raw PNG bytes; the `GENERATORS` dispatch table maps each model_key to a
-generator. To add a model: add to `MODELS`, `_FAMILY`, and `GENERATORS`.
+Two judges (`config.JUDGES`, kept identical across modalities for comparability) label each
+output via a strict JSON-schema call into one of the word's senses plus `multiple/unclear/other`;
+a `multiple` verdict triggers a follow-up listing the senses. Resume is keyed
+`[word][model_key][idx][judge]` in `data/classifications_<modality>.json`; `--histograms`
+aggregates into `data/histograms_<modality>.json`.
 
-## Environment
+## Adding a model
 
-API keys live in `.env` (gitignored, loaded via `python-dotenv`). Add capacity by adding
-more suffixed keys (e.g. `XAI_API_KEY_4`) — they are auto-discovered by prefix.
+Add **one `ModelSpec` row** to `registry.py`. For a brand-new provider family, also add a
+`FAMILY_PROVIDER` entry (sdk / base_url / key_prefix) and ensure a provider function in
+`providers/` handles it.
 
 ## Gotchas
 
-- `outputs/` and `results.json` are large generated artifacts; `outputs/` is gitignored.
-  Some words' image dirs are intentionally sparse (model errored or was skipped).
+- `data/outputs_*/` and the `data/*.json` logs are large generated artifacts; the
+  `data/outputs_*/` trees are gitignored. Some words' dirs are intentionally sparse (model
+  errored or was skipped) — e.g. two Qwen text models are ~40 samples short.
+- The judge models in `config.JUDGES` must stay identical across both modalities, or the
+  image-vs-text comparison is invalid.
+- `figures/` is regenerated by the plot modules; the text side needs
+  `data/histograms_text.json` (re-run `classify --modality text` then `--histograms` to
+  complete it — the original run was interrupted at 9 fully-labelled words).
