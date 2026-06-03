@@ -135,7 +135,7 @@ def _trends_fns():
 
 
 SOURCES = {"wiki": _wiki_fns, "trends": _trends_fns}
-DEFAULT_OUT = {"wiki": "freq_wiki.json", "trends": "freq_trends.json"}
+DEFAULT_OUT = {"wiki": "data/freq_wiki.json", "trends": "data/freq_trends.json"}
 
 
 def main():

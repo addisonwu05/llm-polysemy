@@ -13,7 +13,7 @@ from pathlib import Path
 
 from ..meanings import load_meanings
 
-OUT_FILE = Path("freq_manual.json")
+OUT_FILE = Path("data/freq_manual.json")
 
 # fmt: off
 PRIORS = {
