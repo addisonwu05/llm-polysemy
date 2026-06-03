@@ -1,2 +1,5 @@
 .env
 outputs/
+outputs_text/
+*.log
+__pycache__/
