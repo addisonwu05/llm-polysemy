@@ -1,0 +1,25 @@
+{
+  "_note": "Architecture labels for all image models in the test panel. See preregistration/T1_rule.md §T2 and llm_polysemy/analysis/t2_architecture.py. Labels: 'diffusion', 'autoregressive', 'unknown'. 'source' gives the basis for the label.",
+
+  "flux_1pro":  {"arch": "diffusion",       "source": "public — FLUX.1-pro is a flow-matching rectified-flow diffusion model (Black Forest Labs, 2024)"},
+  "flux_flex":  {"arch": "diffusion",       "source": "public — FLUX.2-flex uses the FLUX architecture (Black Forest Labs)"},
+  "flux":       {"arch": "diffusion",       "source": "public — FLUX.2-pro uses the FLUX architecture (Black Forest Labs)"},
+  "flux_max":   {"arch": "diffusion",       "source": "public — FLUX.2-max uses the FLUX architecture (Black Forest Labs)"},
+
+  "gemini_25":  {"arch": "unknown",         "source": "closed — Gemini 2.5 Flash image generation; predecessors (Imagen) are diffusion but Google has not confirmed the architecture of the Gemini-native generation path"},
+  "gemini":     {"arch": "unknown",         "source": "closed — Gemini 3.1 Flash image generation; architecture not publicly confirmed"},
+  "gemini_pro": {"arch": "unknown",         "source": "closed — Gemini 3 Pro image generation; architecture not publicly confirmed"},
+
+  "openai_1":   {"arch": "unknown",         "source": "closed — gpt-image-1; OpenAI has not published the architecture; may be diffusion-based or AR-integrated"},
+  "openai_mini":{"arch": "unknown",         "source": "closed — gpt-image-1-mini; same as above"},
+  "openai_15":  {"arch": "unknown",         "source": "closed — gpt-image-1.5; same as above"},
+  "openai":     {"arch": "unknown",         "source": "closed — gpt-image-2; same as above"},
+
+  "grok_base":  {"arch": "unknown",         "source": "closed — grok-imagine-image; xAI has not published the architecture"},
+  "grok_pro":   {"arch": "unknown",         "source": "closed — grok-imagine-image-pro; same as above"},
+  "grok":       {"arch": "unknown",         "source": "closed — grok-imagine-image-quality; same as above"},
+
+  "qwen_1":     {"arch": "unknown",         "source": "closed — Qwen-Image; Alibaba has not confirmed the generation architecture for this model tier"},
+  "qwen_20":    {"arch": "unknown",         "source": "closed — Qwen-Image-2.0; same as above", "note": "anomalous outlier in cross-modality PCA: wins 'unclear'/'other' for 31/100 words, suggesting it generates images the judges cannot classify into named senses"},
+  "qwen":       {"arch": "unknown",         "source": "closed — Qwen-Image-2.0-Pro; same as above"}
+}

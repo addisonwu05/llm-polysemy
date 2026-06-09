@@ -1,0 +1,3159 @@
+[
+  {
+    "word": "scale",
+    "model_key": "grok_420",
+    "idx": 7,
+    "gpt_label": "other",
+    "gemini_label": "size",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "weigh",
+      "skin",
+      "music",
+      "size",
+      "climb"
+    ]
+  },
+  {
+    "word": "pool",
+    "model_key": "qwen_25_7b",
+    "idx": 25,
+    "gpt_label": "other",
+    "gemini_label": "shared",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "swimming",
+      "billiards",
+      "shared",
+      "puddle"
+    ]
+  },
+  {
+    "word": "button",
+    "model_key": "gemini_31pro",
+    "idx": 21,
+    "gpt_label": "press",
+    "gemini_label": "press",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fastener",
+      "press",
+      "badge"
+    ]
+  },
+  {
+    "word": "switch",
+    "model_key": "gemini",
+    "idx": 2,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "control",
+      "change",
+      "rod"
+    ]
+  },
+  {
+    "word": "socket",
+    "model_key": "qwen_25_7b",
+    "idx": 24,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "outlet",
+      "joint",
+      "tool"
+    ]
+  },
+  {
+    "word": "amazon",
+    "model_key": "flux",
+    "idx": 6,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "river",
+      "rainforest",
+      "company",
+      "warrior"
+    ]
+  },
+  {
+    "word": "paddle",
+    "model_key": "grok_420",
+    "idx": 9,
+    "gpt_label": "oar",
+    "gemini_label": "oar",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "oar",
+      "bat",
+      "wade"
+    ]
+  },
+  {
+    "word": "bowl",
+    "model_key": "gemini_25",
+    "idx": 29,
+    "gpt_label": "dish",
+    "gemini_label": "dish",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "dish",
+      "roll",
+      "stadium"
+    ]
+  },
+  {
+    "word": "mercury",
+    "model_key": "openai_5",
+    "idx": 0,
+    "gpt_label": "other",
+    "gemini_label": "element",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "planet",
+      "element",
+      "god"
+    ]
+  },
+  {
+    "word": "mortar",
+    "model_key": "flux_flex",
+    "idx": 26,
+    "gpt_label": "cement",
+    "gemini_label": "cement",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "cement",
+      "bowl",
+      "weapon"
+    ]
+  },
+  {
+    "word": "bass",
+    "model_key": "qwen_25_7b",
+    "idx": 4,
+    "gpt_label": "instrument",
+    "gemini_label": "instrument",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "sound",
+      "fish",
+      "instrument"
+    ]
+  },
+  {
+    "word": "spring",
+    "model_key": "gemini_25",
+    "idx": 9,
+    "gpt_label": "season",
+    "gemini_label": "season",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "season",
+      "coil",
+      "water",
+      "leap"
+    ]
+  },
+  {
+    "word": "tank",
+    "model_key": "grok_43",
+    "idx": 9,
+    "gpt_label": "vehicle",
+    "gemini_label": "vehicle",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "container",
+      "vehicle",
+      "fail"
+    ]
+  },
+  {
+    "word": "bar",
+    "model_key": "flux_1pro",
+    "idx": 9,
+    "gpt_label": "pub",
+    "gemini_label": "pub",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "pub",
+      "rod",
+      "block",
+      "law",
+      "music"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "flux_max",
+    "idx": 7,
+    "gpt_label": "other",
+    "gemini_label": "photo",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "turkey",
+    "model_key": "grok_base",
+    "idx": 21,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bird",
+      "country",
+      "food",
+      "bowling",
+      "failure"
+    ]
+  },
+  {
+    "word": "hide",
+    "model_key": "openai",
+    "idx": 29,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "conceal",
+      "skin"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "gemini_31pro",
+    "idx": 25,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "bolt",
+    "model_key": "gemini_31pro",
+    "idx": 26,
+    "gpt_label": "lightning",
+    "gemini_label": "lightning",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fastener",
+      "lightning",
+      "run",
+      "lock"
+    ]
+  },
+  {
+    "word": "coach",
+    "model_key": "qwen",
+    "idx": 10,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "trainer",
+      "vehicle",
+      "tutor",
+      "class"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "gemini_31pro",
+    "idx": 8,
+    "gpt_label": "photo",
+    "gemini_label": "photo",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "tank",
+    "model_key": "gemini_35flash",
+    "idx": 3,
+    "gpt_label": "other",
+    "gemini_label": "container",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "container",
+      "vehicle",
+      "fail"
+    ]
+  },
+  {
+    "word": "bowl",
+    "model_key": "gemini_25",
+    "idx": 21,
+    "gpt_label": "dish",
+    "gemini_label": "dish",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "dish",
+      "roll",
+      "stadium"
+    ]
+  },
+  {
+    "word": "barrel",
+    "model_key": "qwen_35_397b",
+    "idx": 24,
+    "gpt_label": "cask",
+    "gemini_label": "cask",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "cask",
+      "gun",
+      "oil"
+    ]
+  },
+  {
+    "word": "chest",
+    "model_key": "gemini_25flash",
+    "idx": 10,
+    "gpt_label": "box",
+    "gemini_label": "box",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "body",
+      "box"
+    ]
+  },
+  {
+    "word": "spring",
+    "model_key": "flux",
+    "idx": 3,
+    "gpt_label": "season",
+    "gemini_label": "season",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "season",
+      "coil",
+      "water",
+      "leap"
+    ]
+  },
+  {
+    "word": "tie",
+    "model_key": "grok_43",
+    "idx": 7,
+    "gpt_label": "fasten",
+    "gemini_label": "fasten",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "necktie",
+      "fasten",
+      "draw",
+      "bond"
+    ]
+  },
+  {
+    "word": "python",
+    "model_key": "grok_base",
+    "idx": 27,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "snake",
+      "language"
+    ]
+  },
+  {
+    "word": "chest",
+    "model_key": "openai",
+    "idx": 0,
+    "gpt_label": "box",
+    "gemini_label": "box",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "body",
+      "box"
+    ]
+  },
+  {
+    "word": "scale",
+    "model_key": "openai_54mini",
+    "idx": 29,
+    "gpt_label": "other",
+    "gemini_label": "size",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "weigh",
+      "skin",
+      "music",
+      "size",
+      "climb"
+    ]
+  },
+  {
+    "word": "batter",
+    "model_key": "openai_35",
+    "idx": 29,
+    "gpt_label": "cooking",
+    "gemini_label": "cooking",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "baseball",
+      "cooking",
+      "beat"
+    ]
+  },
+  {
+    "word": "pen",
+    "model_key": "grok_base",
+    "idx": 29,
+    "gpt_label": "writing",
+    "gemini_label": "writing",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "writing",
+      "enclosure",
+      "prison"
+    ]
+  },
+  {
+    "word": "batter",
+    "model_key": "openai_54mini",
+    "idx": 2,
+    "gpt_label": "multiple",
+    "gemini_label": "cooking",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "baseball",
+      "cooking",
+      "beat"
+    ]
+  },
+  {
+    "word": "switch",
+    "model_key": "openai_15",
+    "idx": 24,
+    "gpt_label": "other",
+    "gemini_label": "unclear",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "control",
+      "change",
+      "rod"
+    ]
+  },
+  {
+    "word": "beam",
+    "model_key": "qwen_25_7b",
+    "idx": 9,
+    "gpt_label": "light",
+    "gemini_label": "light",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "light",
+      "support",
+      "smile",
+      "transmit"
+    ]
+  },
+  {
+    "word": "bass",
+    "model_key": "flux_flex",
+    "idx": 14,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "sound",
+      "fish",
+      "instrument"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "grok_43",
+    "idx": 27,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "bass",
+    "model_key": "gemini_35flash",
+    "idx": 8,
+    "gpt_label": "instrument",
+    "gemini_label": "sound",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "sound",
+      "fish",
+      "instrument"
+    ]
+  },
+  {
+    "word": "mars",
+    "model_key": "openai_15",
+    "idx": 4,
+    "gpt_label": "planet",
+    "gemini_label": "planet",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "planet",
+      "god",
+      "candy"
+    ]
+  },
+  {
+    "word": "watch",
+    "model_key": "grok_base",
+    "idx": 25,
+    "gpt_label": "timepiece",
+    "gemini_label": "timepiece",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "timepiece",
+      "observe",
+      "guard"
+    ]
+  },
+  {
+    "word": "cobbler",
+    "model_key": "openai_55",
+    "idx": 8,
+    "gpt_label": "shoemaker",
+    "gemini_label": "shoemaker",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "shoemaker",
+      "dessert"
+    ]
+  },
+  {
+    "word": "pump",
+    "model_key": "grok_420",
+    "idx": 13,
+    "gpt_label": "device",
+    "gemini_label": "device",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "device",
+      "shoe",
+      "inflate"
+    ]
+  },
+  {
+    "word": "bolt",
+    "model_key": "flux_max",
+    "idx": 20,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "lightning",
+      "run",
+      "lock"
+    ]
+  },
+  {
+    "word": "basket",
+    "model_key": "grok_420_nr",
+    "idx": 5,
+    "gpt_label": "container",
+    "gemini_label": "container",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "container",
+      "basketball"
+    ]
+  },
+  {
+    "word": "bark",
+    "model_key": "grok_420_nr",
+    "idx": 18,
+    "gpt_label": "dog",
+    "gemini_label": "dog",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "dog",
+      "tree",
+      "ship"
+    ]
+  },
+  {
+    "word": "bolt",
+    "model_key": "flux_flex",
+    "idx": 24,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "lightning",
+      "run",
+      "lock"
+    ]
+  },
+  {
+    "word": "lodge",
+    "model_key": "openai_55",
+    "idx": 6,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "cabin",
+      "file",
+      "stuck"
+    ]
+  },
+  {
+    "word": "bass",
+    "model_key": "flux_max",
+    "idx": 2,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "sound",
+      "fish",
+      "instrument"
+    ]
+  },
+  {
+    "word": "batter",
+    "model_key": "openai_54nano",
+    "idx": 1,
+    "gpt_label": "baseball",
+    "gemini_label": "baseball",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "baseball",
+      "cooking",
+      "beat"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "openai_1",
+    "idx": 24,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "stock",
+    "model_key": "gemini_35flash",
+    "idx": 29,
+    "gpt_label": "broth",
+    "gemini_label": "broth",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "shares",
+      "supply",
+      "broth",
+      "livestock"
+    ]
+  },
+  {
+    "word": "fan",
+    "model_key": "qwen",
+    "idx": 17,
+    "gpt_label": "other",
+    "gemini_label": "cooling",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "cooling",
+      "admirer",
+      "spread"
+    ]
+  },
+  {
+    "word": "mine",
+    "model_key": "qwen_1",
+    "idx": 27,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "excavation",
+      "explosive",
+      "possessive"
+    ]
+  },
+  {
+    "word": "tank",
+    "model_key": "gemini_35flash",
+    "idx": 4,
+    "gpt_label": "other",
+    "gemini_label": "container",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "container",
+      "vehicle",
+      "fail"
+    ]
+  },
+  {
+    "word": "barrel",
+    "model_key": "grok_base",
+    "idx": 7,
+    "gpt_label": "cask",
+    "gemini_label": "cask",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "cask",
+      "gun",
+      "oil"
+    ]
+  },
+  {
+    "word": "tank",
+    "model_key": "gemini_pro",
+    "idx": 2,
+    "gpt_label": "vehicle",
+    "gemini_label": "vehicle",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "container",
+      "vehicle",
+      "fail"
+    ]
+  },
+  {
+    "word": "turkey",
+    "model_key": "openai_5",
+    "idx": 18,
+    "gpt_label": "food",
+    "gemini_label": "food",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "bird",
+      "country",
+      "food",
+      "bowling",
+      "failure"
+    ]
+  },
+  {
+    "word": "stock",
+    "model_key": "gemini_35flash",
+    "idx": 16,
+    "gpt_label": "shares",
+    "gemini_label": "shares",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "shares",
+      "supply",
+      "broth",
+      "livestock"
+    ]
+  },
+  {
+    "word": "fan",
+    "model_key": "openai_5",
+    "idx": 11,
+    "gpt_label": "cooling",
+    "gemini_label": "cooling",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "cooling",
+      "admirer",
+      "spread"
+    ]
+  },
+  {
+    "word": "band",
+    "model_key": "openai_1",
+    "idx": 15,
+    "gpt_label": "music",
+    "gemini_label": "music",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "music",
+      "strip",
+      "unite",
+      "frequency"
+    ]
+  },
+  {
+    "word": "pitch",
+    "model_key": "openai_54nano",
+    "idx": 26,
+    "gpt_label": "sales",
+    "gemini_label": "sales",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "throw",
+      "tone",
+      "sales",
+      "field"
+    ]
+  },
+  {
+    "word": "basket",
+    "model_key": "flux_1pro",
+    "idx": 29,
+    "gpt_label": "container",
+    "gemini_label": "container",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "container",
+      "basketball"
+    ]
+  },
+  {
+    "word": "pitcher",
+    "model_key": "gemini_31pro",
+    "idx": 9,
+    "gpt_label": "jug",
+    "gemini_label": "jug",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "baseball",
+      "jug"
+    ]
+  },
+  {
+    "word": "grave",
+    "model_key": "openai_54nano",
+    "idx": 28,
+    "gpt_label": "burial",
+    "gemini_label": "burial",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "burial",
+      "serious"
+    ]
+  },
+  {
+    "word": "switch",
+    "model_key": "grok_43",
+    "idx": 8,
+    "gpt_label": "control",
+    "gemini_label": "control",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "control",
+      "change",
+      "rod"
+    ]
+  },
+  {
+    "word": "batter",
+    "model_key": "grok_420_nr",
+    "idx": 26,
+    "gpt_label": "other",
+    "gemini_label": "beat",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "baseball",
+      "cooking",
+      "beat"
+    ]
+  },
+  {
+    "word": "ball",
+    "model_key": "openai_55",
+    "idx": 5,
+    "gpt_label": "sphere",
+    "gemini_label": "sphere",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "sphere",
+      "dance",
+      "fun"
+    ]
+  },
+  {
+    "word": "turkey",
+    "model_key": "qwen_1",
+    "idx": 16,
+    "gpt_label": "bird",
+    "gemini_label": "bird",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bird",
+      "country",
+      "food",
+      "bowling",
+      "failure"
+    ]
+  },
+  {
+    "word": "bar",
+    "model_key": "flux_max",
+    "idx": 13,
+    "gpt_label": "pub",
+    "gemini_label": "pub",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "pub",
+      "rod",
+      "block",
+      "law",
+      "music"
+    ]
+  },
+  {
+    "word": "bar",
+    "model_key": "gemini_25flash",
+    "idx": 21,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "pub",
+      "rod",
+      "block",
+      "law",
+      "music"
+    ]
+  },
+  {
+    "word": "pitch",
+    "model_key": "flux_1pro",
+    "idx": 26,
+    "gpt_label": "other",
+    "gemini_label": "unclear",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "throw",
+      "tone",
+      "sales",
+      "field"
+    ]
+  },
+  {
+    "word": "mars",
+    "model_key": "openai_1",
+    "idx": 21,
+    "gpt_label": "planet",
+    "gemini_label": "planet",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "planet",
+      "god",
+      "candy"
+    ]
+  },
+  {
+    "word": "block",
+    "model_key": "grok_420_nr",
+    "idx": 8,
+    "gpt_label": "obstruct",
+    "gemini_label": "obstruct",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "solid",
+      "obstruct",
+      "city"
+    ]
+  },
+  {
+    "word": "ash",
+    "model_key": "grok_base",
+    "idx": 28,
+    "gpt_label": "multiple",
+    "gemini_label": "residue",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "residue",
+      "tree"
+    ]
+  },
+  {
+    "word": "mars",
+    "model_key": "gemini_31pro",
+    "idx": 29,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "planet",
+      "god",
+      "candy"
+    ]
+  },
+  {
+    "word": "ash",
+    "model_key": "gemini_pro",
+    "idx": 19,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "residue",
+      "tree"
+    ]
+  },
+  {
+    "word": "staple",
+    "model_key": "openai_4o",
+    "idx": 10,
+    "gpt_label": "essential",
+    "gemini_label": "essential",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fastener",
+      "essential"
+    ]
+  },
+  {
+    "word": "stock",
+    "model_key": "gemini_35flash",
+    "idx": 20,
+    "gpt_label": "other",
+    "gemini_label": "supply",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "shares",
+      "supply",
+      "broth",
+      "livestock"
+    ]
+  },
+  {
+    "word": "jack",
+    "model_key": "openai",
+    "idx": 5,
+    "gpt_label": "name",
+    "gemini_label": "name",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "lift",
+      "cards",
+      "name",
+      "connector"
+    ]
+  },
+  {
+    "word": "file",
+    "model_key": "openai_55",
+    "idx": 17,
+    "gpt_label": "other",
+    "gemini_label": "document",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "document",
+      "submit",
+      "tool",
+      "line"
+    ]
+  },
+  {
+    "word": "lodge",
+    "model_key": "gemini_pro",
+    "idx": 14,
+    "gpt_label": "cabin",
+    "gemini_label": "cabin",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "cabin",
+      "file",
+      "stuck"
+    ]
+  },
+  {
+    "word": "ball",
+    "model_key": "qwen_1",
+    "idx": 25,
+    "gpt_label": "sphere",
+    "gemini_label": "sphere",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "sphere",
+      "dance",
+      "fun"
+    ]
+  },
+  {
+    "word": "scale",
+    "model_key": "openai_4o",
+    "idx": 29,
+    "gpt_label": "music",
+    "gemini_label": "music",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "weigh",
+      "skin",
+      "music",
+      "size",
+      "climb"
+    ]
+  },
+  {
+    "word": "mole",
+    "model_key": "gemini_pro",
+    "idx": 17,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "animal",
+      "skin",
+      "spy",
+      "chemistry",
+      "sauce"
+    ]
+  },
+  {
+    "word": "club",
+    "model_key": "qwen_25_7b",
+    "idx": 6,
+    "gpt_label": "organization",
+    "gemini_label": "organization",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "organization",
+      "venue",
+      "weapon",
+      "golf",
+      "cards"
+    ]
+  },
+  {
+    "word": "rock",
+    "model_key": "gemini_pro",
+    "idx": 5,
+    "gpt_label": "stone",
+    "gemini_label": "stone",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "stone",
+      "music",
+      "sway"
+    ]
+  },
+  {
+    "word": "pump",
+    "model_key": "gemini_25flash",
+    "idx": 9,
+    "gpt_label": "other",
+    "gemini_label": "device",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "device",
+      "shoe",
+      "inflate"
+    ]
+  },
+  {
+    "word": "mine",
+    "model_key": "flux_1pro",
+    "idx": 9,
+    "gpt_label": "unclear",
+    "gemini_label": "possessive",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "excavation",
+      "explosive",
+      "possessive"
+    ]
+  },
+  {
+    "word": "cast",
+    "model_key": "openai_54mini",
+    "idx": 20,
+    "gpt_label": "other",
+    "gemini_label": "actors",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "actors",
+      "throw",
+      "medical",
+      "mold"
+    ]
+  },
+  {
+    "word": "grave",
+    "model_key": "grok_420",
+    "idx": 11,
+    "gpt_label": "serious",
+    "gemini_label": "serious",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "burial",
+      "serious"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "model_key": "qwen_25_7b",
+    "idx": 26,
+    "gpt_label": "transport",
+    "gemini_label": "transport",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "transport",
+      "spacecraft",
+      "badminton",
+      "weaving"
+    ]
+  },
+  {
+    "word": "tip",
+    "model_key": "openai_4o",
+    "idx": 27,
+    "gpt_label": "advice",
+    "gemini_label": "advice",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gratuity",
+      "point",
+      "advice",
+      "tilt"
+    ]
+  },
+  {
+    "word": "coach",
+    "model_key": "flux_1pro",
+    "idx": 22,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "trainer",
+      "vehicle",
+      "tutor",
+      "class"
+    ]
+  },
+  {
+    "word": "case",
+    "model_key": "grok_base",
+    "idx": 8,
+    "gpt_label": "container",
+    "gemini_label": "container",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "container",
+      "legal",
+      "instance",
+      "investigation"
+    ]
+  },
+  {
+    "word": "cast",
+    "model_key": "grok_420",
+    "idx": 24,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "actors",
+      "throw",
+      "medical",
+      "mold"
+    ]
+  },
+  {
+    "word": "cast",
+    "model_key": "openai_54nano",
+    "idx": 5,
+    "gpt_label": "other",
+    "gemini_label": "actors",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "actors",
+      "throw",
+      "medical",
+      "mold"
+    ]
+  },
+  {
+    "word": "post",
+    "model_key": "openai",
+    "idx": 19,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "mail",
+      "pole",
+      "job",
+      "publish",
+      "station"
+    ]
+  },
+  {
+    "word": "trunk",
+    "model_key": "gemini_25flash",
+    "idx": 29,
+    "gpt_label": "elephant",
+    "gemini_label": "elephant",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "tree",
+      "car",
+      "elephant",
+      "body",
+      "luggage"
+    ]
+  },
+  {
+    "word": "band",
+    "model_key": "qwen_1",
+    "idx": 9,
+    "gpt_label": "other",
+    "gemini_label": "strip",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "music",
+      "strip",
+      "unite",
+      "frequency"
+    ]
+  },
+  {
+    "word": "bench",
+    "model_key": "openai_5",
+    "idx": 10,
+    "gpt_label": "seat",
+    "gemini_label": "seat",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "seat",
+      "sports",
+      "court",
+      "workbench"
+    ]
+  },
+  {
+    "word": "bench",
+    "model_key": "grok_pro",
+    "idx": 2,
+    "gpt_label": "seat",
+    "gemini_label": "seat",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "seat",
+      "sports",
+      "court",
+      "workbench"
+    ]
+  },
+  {
+    "word": "post",
+    "model_key": "gemini_35flash",
+    "idx": 6,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "mail",
+      "pole",
+      "job",
+      "publish",
+      "station"
+    ]
+  },
+  {
+    "word": "toast",
+    "model_key": "flux_1pro",
+    "idx": 16,
+    "gpt_label": "bread",
+    "gemini_label": "bread",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bread",
+      "tribute",
+      "doomed"
+    ]
+  },
+  {
+    "word": "file",
+    "model_key": "qwen_25_7b",
+    "idx": 7,
+    "gpt_label": "document",
+    "gemini_label": "document",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "document",
+      "submit",
+      "tool",
+      "line"
+    ]
+  },
+  {
+    "word": "ring",
+    "model_key": "grok_420_nr",
+    "idx": 4,
+    "gpt_label": "jewelry",
+    "gemini_label": "jewelry",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "jewelry",
+      "sound",
+      "circle",
+      "arena",
+      "call"
+    ]
+  },
+  {
+    "word": "chest",
+    "model_key": "flux_1pro",
+    "idx": 18,
+    "gpt_label": "box",
+    "gemini_label": "box",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "body",
+      "box"
+    ]
+  },
+  {
+    "word": "bench",
+    "model_key": "qwen",
+    "idx": 15,
+    "gpt_label": "seat",
+    "gemini_label": "seat",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "seat",
+      "sports",
+      "court",
+      "workbench"
+    ]
+  },
+  {
+    "word": "block",
+    "model_key": "qwen_25_7b",
+    "idx": 11,
+    "gpt_label": "other",
+    "gemini_label": "unclear",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "solid",
+      "obstruct",
+      "city"
+    ]
+  },
+  {
+    "word": "post",
+    "model_key": "openai",
+    "idx": 25,
+    "gpt_label": "unclear",
+    "gemini_label": "publish",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "mail",
+      "pole",
+      "job",
+      "publish",
+      "station"
+    ]
+  },
+  {
+    "word": "pump",
+    "model_key": "gemini_25flash",
+    "idx": 27,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "device",
+      "shoe",
+      "inflate"
+    ]
+  },
+  {
+    "word": "jack",
+    "model_key": "flux",
+    "idx": 7,
+    "gpt_label": "name",
+    "gemini_label": "name",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "lift",
+      "cards",
+      "name",
+      "connector"
+    ]
+  },
+  {
+    "word": "amazon",
+    "model_key": "gemini_pro",
+    "idx": 22,
+    "gpt_label": "company",
+    "gemini_label": "company",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "river",
+      "rainforest",
+      "company",
+      "warrior"
+    ]
+  },
+  {
+    "word": "press",
+    "model_key": "gemini",
+    "idx": 6,
+    "gpt_label": "media",
+    "gemini_label": "media",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "media",
+      "push",
+      "printing"
+    ]
+  },
+  {
+    "word": "anchor",
+    "model_key": "gemini_pro",
+    "idx": 19,
+    "gpt_label": "ship",
+    "gemini_label": "ship",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "ship",
+      "news",
+      "secure"
+    ]
+  },
+  {
+    "word": "seal",
+    "model_key": "openai_1",
+    "idx": 7,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "animal",
+      "close",
+      "stamp"
+    ]
+  },
+  {
+    "word": "post",
+    "model_key": "openai",
+    "idx": 5,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "mail",
+      "pole",
+      "job",
+      "publish",
+      "station"
+    ]
+  },
+  {
+    "word": "post",
+    "model_key": "qwen_35_9b",
+    "idx": 0,
+    "gpt_label": "other",
+    "gemini_label": "publish",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "mail",
+      "pole",
+      "job",
+      "publish",
+      "station"
+    ]
+  },
+  {
+    "word": "scale",
+    "model_key": "openai_54mini",
+    "idx": 14,
+    "gpt_label": "weigh",
+    "gemini_label": "unclear",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "weigh",
+      "skin",
+      "music",
+      "size",
+      "climb"
+    ]
+  },
+  {
+    "word": "chip",
+    "model_key": "gemini_25flash",
+    "idx": 19,
+    "gpt_label": "fragment",
+    "gemini_label": "fragment",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fragment",
+      "microchip",
+      "snack",
+      "token"
+    ]
+  },
+  {
+    "word": "brush",
+    "model_key": "gemini_25",
+    "idx": 2,
+    "gpt_label": "tool",
+    "gemini_label": "tool",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "tool",
+      "touch",
+      "shrubs"
+    ]
+  },
+  {
+    "word": "match",
+    "model_key": "gemini_25flash",
+    "idx": 28,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "firestick",
+      "contest",
+      "pairing"
+    ]
+  },
+  {
+    "word": "staple",
+    "model_key": "flux_1pro",
+    "idx": 19,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "essential"
+    ]
+  },
+  {
+    "word": "brush",
+    "model_key": "qwen_35_397b",
+    "idx": 27,
+    "gpt_label": "other",
+    "gemini_label": "tool",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "tool",
+      "touch",
+      "shrubs"
+    ]
+  },
+  {
+    "word": "socket",
+    "model_key": "qwen_20",
+    "idx": 28,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "outlet",
+      "joint",
+      "tool"
+    ]
+  },
+  {
+    "word": "track",
+    "model_key": "qwen_20",
+    "idx": 6,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "path",
+      "railroad",
+      "song",
+      "follow",
+      "athletics"
+    ]
+  },
+  {
+    "word": "press",
+    "model_key": "grok_420_nr",
+    "idx": 10,
+    "gpt_label": "other",
+    "gemini_label": "push",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "media",
+      "push",
+      "printing"
+    ]
+  },
+  {
+    "word": "bat",
+    "model_key": "gemini_pro",
+    "idx": 17,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "animal",
+      "sports",
+      "hit"
+    ]
+  },
+  {
+    "word": "staple",
+    "model_key": "flux_1pro",
+    "idx": 18,
+    "gpt_label": "other",
+    "gemini_label": "essential",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "essential"
+    ]
+  },
+  {
+    "word": "cardinal",
+    "model_key": "openai",
+    "idx": 21,
+    "gpt_label": "bird",
+    "gemini_label": "bird",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bird",
+      "clergy",
+      "main",
+      "number"
+    ]
+  },
+  {
+    "word": "press",
+    "model_key": "flux_1pro",
+    "idx": 29,
+    "gpt_label": "unclear",
+    "gemini_label": "media",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "media",
+      "push",
+      "printing"
+    ]
+  },
+  {
+    "word": "crown",
+    "model_key": "openai_54nano",
+    "idx": 6,
+    "gpt_label": "headwear",
+    "gemini_label": "headwear",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "headwear",
+      "top",
+      "monarchy"
+    ]
+  },
+  {
+    "word": "strike",
+    "model_key": "openai",
+    "idx": 25,
+    "gpt_label": "bowling",
+    "gemini_label": "bowling",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "hit",
+      "labor",
+      "baseball",
+      "bowling"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "qwen_20",
+    "idx": 8,
+    "gpt_label": "other",
+    "gemini_label": "unclear",
+    "agree": false,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "bolt",
+    "model_key": "grok_pro",
+    "idx": 9,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "lightning",
+      "run",
+      "lock"
+    ]
+  },
+  {
+    "word": "tip",
+    "model_key": "openai_5",
+    "idx": 1,
+    "gpt_label": "gratuity",
+    "gemini_label": "gratuity",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gratuity",
+      "point",
+      "advice",
+      "tilt"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "openai_54nano",
+    "idx": 20,
+    "gpt_label": "attempt",
+    "gemini_label": "attempt",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "strike",
+    "model_key": "openai_54nano",
+    "idx": 14,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "hit",
+      "labor",
+      "baseball",
+      "bowling"
+    ]
+  },
+  {
+    "word": "staple",
+    "model_key": "qwen_20",
+    "idx": 20,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fastener",
+      "essential"
+    ]
+  },
+  {
+    "word": "ash",
+    "model_key": "qwen",
+    "idx": 3,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "residue",
+      "tree"
+    ]
+  },
+  {
+    "word": "bridge",
+    "model_key": "gemini",
+    "idx": 28,
+    "gpt_label": "crossing",
+    "gemini_label": "crossing",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "crossing",
+      "card game",
+      "nose",
+      "ship"
+    ]
+  },
+  {
+    "word": "pitch",
+    "model_key": "gemini_25flash",
+    "idx": 22,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "throw",
+      "tone",
+      "sales",
+      "field"
+    ]
+  },
+  {
+    "word": "mole",
+    "model_key": "flux_max",
+    "idx": 29,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "animal",
+      "skin",
+      "spy",
+      "chemistry",
+      "sauce"
+    ]
+  },
+  {
+    "word": "match",
+    "model_key": "gemini_25",
+    "idx": 7,
+    "gpt_label": "firestick",
+    "gemini_label": "firestick",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "firestick",
+      "contest",
+      "pairing"
+    ]
+  },
+  {
+    "word": "jaguar",
+    "model_key": "openai_5",
+    "idx": 6,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "animal",
+      "car"
+    ]
+  },
+  {
+    "word": "trunk",
+    "model_key": "qwen_1",
+    "idx": 22,
+    "gpt_label": "luggage",
+    "gemini_label": "luggage",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "tree",
+      "car",
+      "elephant",
+      "body",
+      "luggage"
+    ]
+  },
+  {
+    "word": "apple",
+    "model_key": "grok_base",
+    "idx": 28,
+    "gpt_label": "fruit",
+    "gemini_label": "fruit",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fruit",
+      "company"
+    ]
+  },
+  {
+    "word": "drill",
+    "model_key": "gemini_31pro",
+    "idx": 13,
+    "gpt_label": "tool",
+    "gemini_label": "tool",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "tool",
+      "exercise",
+      "military"
+    ]
+  },
+  {
+    "word": "turkey",
+    "model_key": "openai_1",
+    "idx": 18,
+    "gpt_label": "bird",
+    "gemini_label": "bird",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bird",
+      "country",
+      "food",
+      "bowling",
+      "failure"
+    ]
+  },
+  {
+    "word": "cobbler",
+    "model_key": "openai_15",
+    "idx": 14,
+    "gpt_label": "shoemaker",
+    "gemini_label": "shoemaker",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "shoemaker",
+      "dessert"
+    ]
+  },
+  {
+    "word": "apple",
+    "model_key": "qwen_25_7b",
+    "idx": 27,
+    "gpt_label": "fruit",
+    "gemini_label": "fruit",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fruit",
+      "company"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "openai_54nano",
+    "idx": 27,
+    "gpt_label": "unclear",
+    "gemini_label": "unclear",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "switch",
+    "model_key": "grok_43",
+    "idx": 24,
+    "gpt_label": "other",
+    "gemini_label": "control",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "control",
+      "change",
+      "rod"
+    ]
+  },
+  {
+    "word": "seal",
+    "model_key": "gemini_35flash",
+    "idx": 10,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "animal",
+      "close",
+      "stamp"
+    ]
+  },
+  {
+    "word": "jack",
+    "model_key": "gemini_25",
+    "idx": 11,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "lift",
+      "cards",
+      "name",
+      "connector"
+    ]
+  },
+  {
+    "word": "drill",
+    "model_key": "openai_54mini",
+    "idx": 10,
+    "gpt_label": "other",
+    "gemini_label": "tool",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "tool",
+      "exercise",
+      "military"
+    ]
+  },
+  {
+    "word": "jack",
+    "model_key": "openai_4o",
+    "idx": 23,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "lift",
+      "cards",
+      "name",
+      "connector"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "model_key": "openai_mini",
+    "idx": 14,
+    "gpt_label": "spacecraft",
+    "gemini_label": "spacecraft",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "transport",
+      "spacecraft",
+      "badminton",
+      "weaving"
+    ]
+  },
+  {
+    "word": "bug",
+    "model_key": "grok_pro",
+    "idx": 8,
+    "gpt_label": "insect",
+    "gemini_label": "insect",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "insect",
+      "defect",
+      "annoy",
+      "surveillance"
+    ]
+  },
+  {
+    "word": "shot",
+    "model_key": "openai_54nano",
+    "idx": 9,
+    "gpt_label": "gunfire",
+    "gemini_label": "gunfire",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "gunfire",
+      "injection",
+      "attempt",
+      "drink",
+      "photo"
+    ]
+  },
+  {
+    "word": "toast",
+    "model_key": "grok",
+    "idx": 29,
+    "gpt_label": "bread",
+    "gemini_label": "bread",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "bread",
+      "tribute",
+      "doomed"
+    ]
+  },
+  {
+    "word": "cobbler",
+    "model_key": "gemini",
+    "idx": 10,
+    "gpt_label": "shoemaker",
+    "gemini_label": "shoemaker",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "shoemaker",
+      "dessert"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "model_key": "flux",
+    "idx": 9,
+    "gpt_label": "spacecraft",
+    "gemini_label": "spacecraft",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "transport",
+      "spacecraft",
+      "badminton",
+      "weaving"
+    ]
+  },
+  {
+    "word": "mole",
+    "model_key": "openai_55",
+    "idx": 3,
+    "gpt_label": "animal",
+    "gemini_label": "animal",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "animal",
+      "skin",
+      "spy",
+      "chemistry",
+      "sauce"
+    ]
+  },
+  {
+    "word": "apple",
+    "model_key": "flux_1pro",
+    "idx": 29,
+    "gpt_label": "fruit",
+    "gemini_label": "fruit",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "fruit",
+      "company"
+    ]
+  },
+  {
+    "word": "rock",
+    "model_key": "openai_5",
+    "idx": 13,
+    "gpt_label": "stone",
+    "gemini_label": "stone",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "stone",
+      "music",
+      "sway"
+    ]
+  },
+  {
+    "word": "match",
+    "model_key": "openai_mini",
+    "idx": 24,
+    "gpt_label": "firestick",
+    "gemini_label": "firestick",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "firestick",
+      "contest",
+      "pairing"
+    ]
+  },
+  {
+    "word": "jack",
+    "model_key": "qwen_25_7b",
+    "idx": 6,
+    "gpt_label": "multiple",
+    "gemini_label": "multiple",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "lift",
+      "cards",
+      "name",
+      "connector"
+    ]
+  },
+  {
+    "word": "chip",
+    "model_key": "grok_420",
+    "idx": 17,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "fragment",
+      "microchip",
+      "snack",
+      "token"
+    ]
+  },
+  {
+    "word": "cell",
+    "model_key": "grok_pro",
+    "idx": 8,
+    "gpt_label": "biology",
+    "gemini_label": "biology",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "biology",
+      "prison",
+      "phone",
+      "battery",
+      "spreadsheet"
+    ]
+  },
+  {
+    "word": "mole",
+    "model_key": "grok_43",
+    "idx": 12,
+    "gpt_label": "chemistry",
+    "gemini_label": "chemistry",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "animal",
+      "skin",
+      "spy",
+      "chemistry",
+      "sauce"
+    ]
+  },
+  {
+    "word": "club",
+    "model_key": "gemini_31pro",
+    "idx": 20,
+    "gpt_label": "organization",
+    "gemini_label": "organization",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "organization",
+      "venue",
+      "weapon",
+      "golf",
+      "cards"
+    ]
+  },
+  {
+    "word": "python",
+    "model_key": "grok_43",
+    "idx": 7,
+    "gpt_label": "snake",
+    "gemini_label": "snake",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "snake",
+      "language"
+    ]
+  },
+  {
+    "word": "ash",
+    "model_key": "openai",
+    "idx": 12,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "residue",
+      "tree"
+    ]
+  },
+  {
+    "word": "tie",
+    "model_key": "gemini",
+    "idx": 17,
+    "gpt_label": "necktie",
+    "gemini_label": "necktie",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "necktie",
+      "fasten",
+      "draw",
+      "bond"
+    ]
+  },
+  {
+    "word": "box",
+    "model_key": "openai_mini",
+    "idx": 26,
+    "gpt_label": "container",
+    "gemini_label": "container",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "container",
+      "fight",
+      "rectangle"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "model_key": "qwen_35_397b",
+    "idx": 24,
+    "gpt_label": "spacecraft",
+    "gemini_label": "spacecraft",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "transport",
+      "spacecraft",
+      "badminton",
+      "weaving"
+    ]
+  },
+  {
+    "word": "cast",
+    "model_key": "qwen_1",
+    "idx": 16,
+    "gpt_label": "other",
+    "gemini_label": "other",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "actors",
+      "throw",
+      "medical",
+      "mold"
+    ]
+  },
+  {
+    "word": "lodge",
+    "model_key": "grok_420",
+    "idx": 21,
+    "gpt_label": "other",
+    "gemini_label": "cabin",
+    "agree": false,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "cabin",
+      "file",
+      "stuck"
+    ]
+  },
+  {
+    "word": "tie",
+    "model_key": "qwen_35_397b",
+    "idx": 4,
+    "gpt_label": "fasten",
+    "gemini_label": "fasten",
+    "agree": true,
+    "content": null,
+    "content_type": "sentence",
+    "human_label": null,
+    "modality": "text",
+    "word_senses": [
+      "necktie",
+      "fasten",
+      "draw",
+      "bond"
+    ]
+  },
+  {
+    "word": "mars",
+    "model_key": "grok_base",
+    "idx": 21,
+    "gpt_label": "planet",
+    "gemini_label": "planet",
+    "agree": true,
+    "content": null,
+    "content_type": "image_path",
+    "human_label": null,
+    "modality": "image",
+    "word_senses": [
+      "planet",
+      "god",
+      "candy"
+    ]
+  }
+]

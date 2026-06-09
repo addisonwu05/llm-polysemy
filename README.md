@@ -1,5 +1,29 @@
 # llm-polysemy
 
+## What is novel here
+
+Prior work establishes that language and vision models have **sense bias** (Rassin et al.
+2022; the MFS literature) and that models cluster by provider family (McGovern et al.
+2024; TensorGuard; "What Makes Two LMs Think Alike" 2025). This work adds two things
+that survive prior-art search:
+
+**1. A predictive rule.**  
+Depictability × corpus-frequency predicts which sense each modality defaults to,
+*including* the dissociation case where the frequency-dominant text sense is
+non-depictable (*mine* → possessive). Prior work observes the bias; no prior work
+gives a falsifiable rule for which sense wins per modality.  
+See `preregistration/T1_rule.md` for the pre-registered analysis plan.
+
+**2. Cross-modality + cross-architecture placement.**  
+Image and text generators are placed in one sense-distribution similarity space.
+The "superposition / both-senses" behavior — where a model depicts multiple senses at
+once — appears to be architecture-bound: confirmed-diffusion models (FLUX.2) show
+**6.6× higher** multi-sense rates than closed-architecture models (0.9%).
+The fingerprinting literature is text-only; White & Cotterell (2022) proposed
+superposition as diffusion-specific but did not test it across the current model zoo.
+
+---
+
 A benchmark probing how **text-to-image** and **text** models resolve **polysemous
 words** — words with multiple meanings (e.g. *bank* → finance vs river, *bolt* →
 fastener vs lightning). Each model is given the **bare word** with no disambiguating
@@ -101,6 +125,34 @@ python -m llm_polysemy.freq.fetch_freq --source wiki         # Wikipedia views -
 python -m llm_polysemy.freq.fetch_freq --source trends       # Google Trends  -> data/freq_trends.json
 ```
 
+### T1/T2 predictive-rule analysis
+
+```bash
+# Score depictability (requires ANTHROPIC_API_KEY; run once, resumable)
+python -m llm_polysemy.freq.score_depictability
+
+# Spot-check sample for human inter-rater κ (fill human_score in output JSON, then:)
+python -m llm_polysemy.freq.score_depictability --check
+python -m llm_polysemy.analysis.t1_eval --kappa
+
+# Pre-registered accuracy table + baselines + dissociation analysis
+python -m llm_polysemy.analysis.t1_eval
+
+# Hero Fig A: depictability × frequency scatter
+python -m llm_polysemy.analysis.t1_plot
+
+# T2: superposition rate by image model architecture
+python -m llm_polysemy.analysis.t2_architecture
+
+# T3: generate human-labeling sample (180 cells, 90 image / 90 text)
+python -m llm_polysemy.analysis.t3_judge_validation --sample
+# (fill human_label in data/t3_human_sample.json, then:)
+python -m llm_polysemy.analysis.t3_judge_validation --report
+
+# T4: cross-modality PCA — all image + text models in one sense space
+python -m llm_polysemy.analysis.t4_cross_pca
+```
+
 ### Publish the corpus
 
 ```bash
@@ -121,8 +173,15 @@ All generated data lives under `data/`, all figures under `figures/`:
 | `data/meanings.json` | candidate senses per word |
 | `data/synonyms.txt` | the word list (first 100 used) |
 | `data/freq_{manual,wiki,trends}.json` | text-frequency priors |
+| `data/depictability.json` | depictability scores per (word, sense), rated by Claude |
+| `data/model_architectures.json` | architecture labels for image models (T2) |
+| `preregistration/T1_rule.md` | pre-registered analysis plan for the predictive rule |
 | `figures/{image,text}/...` | per-modality figures |
 | `figures/cross/...` | cross-modality (image vs text) figures |
+| `figures/t1_hero.pdf` | 2D depictability × frequency scatter (hero fig A) |
+| `figures/t2_superposition.pdf` | superposition rate by image model architecture (hero fig B) |
+| `figures/t4_cross_pca.pdf` | cross-modality PCA: all models in one sense space |
+| `data/t3_human_sample.json` | 180-cell human-labeling sample for judge validation |
 
 ## Adding a model
 
@@ -144,7 +203,9 @@ llm_polysemy/
   providers/         # openai_sdk.py, google_genai.py
   eval.py classify.py # merged --modality entrypoints
   plots/             # 7 modality-aware plots + cross_modality.py
-  freq/              # build_freq.py, fetch_freq.py
+  freq/              # build_freq.py, fetch_freq.py, score_depictability.py
+  analysis/          # t1_eval.py (T1 rule), t2_architecture.py (T2 superposition)
+preregistration/     # T1_rule.md (pre-registered analysis plan), observed_set.txt
 eval.py eval_text.py classify.py classify_text.py agreement.py   # thin root shims
 data/  figures/
 ```
