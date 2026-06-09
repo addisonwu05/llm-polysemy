@@ -3,3 +3,10 @@ data/outputs_image/
 data/outputs_text/
 *.log
 __pycache__/
+
+# macOS filename-collision copies (iCloud/AirDrop/unzip merge artifacts)
+* 2.*
+* 2/
+* 2
+* copy.*
+* copy/
