@@ -140,9 +140,9 @@ function showWord() {
 }
 
 function update() {
-  const n = $("response").value.trim().length;
-  $("next").disabled = n < CFG.MIN_RESPONSE_CHARS;
-  $("charNote").textContent = n < CFG.MIN_RESPONSE_CHARS ? `${n} / ${CFG.MIN_RESPONSE_CHARS} characters minimum` : "";
+  const n = $("response").value.trim().split(/\s+/).filter(Boolean).length;
+  $("next").disabled = n < CFG.MIN_RESPONSE_WORDS;
+  $("charNote").textContent = n < CFG.MIN_RESPONSE_WORDS ? `${n} / ${CFG.MIN_RESPONSE_WORDS} words minimum` : "";
 }
 
 function renderDone() {

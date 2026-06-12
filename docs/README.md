@@ -26,7 +26,7 @@ docs/
 ### 2. Configure the page - edit `config.js`
 - `SCRIPT_URL` → the `/exec` URL from step 1.
 - `PROLIFIC_COMPLETION_CODE` → the code from your Prolific study page.
-- `WORDS_PER_PARTICIPANT` (default 1), `MIN_RESPONSE_CHARS` (default 20).
+- `WORDS_PER_PARTICIPANT` (default 1), `MIN_RESPONSE_WORDS` (default 10).
 
 ### 3. Publish on GitHub Pages
 Commit `docs/` and push, then in the repo: **Settings ▸ Pages ▸ Source = Deploy
