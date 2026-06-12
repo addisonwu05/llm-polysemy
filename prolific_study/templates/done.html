@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you</title>
+{% if configured %}<meta http-equiv="refresh" content="4;url={{ completion_url }}">{% endif %}
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #f5f6f8; color: #1d2129; display: flex; justify-content: center; }
+  .card { background: #fff; max-width: 640px; width: 100%; margin: 48px 16px; padding: 36px 40px;
+          border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); text-align: center; }
+  a.btn { display: inline-block; font-weight: 600; color: #fff; background: #2f6fed;
+          border-radius: 8px; padding: 12px 28px; text-decoration: none; margin: 12px 0; }
+  .code { font-size: .95rem; color: #6b7280; }
+  .warn { color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Thank you!</h1>
+  <p>Your response has been recorded.</p>
+  {% if configured %}
+    <p>You will be redirected back to Prolific in a few seconds. If not, click below.</p>
+    <p><a class="btn" href="{{ completion_url }}">Return to Prolific</a></p>
+    <p class="code">Completion code: <strong>{{ completion_code }}</strong></p>
+  {% else %}
+    <p class="warn">No Prolific completion code is configured yet — set
+       <code>PROLIFIC_COMPLETION_CODE</code> in <code>study_config.py</code> before launching.</p>
+  {% endif %}
+</div>
+</body>
+</html>

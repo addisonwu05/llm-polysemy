@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Description Study</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #f5f6f8; color: #1d2129; display: flex; justify-content: center; }
+  .card { background: #fff; max-width: 640px; width: 100%; margin: 48px 16px; padding: 36px 40px;
+          border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  h1 { font-size: 1.25rem; margin: 0 0 16px; }
+  .prose { white-space: pre-line; line-height: 1.55; }
+  .word { font-size: 2.6rem; font-weight: 700; text-align: center; margin: 28px 0; }
+  textarea { width: 100%; min-height: 140px; font: inherit; padding: 12px;
+             border: 1px solid #c8ccd4; border-radius: 8px; resize: vertical; }
+  textarea:focus { outline: 2px solid #4a7dff; border-color: transparent; }
+  .meta { margin-top: 10px; font-size: .85rem; color: #6b7280; min-height: 1.2em; }
+  button { font: inherit; font-weight: 600; color: #fff; background: #2f6fed;
+           border: none; border-radius: 8px; padding: 12px 28px; cursor: pointer; }
+  button:disabled { background: #a9bedf; cursor: not-allowed; }
+  .actions { margin-top: 18px; text-align: right; }
+  .error { color: #c0392b; font-size: .9rem; margin-top: 10px; display: none; }
+  .progress { font-size: .85rem; color: #6b7280; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <section id="consent">
+    <h1>Before you begin</h1>
+    <div class="prose">{{ consent_text }}</div>
+    <div class="actions"><button id="agree">I agree — begin</button></div>
+  </section>
+
+  <section id="task" hidden>
+    <div class="progress" id="progress"></div>
+    <div class="prose" id="instructions"></div>
+    <div class="word" id="word"></div>
+    <textarea id="response" autocomplete="off" spellcheck="true"
+              placeholder="Type your description here…"></textarea>
+    <div class="meta" id="charNote"></div>
+    <div class="error" id="error"></div>
+    <div class="actions"><button id="next" disabled>Submit</button></div>
+  </section>
+
+</div>
+<script>
+const WORDS = {{ words | tojson }};
+const PROMPT_TEMPLATE = {{ prompt_template | tojson }};
+const MIN_CHARS = {{ min_chars | tojson }};
+const META = {
+  assignment_id: {{ assignment_id | tojson }},
+  prolific_pid: {{ prolific_pid | tojson }},
+  study_id: {{ study_id | tojson }},
+  session_id: {{ session_id | tojson }},
+};
+
+const $ = id => document.getElementById(id);
+let i = 0, t0 = null;
+const collected = [];
+
+function showWord() {
+  $('progress').textContent = WORDS.length > 1 ? `Word ${i + 1} of ${WORDS.length}` : '';
+  $('instructions').textContent = PROMPT_TEMPLATE.replaceAll('{word}', WORDS[i]);
+  $('word').textContent = WORDS[i];
+  $('response').value = '';
+  $('next').textContent = (i === WORDS.length - 1) ? 'Submit' : 'Next';
+  update();
+  $('response').focus();
+  t0 = performance.now();
+}
+
+function update() {
+  const n = $('response').value.trim().length;
+  $('next').disabled = n < MIN_CHARS;
+  $('charNote').textContent = n < MIN_CHARS ? `${n} / ${MIN_CHARS} characters minimum` : '';
+}
+
+$('response').addEventListener('input', update);
+
+$('agree').addEventListener('click', () => {
+  $('consent').hidden = true;
+  $('task').hidden = false;
+  showWord();
+});
+
+$('next').addEventListener('click', async () => {
+  collected.push({
+    word: WORDS[i],
+    response: $('response').value.trim(),
+    seconds: Math.round((performance.now() - t0) / 100) / 10,
+  });
+  if (i < WORDS.length - 1) { i++; showWord(); return; }
+
+  const btn = $('next');
+  btn.disabled = true;
+  btn.textContent = 'Submitting…';
+  $('error').style.display = 'none';
+  try {
+    const res = await fetch('submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...META, responses: collected }),
+    });
+    const out = await res.json();
+    if (!res.ok) throw new Error(out.error || res.statusText);
+    window.location = out.redirect;
+  } catch (err) {
+    collected.pop();  // let the participant retry the final submit
+    $('error').textContent = 'Submission failed: ' + err.message + ' — please try again.';
+    $('error').style.display = 'block';
+    btn.textContent = 'Submit';
+    update();
+  }
+});
+</script>
+</body>
+</html>

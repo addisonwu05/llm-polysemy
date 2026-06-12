@@ -10,3 +10,6 @@ __pycache__/
 * 2
 * copy.*
 * copy/
+
+# Prolific study participant data
+prolific_study/responses/

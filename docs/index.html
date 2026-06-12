@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Description Study</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #f5f6f8; color: #1d2129; display: flex; justify-content: center; }
+  .card { background: #fff; max-width: 640px; width: 100%; margin: 48px 16px; padding: 36px 40px;
+          border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  h1 { font-size: 1.25rem; margin: 0 0 16px; }
+  .prose { white-space: pre-line; line-height: 1.55; }
+  .word { font-size: 2.6rem; font-weight: 700; text-align: center; margin: 28px 0; }
+  textarea { width: 100%; min-height: 140px; font: inherit; padding: 12px;
+             border: 1px solid #c8ccd4; border-radius: 8px; resize: vertical; }
+  textarea:focus { outline: 2px solid #4a7dff; border-color: transparent; }
+  .meta { margin-top: 10px; font-size: .85rem; color: #6b7280; min-height: 1.2em; }
+  button { font: inherit; font-weight: 600; color: #fff; background: #2f6fed;
+           border: none; border-radius: 8px; padding: 12px 28px; cursor: pointer; }
+  button:disabled { background: #a9bedf; cursor: not-allowed; }
+  .actions { margin-top: 18px; text-align: right; }
+  .error { color: #c0392b; font-size: .9rem; margin-top: 10px; display: none; }
+  .progress { font-size: .85rem; color: #6b7280; margin-bottom: 8px; }
+  .center { text-align: center; }
+  a.btn { display: inline-block; font-weight: 600; color: #fff; background: #2f6fed;
+          border-radius: 8px; padding: 12px 28px; text-decoration: none; margin: 12px 0; }
+  .code { font-size: .95rem; color: #6b7280; }
+  .warn { color: #c0392b; }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <section id="loading"><p>Loading…</p></section>
+
+  <section id="consent" hidden>
+    <h1>Before you begin</h1>
+    <div class="prose" id="consentText"></div>
+    <div class="actions"><button id="agree">I agree — begin</button></div>
+  </section>
+
+  <section id="task" hidden>
+    <div class="progress" id="progress"></div>
+    <div class="prose" id="instructions"></div>
+    <div class="word" id="word"></div>
+    <textarea id="response" autocomplete="off" spellcheck="true"
+              placeholder="Type your description here…"></textarea>
+    <div class="meta" id="charNote"></div>
+    <div class="error" id="error"></div>
+    <div class="actions"><button id="next" disabled>Submit</button></div>
+  </section>
+
+  <section id="done" hidden class="center">
+    <h1>Thank you!</h1>
+    <p>Your response has been recorded.</p>
+    <div id="doneBody"></div>
+  </section>
+
+</div>
+
+<script src="config.js"></script>
+<script>
+const CFG = window.STUDY_CONFIG;
+const $ = id => document.getElementById(id);
+
+// Prolific passes these in the URL; we record them.
+const params = new URLSearchParams(location.search);
+const META = {
+  assignment_id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random())),
+  prolific_pid: params.get("PROLIFIC_PID") || "",
+  study_id: params.get("STUDY_ID") || "",
+  session_id: params.get("SESSION_ID") || "",
+  user_agent: navigator.userAgent,
+};
+
+let WORDS = [];          // words assigned to this participant
+let PROMPT_TEMPLATE = "";
+let i = 0, t0 = null;
+const collected = [];
+
+function show(section) {
+  for (const s of ["loading", "consent", "task", "done"]) $(s).hidden = (s !== section);
+}
+
+// Pick N distinct words uniformly at random (client-side; no server to balance).
+function pickWords(all, n) {
+  const pool = all.slice();
+  for (let k = pool.length - 1; k > 0; k--) {
+    const j = Math.floor(Math.random() * (k + 1));
+    [pool[k], pool[j]] = [pool[j], pool[k]];
+  }
+  return pool.slice(0, Math.min(n, pool.length));
+}
+
+async function init() {
+  try {
+    const [words, prompt, consent] = await Promise.all([
+      fetch("words.json").then(r => r.json()),
+      fetch("prompt.txt").then(r => r.text()),
+      fetch("consent.txt").then(r => r.text()),
+    ]);
+    PROMPT_TEMPLATE = prompt.trim();
+    WORDS = pickWords(words, CFG.WORDS_PER_PARTICIPANT);
+    $("consentText").textContent = consent.trim();
+    show("consent");
+  } catch (err) {
+    $("loading").innerHTML = "<p class='warn'>Could not load the study files. Please refresh.</p>";
+  }
+}
+
+function showWord() {
+  $("progress").textContent = WORDS.length > 1 ? `Word ${i + 1} of ${WORDS.length}` : "";
+  $("instructions").textContent = PROMPT_TEMPLATE.replaceAll("{word}", WORDS[i]);
+  $("word").textContent = WORDS[i];
+  $("response").value = "";
+  $("next").textContent = (i === WORDS.length - 1) ? "Submit" : "Next";
+  update();
+  $("response").focus();
+  t0 = performance.now();
+}
+
+function update() {
+  const n = $("response").value.trim().length;
+  $("next").disabled = n < CFG.MIN_RESPONSE_CHARS;
+  $("charNote").textContent = n < CFG.MIN_RESPONSE_CHARS ? `${n} / ${CFG.MIN_RESPONSE_CHARS} characters minimum` : "";
+}
+
+function renderDone() {
+  const configured = CFG.PROLIFIC_COMPLETION_CODE && CFG.PROLIFIC_COMPLETION_CODE !== "REPLACE_ME";
+  if (configured) {
+    const url = `https://app.prolific.com/submissions/complete?cc=${encodeURIComponent(CFG.PROLIFIC_COMPLETION_CODE)}`;
+    $("doneBody").innerHTML =
+      `<p>You will be returned to Prolific in a few seconds. If not, click below.</p>
+       <p><a class="btn" href="${url}">Return to Prolific</a></p>
+       <p class="code">Completion code: <strong>${CFG.PROLIFIC_COMPLETION_CODE}</strong></p>`;
+    setTimeout(() => { location.href = url; }, 3500);
+  } else {
+    $("doneBody").innerHTML =
+      `<p class="warn">No Prolific completion code is configured yet — set
+       <code>PROLIFIC_COMPLETION_CODE</code> in <code>config.js</code> before launching.</p>`;
+  }
+}
+
+async function saveResponses() {
+  const payload = { ...META, responses: collected };
+  if (!CFG.SCRIPT_URL || CFG.SCRIPT_URL.startsWith("REPLACE")) {
+    console.warn("SCRIPT_URL not set — logging payload instead of saving:", payload);
+    return; // treat as success so you can preview the flow before wiring the Sheet
+  }
+  // text/plain avoids a CORS preflight Apps Script can't answer; response is
+  // opaque under no-cors, so a resolved fetch (no network error) = success.
+  await fetch(CFG.SCRIPT_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify(payload),
+  });
+}
+
+$("agree").addEventListener("click", () => { show("task"); showWord(); });
+$("response").addEventListener("input", update);
+
+$("next").addEventListener("click", async () => {
+  collected.push({
+    word: WORDS[i],
+    response: $("response").value.trim(),
+    seconds: Math.round((performance.now() - t0) / 100) / 10,
+  });
+  if (i < WORDS.length - 1) { i++; showWord(); return; }
+
+  const btn = $("next");
+  btn.disabled = true;
+  btn.textContent = "Submitting…";
+  $("error").style.display = "none";
+  try {
+    await saveResponses();
+    show("done");
+    renderDone();
+  } catch (err) {
+    collected.pop();  // let the participant retry the final submit
+    $("error").textContent = "Submission failed — please check your connection and try again.";
+    $("error").style.display = "block";
+    btn.textContent = "Submit";
+    update();
+  }
+});
+
+init();
+</script>
+</body>
+</html>
