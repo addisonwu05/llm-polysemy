@@ -19,8 +19,8 @@
 var SHEET_NAME = "Sheet1";
 
 var HEADERS = ["ts", "prolific_pid", "study_id", "session_id", "assignment_id",
-               "word", "response", "seconds_on_word", "word_index", "words_total",
-               "user_agent"];
+               "prompt_id", "prompt_text", "word", "response", "seconds_on_word",
+               "word_index", "words_total", "user_agent"];
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
@@ -40,6 +40,8 @@ function doPost(e) {
         payload.study_id || "",
         payload.session_id || "",
         payload.assignment_id || "",
+        payload.prompt_id || "",
+        payload.prompt_text || "",
         r.word || "",
         r.response || "",
         r.seconds == null ? "" : r.seconds,

@@ -8,10 +8,11 @@ for the `text` modality: show one bare word, collect a free-form description.
 docs/
   index.html      ← the whole study (consent → word → thank-you)
   config.js       ← YOUR settings: Apps Script URL, completion code, etc.
-  words.json      ← the 100 words (regenerate from data/synonyms.txt if it changes)
-  prompt.txt      ← the task instruction  (edit freely)
-  consent.txt     ← the consent screen    (edit freely)
-  apps_script.gs  ← paste this into Google Apps Script (the backend)
+  words.json          ← first 100 words of data/synonyms.txt (regenerate if it changes)
+  prompt_meaning.txt  ← prompt variant A: "use it in a sentence"  (edit freely)
+  prompt_image.txt    ← prompt variant B: "what image comes to mind" (edit freely)
+  consent.txt         ← the consent screen   (edit freely)
+  apps_script.gs      ← paste this into Google Apps Script (the backend)
 ```
 
 ## Setup (one time, ~10 min)
@@ -40,10 +41,17 @@ https://<user>.github.io/<repo>/?PROLIFIC_PID={{%PROLIFIC_PID%}}&STUDY_ID={{%STU
 Choose **"I'll redirect them using a URL"** for completion (the page redirects to
 Prolific with your completion code at the end).
 
+## Prompt variants
+Each participant is shown **exactly one** prompt, chosen at random from the
+`PROMPTS` list in `config.js` (currently `meaning` and `image`). The chosen
+variant's `id` is recorded in the Sheet (`prompt_id` column) so you can split
+results by condition. `{word}` in a prompt is replaced with the assigned word,
+rendered **bold**. Add/remove variants by editing the `.txt` files and the
+`PROMPTS` list.
+
 ## Editing the wording
-`prompt.txt` and `consent.txt` are plain text fetched at page load — edit, commit,
-push, and the live page updates. Put `{word}` in `prompt.txt` to inline the
-assigned word in a sentence (it's also always shown large on its own).
+The prompt `.txt` files and `consent.txt` are plain text fetched at page load —
+edit, commit, push, and the live page updates.
 
 ## Preview locally
 `fetch()` is blocked on `file://`, so serve over HTTP:

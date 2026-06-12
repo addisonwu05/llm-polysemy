@@ -11,4 +11,12 @@ window.STUDY_CONFIG = {
 
   WORDS_PER_PARTICIPANT: 1,   // words each participant describes, one at a time
   MIN_RESPONSE_CHARS: 20,     // submit unlocks at this many characters
+
+  // Each participant is shown exactly ONE of these prompts, picked at random.
+  // The chosen `id` is recorded in the Sheet so you can tell them apart.
+  // Edit the .txt files freely; {word} is replaced with the assigned word (bold).
+  PROMPTS: [
+    { id: "meaning", file: "prompt_meaning.txt" },
+    { id: "image",   file: "prompt_image.txt" },
+  ],
 };

@@ -76,6 +76,7 @@ const META = {
 
 let WORDS = [];          // words assigned to this participant
 let PROMPT_TEMPLATE = "";
+let PROMPT_ID = "";      // which prompt variant this participant got
 let i = 0, t0 = null;
 const collected = [];
 
@@ -95,9 +96,12 @@ function pickWords(all, n) {
 
 async function init() {
   try {
+    // Each participant is randomly assigned exactly one prompt variant.
+    const variant = CFG.PROMPTS[Math.floor(Math.random() * CFG.PROMPTS.length)];
+    PROMPT_ID = variant.id;
     const [words, prompt, consent] = await Promise.all([
       fetch("words.json").then(r => r.json()),
-      fetch("prompt.txt").then(r => r.text()),
+      fetch(variant.file).then(r => r.text()),
       fetch("consent.txt").then(r => r.text()),
     ]);
     PROMPT_TEMPLATE = prompt.trim();
@@ -158,7 +162,7 @@ function renderDone() {
 }
 
 async function saveResponses() {
-  const payload = { ...META, responses: collected };
+  const payload = { ...META, prompt_id: PROMPT_ID, prompt_text: PROMPT_TEMPLATE, responses: collected };
   if (!CFG.SCRIPT_URL || CFG.SCRIPT_URL.startsWith("REPLACE")) {
     console.warn("SCRIPT_URL not set — logging payload instead of saving:", payload);
     return; // treat as success so you can preview the flow before wiring the Sheet
