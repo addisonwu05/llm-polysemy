@@ -44,7 +44,6 @@
   <section id="task" hidden>
     <div class="progress" id="progress"></div>
     <div class="prose" id="instructions"></div>
-    <div class="word" id="word"></div>
     <textarea id="response" autocomplete="off" spellcheck="true"
               placeholder="Type your description here…"></textarea>
     <div class="meta" id="charNote"></div>
@@ -110,10 +109,25 @@ async function init() {
   }
 }
 
+// Render the prompt with {word} replaced by the word in bold, built from DOM
+// nodes (not innerHTML) so the word can never inject markup.
+function setInstructions(template, word) {
+  const el = $("instructions");
+  el.textContent = "";
+  const parts = template.split("{word}");
+  parts.forEach((part, idx) => {
+    el.appendChild(document.createTextNode(part));
+    if (idx < parts.length - 1) {
+      const strong = document.createElement("strong");
+      strong.textContent = word;
+      el.appendChild(strong);
+    }
+  });
+}
+
 function showWord() {
   $("progress").textContent = WORDS.length > 1 ? `Word ${i + 1} of ${WORDS.length}` : "";
-  $("instructions").textContent = PROMPT_TEMPLATE.replaceAll("{word}", WORDS[i]);
-  $("word").textContent = WORDS[i];
+  setInstructions(PROMPT_TEMPLATE, WORDS[i]);
   $("response").value = "";
   $("next").textContent = (i === WORDS.length - 1) ? "Submit" : "Next";
   update();
