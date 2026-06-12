@@ -31,7 +31,7 @@
   <section id="consent">
     <h1>Before you begin</h1>
     <div class="prose">{{ consent_text }}</div>
-    <div class="actions"><button id="agree">I agree — begin</button></div>
+    <div class="actions"><button id="agree">I agree - begin</button></div>
   </section>
 
   <section id="task" hidden>
@@ -109,7 +109,7 @@ $('next').addEventListener('click', async () => {
     window.location = out.redirect;
   } catch (err) {
     collected.pop();  // let the participant retry the final submit
-    $('error').textContent = 'Submission failed: ' + err.message + ' — please try again.';
+    $('error').textContent = 'Submission failed: ' + err.message + ' - please try again.';
     $('error').style.display = 'block';
     btn.textContent = 'Submit';
     update();

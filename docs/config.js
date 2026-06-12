@@ -1,4 +1,4 @@
-// ── Study configuration — edit these, commit, push. ────────────────────────
+// ── Study configuration - edit these, commit, push. ────────────────────────
 window.STUDY_CONFIG = {
 
   // PASTE your Google Apps Script Web App URL here (see apps_script.gs / README).

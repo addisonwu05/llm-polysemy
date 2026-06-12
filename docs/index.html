@@ -38,7 +38,7 @@
   <section id="consent" hidden>
     <h1>Before you begin</h1>
     <div class="prose" id="consentText"></div>
-    <div class="actions"><button id="agree">I agree — begin</button></div>
+    <div class="actions"><button id="agree">I agree - begin</button></div>
   </section>
 
   <section id="task" hidden>
@@ -156,7 +156,7 @@ function renderDone() {
     setTimeout(() => { location.href = url; }, 3500);
   } else {
     $("doneBody").innerHTML =
-      `<p class="warn">No Prolific completion code is configured yet — set
+      `<p class="warn">No Prolific completion code is configured yet - set
        <code>PROLIFIC_COMPLETION_CODE</code> in <code>config.js</code> before launching.</p>`;
   }
 }
@@ -164,7 +164,7 @@ function renderDone() {
 async function saveResponses() {
   const payload = { ...META, prompt_id: PROMPT_ID, prompt_text: PROMPT_TEMPLATE, responses: collected };
   if (!CFG.SCRIPT_URL || CFG.SCRIPT_URL.startsWith("REPLACE")) {
-    console.warn("SCRIPT_URL not set — logging payload instead of saving:", payload);
+    console.warn("SCRIPT_URL not set - logging payload instead of saving:", payload);
     return; // treat as success so you can preview the flow before wiring the Sheet
   }
   // text/plain avoids a CORS preflight Apps Script can't answer; response is
@@ -198,7 +198,7 @@ $("next").addEventListener("click", async () => {
     renderDone();
   } catch (err) {
     collected.pop();  // let the participant retry the final submit
-    $("error").textContent = "Submission failed — please check your connection and try again.";
+    $("error").textContent = "Submission failed - please check your connection and try again.";
     $("error").style.display = "block";
     btn.textContent = "Submit";
     update();

@@ -1,7 +1,7 @@
 # Prolific human-baseline study
 
 Shows a participant **one bare word** and collects a free-form description of
-what it means to them — the human counterpart to the model `text` modality.
+what it means to them - the human counterpart to the model `text` modality.
 
 ## Run locally
 
@@ -14,18 +14,18 @@ Open `http://localhost:5050/` to preview. Live status: `http://localhost:5050/st
 
 ## Edit the wording
 
-- **`prompt.txt`** — the task instruction shown above the word. A literal
+- **`prompt.txt`** - the task instruction shown above the word. A literal
   `{word}` is replaced with the assigned word (optional; the word is also shown
   big on its own).
-- **`consent.txt`** — the first screen. Drop in your IRB-approved language.
+- **`consent.txt`** - the first screen. Drop in your IRB-approved language.
 
-Both files are re-read on every page load — edit and refresh, no restart needed.
+Both files are re-read on every page load - edit and refresh, no restart needed.
 
-## Other knobs — `study_config.py`
+## Other knobs - `study_config.py`
 
 - `WORDS_PER_PARTICIPANT` (default 1), `MIN_RESPONSE_CHARS`, `N_WORDS` (100),
   `TARGET_RESPONSES_PER_WORD`, `PORT`.
-- `PROLIFIC_COMPLETION_CODE` — **set this** to the code from your Prolific study
+- `PROLIFIC_COMPLETION_CODE` - **set this** to the code from your Prolific study
   page. Until set, the final page warns instead of redirecting.
 
 ## Prolific setup

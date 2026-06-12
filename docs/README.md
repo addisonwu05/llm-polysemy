@@ -1,6 +1,6 @@
 # Prolific word-description study (static / GitHub Pages)
 
-A pure HTML/JS page — no server. GitHub Pages serves it; responses are saved to
+A pure HTML/JS page - no server. GitHub Pages serves it; responses are saved to
 a **Google Sheet** via a Google Apps Script web app. This is the human baseline
 for the `text` modality: show one bare word, collect a free-form description.
 
@@ -17,13 +17,13 @@ docs/
 
 ## Setup (one time, ~10 min)
 
-### 1. Backend — Google Sheet + Apps Script
+### 1. Backend - Google Sheet + Apps Script
 1. Create a Google Sheet.
 2. **Extensions ▸ Apps Script**, delete the stub, paste all of `apps_script.gs`.
 3. **Deploy ▸ New deployment ▸ Web app**: *Execute as* **Me**, *Who has access*
    **Anyone**. Deploy, authorize, and copy the **Web app URL** (ends in `/exec`).
 
-### 2. Configure the page — edit `config.js`
+### 2. Configure the page - edit `config.js`
 - `SCRIPT_URL` → the `/exec` URL from step 1.
 - `PROLIFIC_COMPLETION_CODE` → the code from your Prolific study page.
 - `WORDS_PER_PARTICIPANT` (default 1), `MIN_RESPONSE_CHARS` (default 20).
@@ -50,7 +50,7 @@ rendered **bold**. Add/remove variants by editing the `.txt` files and the
 `PROMPTS` list.
 
 ## Editing the wording
-The prompt `.txt` files and `consent.txt` are plain text fetched at page load —
+The prompt `.txt` files and `consent.txt` are plain text fetched at page load -
 edit, commit, push, and the live page updates.
 
 ## Preview locally
@@ -59,7 +59,7 @@ edit, commit, push, and the live page updates.
 cd docs && python3 -m http.server 8077   # open http://localhost:8077/
 ```
 With `SCRIPT_URL` still unset, submissions are logged to the browser console
-(DevTools) instead of saved — so you can walk the whole flow before wiring the Sheet.
+(DevTools) instead of saved - so you can walk the whole flow before wiring the Sheet.
 
 ## Getting the data
 Responses land in your Google Sheet, one row per word:
@@ -69,6 +69,6 @@ seconds_on_word, word_index, words_total, user_agent`.
 
 ## Tradeoff vs. the server version
 A static page can't see global coverage, so each participant gets a **uniformly
-random** word — coverage evens out over many participants but isn't actively
+random** word - coverage evens out over many participants but isn't actively
 balanced. If you need guaranteed even coverage (least-covered word served first),
 use the Flask version in `../prolific_study/` on a real host instead.

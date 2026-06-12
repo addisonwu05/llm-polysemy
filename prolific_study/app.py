@@ -1,4 +1,4 @@
-"""Prolific study server — show one bare word, collect a free-form description.
+"""Prolific study server - show one bare word, collect a free-form description.
 
 Run:             python prolific_study/app.py
 Participant URL: http://<host>:<port>/?PROLIFIC_PID={{%PROLIFIC_PID%}}&STUDY_ID={{%STUDY_ID%}}&SESSION_ID={{%SESSION_ID%}}

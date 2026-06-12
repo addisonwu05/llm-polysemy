@@ -1,6 +1,6 @@
 """All study knobs in one place.
 
-Participant-facing TEXT is not here — edit `prompt.txt` (the task instruction;
+Participant-facing TEXT is not here - edit `prompt.txt` (the task instruction;
 a literal {word} placeholder is substituted) and `consent.txt` (the first
 screen). Both files are re-read on every page load, so edits take effect
 without restarting the server.
@@ -13,7 +13,7 @@ TARGET_RESPONSES_PER_WORD = 30 # progress yardstick for /status; assignment alwa
                                # gives out the least-covered words regardless
 
 # ── Word list ──────────────────────────────────────────────────────────────
-N_WORDS = 100                  # first N words of data/synonyms.txt — the same
+N_WORDS = 100                  # first N words of data/synonyms.txt - the same
                                # slice the image/text models were evaluated on
 
 # ── Prolific ───────────────────────────────────────────────────────────────
