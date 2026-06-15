@@ -86,15 +86,16 @@ python -m llm_polysemy.eval --modality text --lang tr        # Turkish word list
 Resume is automatic & filesystem-driven: only missing outputs are regenerated
 (delete an output file to re-queue just that sample).
 
-**Languages (`--lang {en,tr}`, default `en`).** `en` uses `data/synonyms.txt`
-(100 words) with the English prompt and the original output paths. `tr` uses
-`data/synonyms_tr.txt` (25 Turkish words) with a Turkish generation prompt and
-writes to **`_tr`-suffixed** paths (`outputs_text_tr/`, `histograms_text_tr.json`,
-senses from `data/meanings_tr.json`) so the two languages never collide. The
-image prompt is the bare word, so it's already language-correct. Pass the same
-`--lang` to `classify`. For `tr`, the default run **drops the Qwen and FLUX
-families** (`LANG_EXCLUDE_FAMILIES` in `eval.py`) — image `tr` runs 10 models,
-text `tr` runs 12; an explicit `--model KEY` still runs any single model.
+**Languages (`--lang {en,tr,fr}`, default `en`).** `en` uses `data/synonyms.txt`
+(100 words) with the English prompt and the original output paths. `tr` / `fr`
+use `data/synonyms_{tr,fr}.txt` (25 words each) with a Turkish / French generation
+prompt and write to **`_<lang>`-suffixed** paths (`outputs_text_tr/`,
+`histograms_text_fr.json`, senses from `data/meanings_<lang>.json`) so the languages
+never collide. The image prompt is the bare word, so it's already language-correct.
+Pass the same `--lang` to `classify`. For `tr`, the default run **drops the Qwen and
+FLUX families** (`LANG_EXCLUDE_FAMILIES` in `eval.py`) — image `tr` runs 10 models,
+text `tr` runs 12; `fr` currently runs all families. An explicit `--model KEY` still
+runs any single model.
 
 ### Classify
 
@@ -185,9 +186,9 @@ All generated data lives under `data/`, all figures under `figures/`:
 | `data/histograms_{image,text}.json` | aggregated sense distributions |
 | `data/meanings.json` | candidate senses per word |
 | `data/synonyms.txt` | the word list (first 100 used) |
-| `data/synonyms_tr.txt` | Turkish word list (25 words, `--lang tr`) |
-| `data/meanings_tr.json` | Turkish candidate senses (English glosses for the judges + `meaning_tr`) |
-| `data/{outputs,results,classifications,histograms}_*_tr.*` | Turkish-run artifacts (`_tr` suffix) |
+| `data/synonyms_{tr,fr}.txt` | Turkish / French word lists (25 words each, `--lang {tr,fr}`) |
+| `data/meanings_{tr,fr}.json` | Turkish / French candidate senses (English glosses for the judges + `meaning_<lang>`) |
+| `data/{outputs,results,classifications,histograms}_*_{tr,fr}.*` | non-English run artifacts (`_<lang>` suffix) |
 | `data/freq_{manual,wiki,trends}.json` | text-frequency priors |
 | `data/depictability.json` | depictability scores per (word, sense), rated by Claude |
 | `data/model_architectures.json` | architecture labels for image models (T2) |

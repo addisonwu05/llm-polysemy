@@ -64,7 +64,7 @@ DATA = Path("data")
 
 # Per-language file suffix. English keeps the original (unsuffixed) paths so the
 # existing corpus/logs are untouched; a new language just gets a "_<lang>" suffix.
-LANG_SUFFIX = {"en": "", "tr": "_tr"}
+LANG_SUFFIX = {"en": "", "tr": "_tr", "fr": "_fr"}
 
 
 def gen_modality(name: str, lang: str = "en") -> GenModality:

@@ -24,7 +24,7 @@ def cli_main(default_modality: str | None = None):
     p = argparse.ArgumentParser()
     p.add_argument("--modality", choices=["image", "text"],
                    default=default_modality or "image")
-    p.add_argument("--lang", choices=["en", "tr"], default="en",
+    p.add_argument("--lang", choices=["en", "tr", "fr"], default="en",
                    help="which language's outputs + meanings to classify (default: en)")
     p.add_argument("--judge", choices=list(JUDGES), default=None,
                    help="run only this judge (default: both)")

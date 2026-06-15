@@ -17,6 +17,10 @@ TEXT_PROMPT_TEMPLATES = {
         "Aşağıdaki kelimeyi tek bir cümlede kullanın: {word}\n"
         "Yalnızca cümleyi yazın, başka hiçbir şey yazmayın."
     ),
+    "fr": (
+        "Utilisez le mot suivant dans une seule phrase : {word}\n"
+        "Répondez uniquement avec la phrase et rien d'autre."
+    ),
 }
 # Back-compat alias (English) for any importer of the old constant.
 TEXT_PROMPT_TEMPLATE = TEXT_PROMPT_TEMPLATES["en"]

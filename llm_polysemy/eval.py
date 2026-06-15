@@ -19,6 +19,7 @@ from .registry import models_for, family_of
 WORDS_FILES = {
     "en": Path("data/synonyms.txt"),
     "tr": Path("data/synonyms_tr.txt"),
+    "fr": Path("data/synonyms_fr.txt"),
 }
 
 # Families skipped for a given language's default ("all models") run. Turkish
@@ -37,7 +38,7 @@ def cli_main(default_modality: str | None = None):
     p = argparse.ArgumentParser()
     p.add_argument("--modality", choices=["image", "text"],
                    default=default_modality or "image")
-    p.add_argument("--lang", choices=["en", "tr"], default="en",
+    p.add_argument("--lang", choices=["en", "tr", "fr"], default="en",
                    help="word list + generation-prompt language (default: en)")
     p.add_argument("--model", default=None, help="run only this model_key (default: all)")
     args = p.parse_args()

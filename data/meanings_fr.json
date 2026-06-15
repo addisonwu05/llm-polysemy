@@ -1,0 +1,128 @@
+{
+  "trombone": [
+    {"sense": "instrument", "meaning": "the brass musical instrument (trombone)", "meaning_fr": "trombone (instrument)"},
+    {"sense": "paperclip",  "meaning": "a paperclip",                              "meaning_fr": "trombone (agrafe/attache)"}
+  ],
+  "souris": [
+    {"sense": "animal",   "meaning": "the animal (a mouse)",      "meaning_fr": "souris (animal)"},
+    {"sense": "computer", "meaning": "a computer mouse",          "meaning_fr": "souris (informatique)"}
+  ],
+  "timbre": [
+    {"sense": "stamp",  "meaning": "a postage stamp",                   "meaning_fr": "timbre (poste)"},
+    {"sense": "tone",   "meaning": "the tone-quality/timbre of a sound","meaning_fr": "timbre (qualité sonore)"},
+    {"sense": "buzzer", "meaning": "a buzzer or doorbell",              "meaning_fr": "timbre (sonnette)"}
+  ],
+  "chaîne": [
+    {"sense": "chain",    "meaning": "a chain (of links)",          "meaning_fr": "chaîne (maillons)"},
+    {"sense": "channel",  "meaning": "a TV channel",                "meaning_fr": "chaîne (télévision)"},
+    {"sense": "range",    "meaning": "a mountain range",            "meaning_fr": "chaîne (de montagnes)"},
+    {"sense": "assembly", "meaning": "an assembly line (chaîne de montage)","meaning_fr": "chaîne (de montage)"}
+  ],
+  "avocat": [
+    {"sense": "lawyer",  "meaning": "a lawyer",                "meaning_fr": "avocat (juriste)"},
+    {"sense": "avocado", "meaning": "an avocado (the fruit)",  "meaning_fr": "avocat (fruit)"}
+  ],
+  "pile": [
+    {"sense": "battery", "meaning": "a battery",                       "meaning_fr": "pile (batterie)"},
+    {"sense": "stack",   "meaning": "a stack or pile",                 "meaning_fr": "pile (tas)"},
+    {"sense": "heads",   "meaning": "'heads' in a coin toss (pile ou face)","meaning_fr": "pile (côté pile d'une pièce)"},
+    {"sense": "exactly", "meaning": "exactly, on the dot (à 8h pile)", "meaning_fr": "pile (exactement)"}
+  ],
+  "clé": [
+    {"sense": "key",    "meaning": "a key (for a lock)",  "meaning_fr": "clé (serrure)"},
+    {"sense": "wrench", "meaning": "a wrench or spanner",  "meaning_fr": "clé (outil)"},
+    {"sense": "clef",   "meaning": "a musical clef",       "meaning_fr": "clé (musicale)"}
+  ],
+  "bouchon": [
+    {"sense": "cork",   "meaning": "a cork or stopper",                  "meaning_fr": "bouchon (liège)"},
+    {"sense": "jam",    "meaning": "a traffic jam",                      "meaning_fr": "bouchon (embouteillage)"},
+    {"sense": "bistro", "meaning": "a traditional Lyon bistro (bouchon lyonnais)","meaning_fr": "bouchon (bistro lyonnais)"}
+  ],
+  "règle": [
+    {"sense": "ruler",  "meaning": "a ruler (measuring tool)", "meaning_fr": "règle (instrument)"},
+    {"sense": "rule",   "meaning": "a rule or regulation",     "meaning_fr": "règle (loi/principe)"},
+    {"sense": "period", "meaning": "menstruation (les règles)","meaning_fr": "règles (menstruation)"}
+  ],
+  "cadre": [
+    {"sense": "frame",     "meaning": "a picture frame",                 "meaning_fr": "cadre (encadrement)"},
+    {"sense": "context",   "meaning": "a setting or context (dans le cadre de)","meaning_fr": "cadre (contexte)"},
+    {"sense": "executive", "meaning": "an executive or manager",         "meaning_fr": "cadre (dirigeant)"}
+  ],
+  "fève": [
+    {"sense": "bean",    "meaning": "a broad bean",                          "meaning_fr": "fève (légume)"},
+    {"sense": "trinket", "meaning": "the trinket hidden in a galette des rois","meaning_fr": "fève (figurine de galette)"}
+  ],
+  "mine": [
+    {"sense": "expression", "meaning": "facial expression or look (avoir bonne mine)","meaning_fr": "mine (expression du visage)"},
+    {"sense": "mine",       "meaning": "a mine (coal, gold)",              "meaning_fr": "mine (gisement)"},
+    {"sense": "lead",       "meaning": "pencil lead",                      "meaning_fr": "mine (de crayon)"},
+    {"sense": "landmine",   "meaning": "a land mine",                      "meaning_fr": "mine (explosif)"}
+  ],
+  "toile": [
+    {"sense": "canvas",   "meaning": "a painter's canvas",            "meaning_fr": "toile (peinture)"},
+    {"sense": "cloth",    "meaning": "cloth or linen",                "meaning_fr": "toile (tissu)"},
+    {"sense": "web",      "meaning": "a spider web (toile d'araignée)","meaning_fr": "toile (d'araignée)"},
+    {"sense": "internet", "meaning": "the Web (la Toile)",            "meaning_fr": "toile (Internet)"}
+  ],
+  "prise": [
+    {"sense": "outlet", "meaning": "an electrical outlet or socket", "meaning_fr": "prise (électrique)"},
+    {"sense": "grip",   "meaning": "a grip or hold",                 "meaning_fr": "prise (saisie/maintien)"},
+    {"sense": "catch",  "meaning": "a catch (fishing or hunting)",   "meaning_fr": "prise (capture)"},
+    {"sense": "dose",   "meaning": "a dose or hit (of a substance)", "meaning_fr": "prise (dose)"}
+  ],
+  "pont": [
+    {"sense": "bridge",  "meaning": "a bridge",                       "meaning_fr": "pont (passage)"},
+    {"sense": "deck",    "meaning": "a ship's deck",                  "meaning_fr": "pont (de navire)"},
+    {"sense": "weekend", "meaning": "a long weekend (faire le pont)", "meaning_fr": "pont (week-end prolongé)"}
+  ],
+  "coup": [
+    {"sense": "blow",    "meaning": "a blow or hit",                  "meaning_fr": "coup (frappe)"},
+    {"sense": "attempt", "meaning": "an attempt or go (du premier coup)","meaning_fr": "coup (tentative/essai)"},
+    {"sense": "coup",    "meaning": "a coup (coup d'État)",           "meaning_fr": "coup (coup d'État)"}
+  ],
+  "batterie": [
+    {"sense": "drums",    "meaning": "a drum kit",                       "meaning_fr": "batterie (instrument)"},
+    {"sense": "battery",  "meaning": "a battery",                        "meaning_fr": "batterie (pile/accu)"},
+    {"sense": "cookware", "meaning": "a set of kitchen pots (batterie de cuisine)","meaning_fr": "batterie (de cuisine)"}
+  ],
+  "filet": [
+    {"sense": "net",     "meaning": "a net",                         "meaning_fr": "filet (à mailles)"},
+    {"sense": "fillet",  "meaning": "a fillet (of meat or fish)",     "meaning_fr": "filet (de viande/poisson)"},
+    {"sense": "trickle", "meaning": "a thin trickle (un filet d'eau)","meaning_fr": "filet (mince écoulement)"}
+  ],
+  "fort": [
+    {"sense": "strong",  "meaning": "strong",                  "meaning_fr": "fort (puissant)"},
+    {"sense": "loud",    "meaning": "loud",                    "meaning_fr": "fort (sonore)"},
+    {"sense": "fort",    "meaning": "a fort or fortress",      "meaning_fr": "fort (fortification)"},
+    {"sense": "skilled", "meaning": "skilled or good at something","meaning_fr": "fort (doué)"}
+  ],
+  "gomme": [
+    {"sense": "eraser", "meaning": "an eraser",                    "meaning_fr": "gomme (à effacer)"},
+    {"sense": "gum",    "meaning": "gum (chewing gum or resin)",   "meaning_fr": "gomme (à mâcher/résine)"},
+    {"sense": "rubber", "meaning": "rubber (the material)",        "meaning_fr": "gomme (caoutchouc)"}
+  ],
+  "planche": [
+    {"sense": "plank",    "meaning": "a plank or board",                  "meaning_fr": "planche (de bois)"},
+    {"sense": "plate",    "meaning": "a plate or illustration in a book", "meaning_fr": "planche (illustration)"},
+    {"sense": "exercise", "meaning": "the plank exercise",                "meaning_fr": "planche (exercice de gainage)"}
+  ],
+  "canon": [
+    {"sense": "cannon",   "meaning": "a cannon",                  "meaning_fr": "canon (arme)"},
+    {"sense": "standard", "meaning": "a standard or canon",       "meaning_fr": "canon (norme/référence)"},
+    {"sense": "barrel",   "meaning": "a gun's barrel",            "meaning_fr": "canon (d'une arme)"},
+    {"sense": "gorgeous", "meaning": "'gorgeous' or hot (slang)", "meaning_fr": "canon (très beau, argot)"}
+  ],
+  "pouce": [
+    {"sense": "thumb", "meaning": "a thumb",                              "meaning_fr": "pouce (doigt)"},
+    {"sense": "inch",  "meaning": "an inch (unit of length)",            "meaning_fr": "pouce (unité de mesure)"},
+    {"sense": "truce", "meaning": "a truce call in kids' games (pouce!)", "meaning_fr": "pouce (trêve dans les jeux)"}
+  ],
+  "chouette": [
+    {"sense": "owl",  "meaning": "an owl",                       "meaning_fr": "chouette (oiseau)"},
+    {"sense": "cool", "meaning": "'great!' or 'cool' (c'est chouette)","meaning_fr": "chouette (génial/cool)"}
+  ],
+  "vase": [
+    {"sense": "vase", "meaning": "a vase (le vase)",        "meaning_fr": "vase (récipient)"},
+    {"sense": "mud",  "meaning": "silt or mud (la vase)",   "meaning_fr": "vase (boue/limon)"}
+  ]
+}
