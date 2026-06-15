@@ -14,11 +14,17 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 from . import config, runner
-from .registry import models_for
+from .registry import models_for, family_of
 
 WORDS_FILES = {
     "en": Path("data/synonyms.txt"),
     "tr": Path("data/synonyms_tr.txt"),
+}
+
+# Families skipped for a given language's default ("all models") run. Turkish
+# drops Qwen + FLUX (weak/uninteresting on Turkish). An explicit --model still runs.
+LANG_EXCLUDE_FAMILIES = {
+    "tr": {"qwen", "flux"},
 }
 
 
@@ -42,6 +48,9 @@ def cli_main(default_modality: str | None = None):
             p.error(f"--model {args.model!r} is not a {args.modality} model; "
                     f"choose from: {', '.join(keys)}")
         keys = [args.model]
+    else:
+        exclude = LANG_EXCLUDE_FAMILIES.get(args.lang, set())
+        keys = [k for k in keys if family_of(k) not in exclude]
 
     words = load_words(args.lang)[:100]
     asyncio.run(runner.run_generation(config.gen_modality(args.modality, args.lang), keys, words))

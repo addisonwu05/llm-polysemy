@@ -92,7 +92,9 @@ Resume is automatic & filesystem-driven: only missing outputs are regenerated
 writes to **`_tr`-suffixed** paths (`outputs_text_tr/`, `histograms_text_tr.json`,
 senses from `data/meanings_tr.json`) so the two languages never collide. The
 image prompt is the bare word, so it's already language-correct. Pass the same
-`--lang` to `classify`.
+`--lang` to `classify`. For `tr`, the default run **drops the Qwen and FLUX
+families** (`LANG_EXCLUDE_FAMILIES` in `eval.py`) — image `tr` runs 10 models,
+text `tr` runs 12; an explicit `--model KEY` still runs any single model.
 
 ### Classify
 
