@@ -13,3 +13,17 @@ __pycache__/
 
 # Prolific study participant data
 prolific_study/responses/
+
+# Non-English generated output trees (large, like the English ones above)
+data/outputs_image_tr/
+data/outputs_text_tr/
+data/outputs_image_fr/
+data/outputs_text_fr/
+
+# Prolific participant data export (contains PIDs/responses — do not commit)
+Sheet1.xlsx
+
+# Overnight-run local scratch (orchestration helpers, not part of the codebase)
+progress_tr.py
+run_pipeline.sh
+run_fr_after_tr.sh
