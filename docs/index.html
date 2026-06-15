@@ -84,7 +84,8 @@ function show(section) {
   for (const s of ["loading", "consent", "task", "done"]) $(s).hidden = (s !== section);
 }
 
-// Pick N distinct words uniformly at random (client-side; no server to balance).
+// Pick N distinct words uniformly at random (fallback only, if the coordinator
+// is unreachable — keeps the participant unblocked at the cost of balance).
 function pickWords(all, n) {
   const pool = all.slice();
   for (let k = pool.length - 1; k > 0; k--) {
@@ -94,18 +95,52 @@ function pickWords(all, n) {
   return pool.slice(0, Math.min(n, pool.length));
 }
 
+// Ask the Apps Script coordinator for a balanced assignment via JSONP (a plain
+// fetch can't read Apps Script's cross-origin response; a <script> tag can).
+function getAssignment() {
+  return new Promise((resolve, reject) => {
+    if (!CFG.SCRIPT_URL || CFG.SCRIPT_URL.startsWith("REPLACE")) return reject(new Error("no SCRIPT_URL"));
+    const cb = "__assign_" + Math.floor(Math.random() * 1e9);
+    const s = document.createElement("script");
+    let done = false;
+    const cleanup = () => { delete window[cb]; if (s.parentNode) s.parentNode.removeChild(s); };
+    const timer = setTimeout(() => { if (!done) { done = true; cleanup(); reject(new Error("assign timeout")); } }, 12000);
+    window[cb] = (data) => { if (done) return; done = true; clearTimeout(timer); cleanup(); resolve(data); };
+    s.onerror = () => { if (done) return; done = true; clearTimeout(timer); cleanup(); reject(new Error("assign network error")); };
+    s.src = CFG.SCRIPT_URL + "?action=assign"
+          + "&n=" + encodeURIComponent(CFG.WORDS_PER_PARTICIPANT)
+          + "&assignment_id=" + encodeURIComponent(META.assignment_id)
+          + "&callback=" + cb;
+    document.head.appendChild(s);
+  });
+}
+
 async function init() {
   try {
-    // Each participant is randomly assigned exactly one prompt variant.
-    const variant = CFG.PROMPTS[Math.floor(Math.random() * CFG.PROMPTS.length)];
-    PROMPT_ID = variant.id;
-    const [words, prompt, consent] = await Promise.all([
-      fetch("words.json").then(r => r.json()),
+    // Primary: balanced assignment from the coordinator (word set + prompt type).
+    // Fallback: random, so a coordinator hiccup never blocks a participant.
+    let words;
+    try {
+      const a = await getAssignment();
+      if (a && a.prompt_id && Array.isArray(a.words) && a.words.length) {
+        PROMPT_ID = a.prompt_id;
+        words = a.words;
+      } else {
+        throw new Error("bad assignment");
+      }
+    } catch (e) {
+      console.warn("coordinator unavailable, using random assignment:", e);
+      const all = await fetch("words.json").then(r => r.json());
+      PROMPT_ID = CFG.PROMPTS[Math.floor(Math.random() * CFG.PROMPTS.length)].id;
+      words = pickWords(all, CFG.WORDS_PER_PARTICIPANT);
+    }
+    const variant = CFG.PROMPTS.find(v => v.id === PROMPT_ID) || CFG.PROMPTS[0];
+    const [promptText, consent] = await Promise.all([
       fetch(variant.file).then(r => r.text()),
       fetch("consent.txt").then(r => r.text()),
     ]);
-    PROMPT_TEMPLATE = prompt.trim();
-    WORDS = pickWords(words, CFG.WORDS_PER_PARTICIPANT);
+    PROMPT_TEMPLATE = promptText.trim();
+    WORDS = words;
     $("consentText").textContent = consent.trim();
     show("consent");
   } catch (err) {
