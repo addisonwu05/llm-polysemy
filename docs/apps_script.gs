@@ -2,30 +2,37 @@
  * Google Apps Script backend for the Prolific word-description study.
  *
  * Two jobs:
- *   - doPost: append one row per response to the data sheet (Sheet1), and clear
- *     the participant's reservation.
- *   - doGet?action=assign: COORDINATED ASSIGNMENT. Reads current coverage from
- *     the sheet + active reservations, hands the participant the N least-covered
- *     words under the least-covered prompt type, and reserves them (TTL). This is
- *     what makes coverage converge to TARGET per (word x prompt) cell instead of
- *     being random. Returns JSONP so the GitHub Pages frontend can read it.
+ *   - doPost: append one row per response to the data sheet (Sheet1), bump the
+ *     running counts cache, and clear the participant's reservation.
+ *   - doGet?action=assign: COORDINATED ASSIGNMENT. Reads current coverage (from a
+ *     cached counts blob, NOT a full-sheet scan) + active reservations, hands the
+ *     participant the N least-covered words under the least-covered prompt type,
+ *     and reserves them (TTL). Converges coverage to TARGET per (word x prompt).
+ *     Returns JSONP so the GitHub Pages frontend can read it.
  *
- * SETUP (one time):
- *   1. Create a Google Sheet. Extensions > Apps Script. Paste this whole file.
- *   2. Deploy > New deployment > Web app. Execute as: Me. Who has access: Anyone.
- *      Deploy, authorize, COPY the /exec URL into docs/config.js as SCRIPT_URL.
- *   3. AFTER ANY EDIT to this file: Deploy > Manage deployments > edit (pencil)
- *      > Version: New version > Deploy (keeps the same URL).
+ * PERF: coverage is kept in a Script-Property "counts" blob that doPost increments
+ * by +1 per saved row. On first use it SEEDS ONCE from the existing Sheet1 rows,
+ * so it picks up exactly at current coverage. This keeps assign + submit O(1)
+ * regardless of how many rows the sheet has (no growing lag as you recruit).
+ * Your Sheet1 data is untouched; a tiny "Reservations" tab is the only extra tab.
  *
- * IMPORTANT: WORDS, PROMPTS and TARGET below must match the study. If you change
- * docs/words.json or the PROMPTS list in docs/config.js, update them here too.
+ * SETUP / REDEPLOY:
+ *   - Paste this whole file into the Apps Script editor (replacing the old one).
+ *   - Deploy > Manage deployments > edit (pencil) > Version: New version > Deploy.
+ *     (Same /exec URL — no frontend change needed.)
+ *   - If you ever change WORDS/PROMPTS, or want to rebuild counts from the sheet,
+ *     run reseedCounts() once from the editor (Run menu).
+ *
+ * IMPORTANT: WORDS, PROMPTS and TARGET below must match the study (docs/words.json
+ * and docs/config.js PROMPTS).
  */
 
-var SHEET_NAME = "Sheet1";       // data sheet (one row per response)
+var SHEET_NAME = "Sheet1";       // data sheet (one row per response) — UNCHANGED
 var RES_SHEET  = "Reservations"; // assignment_id | prompt_id | words(csv) | ts
 var TARGET     = 30;             // responses wanted per (word x prompt) cell
 var TTL_MS     = 20 * 60 * 1000; // a reservation frees after this if not submitted
 var PROMPTS    = ["meaning", "image"];
+var COUNTS_KEY = "counts_v1";    // Script-Property key holding the coverage cache
 
 var WORDS = [
   "trunk", "jordan", "bolt", "bank", "pitch", "bow", "spring", "crane",
@@ -63,10 +70,16 @@ function ensureResHeader(sh) {
   if (sh.getLastRow() === 0) sh.appendRow(["assignment_id", "prompt_id", "words", "ts"]);
 }
 
-// counts[prompt][word] from submitted responses only
-function submittedCounts() {
-  var counts = {};
-  PROMPTS.forEach(function (p) { counts[p] = {}; WORDS.forEach(function (w) { counts[p][w] = 0; }); });
+// blank counts[prompt][word] = 0 for the whole panel
+function zeroCounts() {
+  var c = {};
+  PROMPTS.forEach(function (p) { c[p] = {}; WORDS.forEach(function (w) { c[p][w] = 0; }); });
+  return c;
+}
+
+// counts[prompt][word] by scanning the sheet — used ONLY to seed the cache once
+function scanCounts() {
+  var counts = zeroCounts();
   var data = dataSheet().getDataRange().getValues();
   if (data.length > 1) {
     var head = data[0];
@@ -79,6 +92,32 @@ function submittedCounts() {
     }
   }
   return counts;
+}
+
+// fast cached coverage: read the Script-Property blob; seed from the sheet on
+// first use so existing rows are reflected exactly.
+function loadCounts() {
+  var raw = PropertiesService.getScriptProperties().getProperty(COUNTS_KEY);
+  if (raw) {
+    try {
+      var c = JSON.parse(raw);
+      // make sure every panel cell exists (in case WORDS grew)
+      var base = zeroCounts();
+      PROMPTS.forEach(function (p) {
+        WORDS.forEach(function (w) {
+          base[p][w] = (c[p] && typeof c[p][w] === "number") ? c[p][w] : 0;
+        });
+      });
+      return base;
+    } catch (e) { /* fall through to reseed */ }
+  }
+  var seeded = scanCounts();
+  saveCounts(seeded);
+  return seeded;
+}
+
+function saveCounts(counts) {
+  PropertiesService.getScriptProperties().setProperty(COUNTS_KEY, JSON.stringify(counts));
 }
 
 // returns active reservation rows, purging expired ones from the sheet
@@ -113,10 +152,14 @@ function clearReservation(assignmentId) {
   }
 }
 
-// the core: pick least-covered prompt, then its N least-covered words; reserve
+// the core: pick least-covered prompt, then its N least-covered words; reserve.
+// Uses the cached counts (O(1)) plus active reservations.
 function assign(assignmentId, n) {
   var now = Date.now();
-  var counts = submittedCounts();
+  var stored = loadCounts();
+  // effective coverage = stored + in-flight reservations (don't mutate the cache)
+  var counts = zeroCounts();
+  PROMPTS.forEach(function (p) { WORDS.forEach(function (w) { counts[p][w] = stored[p][w]; }); });
   activeReservations(now).forEach(function (row) {
     var p = row[1], ws = String(row[2]).split(",");
     ws.forEach(function (w) { if (counts[p] && counts[p][w] !== undefined) counts[p][w]++; });
@@ -172,6 +215,8 @@ function doPost(e) {
     var sheet = dataSheet();
     if (sheet.getLastRow() === 0) sheet.appendRow(HEADERS);
 
+    var counts = loadCounts();
+    var prompt = payload.prompt_id || "";
     var responses = payload.responses || [];
     for (var i = 0; i < responses.length; i++) {
       var r = responses[i];
@@ -181,7 +226,7 @@ function doPost(e) {
         payload.study_id || "",
         payload.session_id || "",
         payload.assignment_id || "",
-        payload.prompt_id || "",
+        prompt,
         payload.prompt_text || "",
         r.word || "",
         r.response || "",
@@ -190,7 +235,9 @@ function doPost(e) {
         responses.length,
         payload.user_agent || "",
       ]);
+      if (counts[prompt] && counts[prompt][r.word] !== undefined) counts[prompt][r.word]++;
     }
+    saveCounts(counts);
     clearReservation(payload.assignment_id || "");
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true, saved: responses.length }))
@@ -202,4 +249,14 @@ function doPost(e) {
   } finally {
     lock.releaseLock();
   }
+}
+
+// ── maintenance (run manually from the editor) ──────────────────────────────
+
+// Rebuild the counts cache from the current Sheet1 (use after editing WORDS, or
+// if you ever bulk-edit the sheet). Run from the Apps Script "Run" menu.
+function reseedCounts() {
+  var c = scanCounts();
+  saveCounts(c);
+  Logger.log("counts reseeded from sheet: " + JSON.stringify(c));
 }
