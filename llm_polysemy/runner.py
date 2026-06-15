@@ -58,7 +58,7 @@ async def run_generation(mod: GenModality, model_keys: list[str], words: list[st
     total = sum(len(pools[f]) for f in fams)
     tqdm.write("\nConcurrency: " + " ".join(f"{f}={len(pools[f])}" for f in fams) + f" (total={total})")
 
-    generators = {k: providers.build_generator(spec(k), pools[family_of(k)], mod.temperature)
+    generators = {k: providers.build_generator(spec(k), pools[family_of(k)], mod.temperature, mod.gen_prompt)
                   for k in model_keys}
 
     results: dict = {}

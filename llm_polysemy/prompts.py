@@ -6,18 +6,28 @@ classify_text.py so existing classifications stay comparable.
 
 # ── Generation prompts ─────────────────────────────────────────────────────────
 
-TEXT_PROMPT_TEMPLATE = (
-    "Use the following word in a single sentence: {word}\n"
-    "Reply with only the sentence and nothing else."
-)
+# One per language; the text models are instructed in the word's own language so
+# they answer in it. The image prompt is the bare word, which is language-agnostic.
+TEXT_PROMPT_TEMPLATES = {
+    "en": (
+        "Use the following word in a single sentence: {word}\n"
+        "Reply with only the sentence and nothing else."
+    ),
+    "tr": (
+        "Aşağıdaki kelimeyi tek bir cümlede kullanın: {word}\n"
+        "Yalnızca cümleyi yazın, başka hiçbir şey yazmayın."
+    ),
+}
+# Back-compat alias (English) for any importer of the old constant.
+TEXT_PROMPT_TEMPLATE = TEXT_PROMPT_TEMPLATES["en"]
 
 
 def gen_prompt_image(word: str) -> str:
     return word  # the prompt sent to an image model is the bare word
 
 
-def gen_prompt_text(word: str) -> str:
-    return TEXT_PROMPT_TEMPLATE.format(word=word)
+def gen_prompt_text(word: str, lang: str = "en") -> str:
+    return TEXT_PROMPT_TEMPLATES[lang].format(word=word)
 
 
 # ── Judge prompts ──────────────────────────────────────────────────────────────

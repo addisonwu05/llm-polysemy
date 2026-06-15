@@ -16,11 +16,14 @@ from dotenv import load_dotenv
 from . import config, runner
 from .registry import models_for
 
-WORDS_FILE = Path("data/synonyms.txt")
+WORDS_FILES = {
+    "en": Path("data/synonyms.txt"),
+    "tr": Path("data/synonyms_tr.txt"),
+}
 
 
-def load_words() -> list[str]:
-    return [l.strip() for l in WORDS_FILE.read_text().splitlines() if l.strip()]
+def load_words(lang: str = "en") -> list[str]:
+    return [l.strip() for l in WORDS_FILES[lang].read_text().splitlines() if l.strip()]
 
 
 def cli_main(default_modality: str | None = None):
@@ -28,6 +31,8 @@ def cli_main(default_modality: str | None = None):
     p = argparse.ArgumentParser()
     p.add_argument("--modality", choices=["image", "text"],
                    default=default_modality or "image")
+    p.add_argument("--lang", choices=["en", "tr"], default="en",
+                   help="word list + generation-prompt language (default: en)")
     p.add_argument("--model", default=None, help="run only this model_key (default: all)")
     args = p.parse_args()
 
@@ -38,8 +43,8 @@ def cli_main(default_modality: str | None = None):
                     f"choose from: {', '.join(keys)}")
         keys = [args.model]
 
-    words = load_words()[:100]
-    asyncio.run(runner.run_generation(config.GEN[args.modality], keys, words))
+    words = load_words(args.lang)[:100]
+    asyncio.run(runner.run_generation(config.gen_modality(args.modality, args.lang), keys, words))
 
 
 if __name__ == "__main__":

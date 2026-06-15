@@ -81,9 +81,18 @@ llm_polysemy.<entrypoint>`; thin root shims (`python eval.py`, `python eval_text
 python -m llm_polysemy.eval --modality image                 # all image models
 python -m llm_polysemy.eval --modality text                  # all text models
 python -m llm_polysemy.eval --modality text --model openai_55 # one model
+python -m llm_polysemy.eval --modality text --lang tr        # Turkish word list + Turkish prompt
 ```
 Resume is automatic & filesystem-driven: only missing outputs are regenerated
 (delete an output file to re-queue just that sample).
+
+**Languages (`--lang {en,tr}`, default `en`).** `en` uses `data/synonyms.txt`
+(100 words) with the English prompt and the original output paths. `tr` uses
+`data/synonyms_tr.txt` (25 Turkish words) with a Turkish generation prompt and
+writes to **`_tr`-suffixed** paths (`outputs_text_tr/`, `histograms_text_tr.json`,
+senses from `data/meanings_tr.json`) so the two languages never collide. The
+image prompt is the bare word, so it's already language-correct. Pass the same
+`--lang` to `classify`.
 
 ### Classify
 
@@ -93,6 +102,8 @@ python -m llm_polysemy.classify --modality text --word bank --n 1      # cheap t
 python -m llm_polysemy.classify --modality image --judge gemini        # one judge
 python -m llm_polysemy.classify --modality image --histograms          # build histograms
 python -m llm_polysemy.classify --modality text  --histograms
+python -m llm_polysemy.classify --modality text --lang tr              # classify the Turkish run
+python -m llm_polysemy.classify --modality text --lang tr --histograms
 ```
 
 ### Inter-judge agreement
@@ -172,6 +183,9 @@ All generated data lives under `data/`, all figures under `figures/`:
 | `data/histograms_{image,text}.json` | aggregated sense distributions |
 | `data/meanings.json` | candidate senses per word |
 | `data/synonyms.txt` | the word list (first 100 used) |
+| `data/synonyms_tr.txt` | Turkish word list (25 words, `--lang tr`) |
+| `data/meanings_tr.json` | Turkish candidate senses (English glosses for the judges + `meaning_tr`) |
+| `data/{outputs,results,classifications,histograms}_*_tr.*` | Turkish-run artifacts (`_tr` suffix) |
 | `data/freq_{manual,wiki,trends}.json` | text-frequency priors |
 | `data/depictability.json` | depictability scores per (word, sense), rated by Claude |
 | `data/model_architectures.json` | architecture labels for image models (T2) |

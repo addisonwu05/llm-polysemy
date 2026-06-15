@@ -99,6 +99,13 @@ There is no test suite, linter, or build step — this is a research/eval repo.
 ## How generation works
 
 - **Words** come from `data/synonyms.txt`; `main()` uses the first 100.
+- **Language (`--lang {en,tr}`)** is a dimension orthogonal to modality, threaded
+  through `eval`/`classify`. `config.gen_modality(name, lang)` / `cls_modality(name,
+  lang)` build language-aware Modality objects: `en` keeps the original unsuffixed
+  paths + English prompt; `tr` uses `data/synonyms_tr.txt` (25 words),
+  `data/meanings_tr.json`, the Turkish prompt in `prompts.TEXT_PROMPT_TEMPLATES`,
+  and `_tr`-suffixed output/log paths. The generation prompt now lives on the
+  modality (`mod.gen_prompt`), no longer hardcoded in `providers/`.
 - **30 samples per word per model** (`N_PER_WORD` in `config.py`). Image prompt = the bare
   word; text prompt = the one-sentence instruction (`prompts.gen_prompt_text`).
 - **Output layout**: `data/outputs_<modality>/<word>/<model_key>/<NN>.{png,txt}` (word first,

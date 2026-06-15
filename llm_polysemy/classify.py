@@ -24,6 +24,8 @@ def cli_main(default_modality: str | None = None):
     p = argparse.ArgumentParser()
     p.add_argument("--modality", choices=["image", "text"],
                    default=default_modality or "image")
+    p.add_argument("--lang", choices=["en", "tr"], default="en",
+                   help="which language's outputs + meanings to classify (default: en)")
     p.add_argument("--judge", choices=list(JUDGES), default=None,
                    help="run only this judge (default: both)")
     p.add_argument("--model", default=None, help="classify only this model_key")
@@ -34,12 +36,12 @@ def cli_main(default_modality: str | None = None):
                    help="build the histograms file from the classifications and exit")
     args = p.parse_args()
 
-    mod = config.CLS[args.modality]
+    mod = config.cls_modality(args.modality, args.lang)
     if args.histograms:
         build_histograms(mod.class_file, mod.hist_file)
         return
 
-    meanings = load_meanings()
+    meanings = load_meanings(mod.meanings_file)
     words = [w for w in meanings if not args.word or w == args.word]
     judges = [args.judge] if args.judge else list(JUDGES)
     asyncio.run(runner.run_classify(mod, meanings, words, judges,

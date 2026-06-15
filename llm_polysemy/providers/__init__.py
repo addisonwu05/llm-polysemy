@@ -8,17 +8,22 @@ from .. import prompts
 from . import openai_sdk, google_genai
 
 
-def build_generator(spec: ModelSpec, pool: KeyPool, temperature: float):
-    """Return `word -> bytes|str` for this model, using its family's pool."""
+def build_generator(spec: ModelSpec, pool: KeyPool, temperature: float, gen_prompt=None):
+    """Return `word -> bytes|str` for this model, using its family's pool.
+
+    `gen_prompt` (word -> prompt string) is the modality's language-aware prompt
+    builder; defaults to the English text prompt for back-compat.
+    """
     prov = FAMILY_PROVIDER[spec.family]
     base_url = prov["base_url"]
+    text_prompt = gen_prompt or prompts.gen_prompt_text
 
     if spec.modality == "text":
         if prov["sdk"] == "openai_sdk":
             return lambda w: openai_sdk.generate_text(
-                w, spec.api_id, pool, base_url, temperature, prompts.gen_prompt_text(w))
+                w, spec.api_id, pool, base_url, temperature, text_prompt(w))
         return lambda w: google_genai.generate_text(
-            w, spec.api_id, pool, temperature, prompts.gen_prompt_text(w))
+            w, spec.api_id, pool, temperature, text_prompt(w))
 
     # image
     if prov["sdk"] == "google_genai":

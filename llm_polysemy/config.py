@@ -38,6 +38,8 @@ class GenModality:
     save: Callable[[Path, object], None]
     temperature: float | None = None
     n_per_word: int = N_PER_WORD
+    lang: str = "en"
+    gen_prompt: Callable[[str], str] | None = None  # word -> prompt string
 
 
 @dataclass(frozen=True)
@@ -52,41 +54,71 @@ class ClassifyModality:
     build_multiple_prompt: Callable[..., str]
     judge_input_kind: str           # "image" | "text"
     n_per_word: int = N_PER_WORD
+    lang: str = "en"
+    meanings_file: Path = Path("data/meanings.json")
 
 
 # ── Instances ──────────────────────────────────────────────────────────────────
 
 DATA = Path("data")
 
-IMAGE_GEN = GenModality(
-    name="image", output_dir=DATA / "outputs_image", results_file=DATA / "results_image.json",
-    ext="png", retry_token="no image", artifact_word="images",
-    save=lambda path, data: path.write_bytes(data),
-)
+# Per-language file suffix. English keeps the original (unsuffixed) paths so the
+# existing corpus/logs are untouched; a new language just gets a "_<lang>" suffix.
+LANG_SUFFIX = {"en": "", "tr": "_tr"}
 
-TEXT_GEN = GenModality(
-    name="text", output_dir=DATA / "outputs_text", results_file=DATA / "results_text.json",
-    ext="txt", retry_token="no text", artifact_word="sentences",
-    save=lambda path, data: path.write_text(data), temperature=TEXT_TEMPERATURE,
-)
 
-IMAGE_CLS = ClassifyModality(
-    name="image", output_dir=DATA / "outputs_image",
-    class_file=DATA / "classifications_image.json", hist_file=DATA / "histograms_image.json",
-    ext="png", load_artifact=lambda p: p.read_bytes(),
-    build_prompt=lambda meanings, word, artifact: prompts.image_prompt(meanings, word),
-    build_multiple_prompt=lambda meanings, word, artifact: prompts.image_multi(meanings, word),
-    judge_input_kind="image",
-)
+def gen_modality(name: str, lang: str = "en") -> GenModality:
+    suf = LANG_SUFFIX[lang]
+    if name == "image":
+        return GenModality(
+            name="image", lang=lang,
+            output_dir=DATA / f"outputs_image{suf}",
+            results_file=DATA / f"results_image{suf}.json",
+            ext="png", retry_token="no image", artifact_word="images",
+            save=lambda path, data: path.write_bytes(data),
+            gen_prompt=prompts.gen_prompt_image,
+        )
+    return GenModality(
+        name="text", lang=lang,
+        output_dir=DATA / f"outputs_text{suf}",
+        results_file=DATA / f"results_text{suf}.json",
+        ext="txt", retry_token="no text", artifact_word="sentences",
+        save=lambda path, data: path.write_text(data), temperature=TEXT_TEMPERATURE,
+        gen_prompt=lambda w, _l=lang: prompts.gen_prompt_text(w, _l),
+    )
 
-TEXT_CLS = ClassifyModality(
-    name="text", output_dir=DATA / "outputs_text",
-    class_file=DATA / "classifications_text.json", hist_file=DATA / "histograms_text.json",
-    ext="txt", load_artifact=lambda p: p.read_text().strip(),
-    build_prompt=lambda meanings, word, artifact: prompts.text_prompt(meanings, word, artifact),
-    build_multiple_prompt=lambda meanings, word, artifact: prompts.text_multi(meanings, word, artifact),
-    judge_input_kind="text",
-)
+
+def cls_modality(name: str, lang: str = "en") -> ClassifyModality:
+    suf = LANG_SUFFIX[lang]
+    meanings_file = DATA / f"meanings{suf}.json"
+    if name == "image":
+        return ClassifyModality(
+            name="image", lang=lang,
+            output_dir=DATA / f"outputs_image{suf}",
+            class_file=DATA / f"classifications_image{suf}.json",
+            hist_file=DATA / f"histograms_image{suf}.json",
+            ext="png", load_artifact=lambda p: p.read_bytes(),
+            build_prompt=lambda meanings, word, artifact: prompts.image_prompt(meanings, word),
+            build_multiple_prompt=lambda meanings, word, artifact: prompts.image_multi(meanings, word),
+            judge_input_kind="image", meanings_file=meanings_file,
+        )
+    return ClassifyModality(
+        name="text", lang=lang,
+        output_dir=DATA / f"outputs_text{suf}",
+        class_file=DATA / f"classifications_text{suf}.json",
+        hist_file=DATA / f"histograms_text{suf}.json",
+        ext="txt", load_artifact=lambda p: p.read_text().strip(),
+        build_prompt=lambda meanings, word, artifact: prompts.text_prompt(meanings, word, artifact),
+        build_multiple_prompt=lambda meanings, word, artifact: prompts.text_multi(meanings, word, artifact),
+        judge_input_kind="text", meanings_file=meanings_file,
+    )
+
+
+# English instances kept under the original names + dicts for back-compat.
+IMAGE_GEN = gen_modality("image")
+TEXT_GEN = gen_modality("text")
+IMAGE_CLS = cls_modality("image")
+TEXT_CLS = cls_modality("text")
 
 GEN = {"image": IMAGE_GEN, "text": TEXT_GEN}
 CLS = {"image": IMAGE_CLS, "text": TEXT_CLS}
