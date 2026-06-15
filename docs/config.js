@@ -9,7 +9,7 @@ window.STUDY_CONFIG = {
   // Until set, the final screen warns instead of redirecting to Prolific.
   PROLIFIC_COMPLETION_CODE: "REPLACE_ME",
 
-  WORDS_PER_PARTICIPANT: 1,   // words each participant describes, one at a time
+  WORDS_PER_PARTICIPANT: 5,   // words each participant describes, one at a time
   MIN_RESPONSE_WORDS: 10,     // submit unlocks once the response has this many words
 
   // Each participant is shown exactly ONE of these prompts, picked at random.
