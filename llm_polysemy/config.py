@@ -9,6 +9,7 @@ Paths use the current on-disk filenames; the data-file migration step updates on
 these constants (resume logic is unaffected — see plan).
 """
 
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -17,6 +18,12 @@ from . import prompts
 
 N_PER_WORD = 30
 TEXT_TEMPERATURE = 1.0
+
+# Per-generation-request timeout (seconds) so a hung API call can't squat on a
+# key slot, and how many concurrent in-flight requests to allow PER KEY (the
+# generation semaphore is len(pool) * this). Both env-overridable for tuning.
+GEN_REQUEST_TIMEOUT = int(os.environ.get("GEN_REQUEST_TIMEOUT", "120"))
+GEN_PER_KEY_CONCURRENCY = int(os.environ.get("GEN_PER_KEY_CONCURRENCY", "3"))
 
 # Judges — MUST stay identical across modalities for cross-modality comparability.
 JUDGES = {

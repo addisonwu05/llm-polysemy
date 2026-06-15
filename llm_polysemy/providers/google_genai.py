@@ -6,12 +6,14 @@ Bodies ported verbatim from the original eval*.py / classify*.py.
 import json
 
 from ..keys import KeyPool
+from ..config import GEN_REQUEST_TIMEOUT
 
 
 def generate_text(word: str, api_id: str, pool: KeyPool, temperature: float, prompt: str) -> str:
     from google import genai
     from google.genai import types
-    client = genai.Client(api_key=pool.next())
+    client = genai.Client(api_key=pool.next(),
+                          http_options=types.HttpOptions(timeout=GEN_REQUEST_TIMEOUT * 1000))
     resp = client.models.generate_content(
         model=api_id,
         contents=prompt,
@@ -26,7 +28,8 @@ def generate_text(word: str, api_id: str, pool: KeyPool, temperature: float, pro
 def generate_image(word: str, api_id: str, pool: KeyPool) -> bytes:
     from google import genai
     from google.genai import types
-    client = genai.Client(api_key=pool.next())
+    client = genai.Client(api_key=pool.next(),
+                          http_options=types.HttpOptions(timeout=GEN_REQUEST_TIMEOUT * 1000))
     resp = client.models.generate_content(
         model=api_id,
         contents=word,
@@ -41,7 +44,8 @@ def generate_image(word: str, api_id: str, pool: KeyPool) -> bytes:
 def judge(api_id: str, prompt: str, schema, pool: KeyPool, *, image: bytes | None = None) -> dict:
     from google import genai
     from google.genai import types
-    client = genai.Client(api_key=pool.next())
+    client = genai.Client(api_key=pool.next(),
+                          http_options=types.HttpOptions(timeout=GEN_REQUEST_TIMEOUT * 1000))
     if image is not None:
         contents = [types.Part.from_bytes(data=image, mime_type="image/png"), prompt]
     else:

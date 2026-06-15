@@ -12,7 +12,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 from . import schemas
-from .config import GenModality, ClassifyModality, JUDGES, PER_KEY_CONCURRENCY
+from .config import GenModality, ClassifyModality, JUDGES, PER_KEY_CONCURRENCY, GEN_PER_KEY_CONCURRENCY
 from .keys import build_pools
 from .meanings import allowed_labels, sense_keys
 from .registry import FAMILY_PROVIDER, family_of, models_for, spec
@@ -54,9 +54,11 @@ async def run_generation(mod: GenModality, model_keys: list[str], words: list[st
     # Build only the pools the selected families need (text never needs flux).
     fams = sorted({family_of(k) for k in model_keys})
     pools = build_pools({f: FAMILY_PROVIDER[f]["key_prefix"] for f in fams})
-    sems = {f: asyncio.Semaphore(len(pools[f])) for f in fams}
-    total = sum(len(pools[f]) for f in fams)
-    tqdm.write("\nConcurrency: " + " ".join(f"{f}={len(pools[f])}" for f in fams) + f" (total={total})")
+    sems = {f: asyncio.Semaphore(len(pools[f]) * GEN_PER_KEY_CONCURRENCY) for f in fams}
+    total = sum(len(pools[f]) * GEN_PER_KEY_CONCURRENCY for f in fams)
+    tqdm.write("\nConcurrency: "
+               + " ".join(f"{f}={len(pools[f])}x{GEN_PER_KEY_CONCURRENCY}" for f in fams)
+               + f" (total={total})")
 
     generators = {k: providers.build_generator(spec(k), pools[family_of(k)], mod.temperature, mod.gen_prompt)
                   for k in model_keys}
@@ -68,7 +70,9 @@ async def run_generation(mod: GenModality, model_keys: list[str], words: list[st
     bars = {k: tqdm(total=len(words) * mod.n_per_word, desc=k, position=i, leave=True)
             for i, k in enumerate(model_keys)}
 
-    def retryable(msg): return "429" in msg or mod.retry_token in msg
+    def retryable(msg):
+        m = msg.lower()
+        return "429" in m or "timeout" in m or "timed out" in m or mod.retry_token in msg
 
     async def gen_one(model_key, word, idx):
         key = f"{model_key}/{word}/{idx:02d}"

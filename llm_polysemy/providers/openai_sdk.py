@@ -9,11 +9,15 @@ import json
 import urllib.request
 
 from ..keys import KeyPool
+from ..config import GEN_REQUEST_TIMEOUT
 
 
 def _client(api_key: str, base_url: str | None = None):
     from openai import OpenAI
-    return OpenAI(api_key=api_key, **({"base_url": base_url} if base_url else {}))
+    # timeout caps hung requests; max_retries=0 because our runner does retries
+    # (the SDK's default 2 internal retries just compound a stall).
+    return OpenAI(api_key=api_key, timeout=GEN_REQUEST_TIMEOUT, max_retries=0,
+                  **({"base_url": base_url} if base_url else {}))
 
 
 # ── Text generation (OpenAI / Grok / Qwen share one chat path) ─────────────────
