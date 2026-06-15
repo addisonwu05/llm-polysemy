@@ -26,6 +26,7 @@ WORDS_FILES = {
 # drops Qwen + FLUX (weak/uninteresting on Turkish). An explicit --model still runs.
 LANG_EXCLUDE_FAMILIES = {
     "tr": {"qwen", "flux"},
+    "fr": {"qwen", "flux"},
 }
 
 
