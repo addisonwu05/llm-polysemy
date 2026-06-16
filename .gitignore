@@ -21,7 +21,7 @@ data/outputs_image_fr/
 data/outputs_text_fr/
 
 # Prolific participant data export (contains PIDs/responses — do not commit)
-Sheet1.xlsx
+Sheet1*.xlsx
 
 # Overnight-run local scratch (orchestration helpers, not part of the codebase)
 progress_tr.py
