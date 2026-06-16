@@ -109,6 +109,22 @@ python -m llm_polysemy.classify --modality text --lang tr              # classif
 python -m llm_polysemy.classify --modality text --lang tr --histograms
 ```
 
+### Human baseline (Prolific) classification
+
+Classify the human Prolific responses (`data/human_responses.json`, the same
+100-word English panel) with the **same GPT + Gemini judges**, in two conditions
+that mirror the LLM modalities — `meaning` (used the word in a sentence ≈ text)
+and `image` (described the image it evokes ≈ image). Human-framed judge prompts
+live in `prompts.human_*`; senses come from `data/meanings.json`.
+
+```bash
+python -m llm_polysemy.classify_human --convert            # human_responses.json -> file tree
+python -m llm_polysemy.classify_human --condition both     # classify (both judges)
+python -m llm_polysemy.classify_human --histograms         # -> histograms_human_{meaning,image}.json
+```
+`histograms_human_meaning.json` / `histograms_human_image.json` are directly
+comparable to `histograms_text.json` / `histograms_image.json`.
+
 ### Inter-judge agreement
 
 ```bash

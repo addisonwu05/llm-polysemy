@@ -121,6 +121,28 @@ def cls_modality(name: str, lang: str = "en") -> ClassifyModality:
     )
 
 
+def human_cls_modality(condition: str) -> ClassifyModality:
+    """Classify human Prolific responses. condition: "meaning" | "image".
+
+    Reuses the English senses (data/meanings.json — same 100-word panel) and the
+    same judges, but with human-framed prompts. The two conditions are the human
+    analogs of the LLM text ("meaning") and image ("image") modalities, so their
+    histograms compare directly to histograms_text.json / histograms_image.json.
+    """
+    prompt = prompts.human_meaning_prompt if condition == "meaning" else prompts.human_image_prompt
+    multi = prompts.human_meaning_multi if condition == "meaning" else prompts.human_image_multi
+    return ClassifyModality(
+        name=f"human_{condition}",
+        output_dir=DATA / f"outputs_human_{condition}",
+        class_file=DATA / f"classifications_human_{condition}.json",
+        hist_file=DATA / f"histograms_human_{condition}.json",
+        ext="txt", load_artifact=lambda p: p.read_text().strip(),
+        build_prompt=lambda meanings, word, artifact, _p=prompt: _p(meanings, word, artifact),
+        build_multiple_prompt=lambda meanings, word, artifact, _m=multi: _m(meanings, word, artifact),
+        judge_input_kind="text", meanings_file=DATA / "meanings.json",
+    )
+
+
 # English instances kept under the original names + dicts for back-compat.
 IMAGE_GEN = gen_modality("image")
 TEXT_GEN = gen_modality("text")

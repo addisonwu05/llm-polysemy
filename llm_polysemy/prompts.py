@@ -88,3 +88,58 @@ def text_multi(meanings: dict, word: str, sentence: str) -> str:
         f'Of the meanings below, list every one that is actually present in the sentence:\n{opts}\n\n'
         f'Return the senses that apply (at least two).'
     )
+
+
+# ── Human-response judge prompts ────────────────────────────────────────────────
+# Same labels/senses as the LLM judges (so distributions are comparable), but the
+# framing matches how the human data was collected: a person, and two conditions
+# — "meaning" (use the word in a sentence) and "image" (describe the image that
+# comes to mind). Kept separate from the model prompts so neither biases the other.
+
+def _human_label_lines(meanings: dict, word: str, subject: str) -> str:
+    lines = [f'- "{s["sense"]}": {s["meaning"]}' for s in meanings[word]]
+    lines.append(f'- "multiple": the {subject} clearly uses two or more of the above meanings together')
+    lines.append('- "unclear": you cannot tell, or it matches none of the above')
+    lines.append('- "other": it clearly uses a different, specific meaning of the word not listed above')
+    return "\n".join(lines)
+
+
+def human_meaning_prompt(meanings: dict, word: str, sentence: str) -> str:
+    opts = _human_label_lines(meanings, word, "sentence")
+    return (
+        f'A person was shown only the single word "{word}", with no other context, and '
+        f'asked to use it in one sentence. Here is the sentence they wrote:\n\n"{sentence}"\n\n'
+        f'Decide which meaning of "{word}" the sentence uses.\n\n'
+        f'Choose exactly one of these labels:\n{opts}\n\nRespond with only the label.'
+    )
+
+
+def human_meaning_multi(meanings: dict, word: str, sentence: str) -> str:
+    opts = _sense_lines(meanings, word)
+    return (
+        f'This sentence (written by a person shown only the single word "{word}") clearly '
+        f'uses two or more distinct meanings of "{word}" together:\n\n"{sentence}"\n\n'
+        f'Of the meanings below, list every one that is actually present in the sentence:\n{opts}\n\n'
+        f'Return the senses that apply (at least two).'
+    )
+
+
+def human_image_prompt(meanings: dict, word: str, description: str) -> str:
+    opts = _human_label_lines(meanings, word, "described image")
+    return (
+        f'A person was shown only the single word "{word}", with no other context, and '
+        f'asked to briefly describe the first image that comes to mind. Here is their '
+        f'description:\n\n"{description}"\n\n'
+        f'Decide which meaning of "{word}" the image they describe corresponds to.\n\n'
+        f'Choose exactly one of these labels:\n{opts}\n\nRespond with only the label.'
+    )
+
+
+def human_image_multi(meanings: dict, word: str, description: str) -> str:
+    opts = _sense_lines(meanings, word)
+    return (
+        f'This description (of the image a person pictured for the single word "{word}") '
+        f'clearly evokes two or more distinct meanings of "{word}" together:\n\n"{description}"\n\n'
+        f'Of the meanings below, list every one that is actually present:\n{opts}\n\n'
+        f'Return the senses that apply (at least two).'
+    )

@@ -27,3 +27,6 @@ Sheet1.xlsx
 progress_tr.py
 run_pipeline.sh
 run_fr_after_tr.sh
+data/human_responses.json
+data/outputs_human_meaning/
+data/outputs_human_image/

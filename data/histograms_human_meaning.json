@@ -1,0 +1,2620 @@
+{
+  "bank": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "finance": 13,
+          "multiple": 1
+        },
+        "_multiple": {
+          "finance+heap": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "finance": 13,
+          "multiple": 1
+        },
+        "_multiple": {
+          "finance+heap": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "trunk": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "car": 9,
+          "luggage": 3,
+          "tree": 1,
+          "elephant": 2,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "luggage": 5,
+          "car": 8,
+          "tree": 1,
+          "elephant": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 16,
+        "rate": 0.875
+      }
+    }
+  },
+  "jordan": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "person": 7,
+          "country": 3,
+          "other": 2,
+          "shoes": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "person": 7,
+          "country": 3,
+          "other": 2,
+          "shoes": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "bolt": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "run": 4,
+          "fastener": 6,
+          "lightning": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "run": 4,
+          "fastener": 5,
+          "lightning": 4,
+          "lock": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "pitch": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "throw": 4,
+          "field": 4,
+          "tone": 1,
+          "unclear": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "field+tone": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "other": 2,
+          "throw": 5,
+          "field": 4,
+          "tone": 1,
+          "unclear": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "field+tone": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "bow": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "weapon": 5,
+          "knot": 4,
+          "bend": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "weapon": 5,
+          "knot": 4,
+          "bend": 5
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "spring": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "coil": 2,
+          "season": 9,
+          "other": 1,
+          "water": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "coil": 2,
+          "season": 10,
+          "water": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 13,
+        "rate": 0.923
+      }
+    }
+  },
+  "crane": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "machine": 11,
+          "unclear": 1,
+          "bird": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 1,
+          "bird": 3,
+          "machine": 10
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 14,
+        "rate": 0.857
+      }
+    }
+  },
+  "club": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "organization": 6,
+          "venue": 5,
+          "golf": 1,
+          "unclear": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "organization+venue+weapon": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "organization": 6,
+          "venue": 5,
+          "golf": 1,
+          "unclear": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "organization+venue+weapon": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "turkey": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "bird": 3,
+          "food": 7,
+          "multiple": 4
+        },
+        "_multiple": {
+          "bird+food": 4
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 3,
+          "food": 8,
+          "multiple": 3
+        },
+        "_multiple": {
+          "bird+food": 3
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "shot": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "gunfire": 5,
+          "attempt": 7,
+          "drink": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "gunfire": 4,
+          "attempt": 6,
+          "drink": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 13,
+        "rate": 0.846
+      }
+    }
+  },
+  "bar": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "block": 1,
+          "other": 1,
+          "multiple": 2,
+          "pub": 7,
+          "rod": 2
+        },
+        "_multiple": {
+          "block+pub": 1,
+          "pub+rod": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "block": 1,
+          "other": 1,
+          "multiple": 2,
+          "pub": 7,
+          "rod": 2
+        },
+        "_multiple": {
+          "block+pub": 1,
+          "pub+rod": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "mercury": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "planet": 2,
+          "element": 10,
+          "multiple": 1,
+          "unclear": 1
+        },
+        "_multiple": {
+          "element+planet": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "planet": 2,
+          "element": 10,
+          "multiple": 1,
+          "unclear": 1
+        },
+        "_multiple": {
+          "element+planet": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "jack": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "connector": 1,
+          "other": 3,
+          "lift": 8,
+          "name": 1,
+          "cards": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "connector": 1,
+          "unclear": 1,
+          "lift": 8,
+          "name": 1,
+          "other": 2,
+          "cards": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "mole": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "skin": 7,
+          "animal": 5,
+          "spy": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "skin": 7,
+          "animal": 5,
+          "spy": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "charge": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "electric": 10,
+          "unclear": 1,
+          "accusation": 1,
+          "rush": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "electric": 10,
+          "unclear": 1,
+          "accusation": 1,
+          "rush": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "key": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "crucial": 3,
+          "lock": 9,
+          "multiple": 1
+        },
+        "_multiple": {
+          "crucial+lock": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "crucial": 3,
+          "lock": 9,
+          "multiple": 1
+        },
+        "_multiple": {
+          "crucial+lock": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "watch": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "observe": 6,
+          "timepiece": 7,
+          "multiple": 1
+        },
+        "_multiple": {
+          "guard+timepiece": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "observe": 6,
+          "timepiece": 7,
+          "multiple": 1
+        },
+        "_multiple": {
+          "observe+timepiece": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "ring": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "unclear": 1,
+          "jewelry": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "jewelry": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "nail": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 1,
+          "fastener": 10,
+          "finger": 1,
+          "succeed": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 1,
+          "fastener": 10,
+          "finger": 1,
+          "succeed": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "chip": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "fragment": 6,
+          "microchip": 2,
+          "snack": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 3,
+          "fragment": 6,
+          "microchip": 2,
+          "snack": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "cell": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "biology": 9,
+          "spreadsheet": 1,
+          "multiple": 2,
+          "prison": 2
+        },
+        "_multiple": {
+          "biology+prison": 1,
+          "biology+phone+prison": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "biology": 9,
+          "spreadsheet": 1,
+          "multiple": 2,
+          "prison": 2
+        },
+        "_multiple": {
+          "biology+prison": 1,
+          "biology+phone+prison": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "toast": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 1,
+          "tribute": 1,
+          "bread": 10,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bread+tribute": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "other": 1,
+          "tribute": 1,
+          "bread": 10,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bread+tribute": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "track": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 2,
+          "follow": 5,
+          "athletics": 2,
+          "multiple": 1,
+          "path": 1,
+          "song": 2,
+          "railroad": 1
+        },
+        "_multiple": {
+          "athletics+follow": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "other": 2,
+          "follow": 5,
+          "athletics": 2,
+          "multiple": 1,
+          "path": 1,
+          "song": 2,
+          "railroad": 1
+        },
+        "_multiple": {
+          "athletics+follow": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "wave": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "gesture": 8,
+          "water": 6,
+          "surge": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "gesture": 8,
+          "water": 6,
+          "surge": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "train": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "teach": 3,
+          "railway": 11
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "teach": 3,
+          "railway": 11
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "anchor": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "secure": 1,
+          "ship": 12,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "secure": 2,
+          "ship": 12
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "ash": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "residue": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "residue": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "ball": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "sphere": 14
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sphere": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "band": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "music": 10,
+          "strip": 2,
+          "unite": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "music": 10,
+          "strip": 2,
+          "unite": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "bark": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "tree": 4,
+          "dog": 9
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tree": 4,
+          "dog": 9
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "barrel": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 6,
+          "cask": 9,
+          "oil": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cask": 13,
+          "oil": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 16,
+        "rate": 0.75
+      }
+    }
+  },
+  "basket": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "container": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "bass": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "sound": 3,
+          "fish": 4,
+          "multiple": 1,
+          "instrument": 6
+        },
+        "_multiple": {
+          "instrument+sound": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "sound": 5,
+          "fish": 4,
+          "instrument": 5
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 14,
+        "rate": 0.786
+      }
+    }
+  },
+  "batter": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "cooking": 10,
+          "baseball": 2,
+          "multiple": 1,
+          "beat": 1
+        },
+        "_multiple": {
+          "baseball+cooking": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "cooking": 10,
+          "baseball": 2,
+          "multiple": 1,
+          "beat": 1
+        },
+        "_multiple": {
+          "baseball+cooking": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "beam": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "light": 9,
+          "support": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "light": 9,
+          "support": 5
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "bench": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "seat": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "seat": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "block": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "solid": 5,
+          "obstruct": 5,
+          "city": 1,
+          "other": 2,
+          "multiple": 1
+        },
+        "_multiple": {
+          "city+obstruct+solid": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "solid": 5,
+          "obstruct": 6,
+          "city": 1,
+          "other": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "city+obstruct+solid": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "bowl": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "dish": 12,
+          "roll": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "dish": 12,
+          "roll": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "box": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "container": 13,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "brush": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 4,
+          "tool": 9
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 9,
+        "total": 13,
+        "rate": 0.692
+      }
+    }
+  },
+  "buck": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "resist": 4,
+          "dollar": 5,
+          "deer": 5,
+          "multiple": 1,
+          "other": 1
+        },
+        "_multiple": {
+          "deer+resist": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "resist": 4,
+          "dollar": 5,
+          "deer": 5,
+          "multiple": 1,
+          "other": 1
+        },
+        "_multiple": {
+          "deer+resist": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 16,
+        "rate": 1.0
+      }
+    }
+  },
+  "button": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "fastener": 7,
+          "press": 6,
+          "multiple": 1
+        },
+        "_multiple": {
+          "fastener+press": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "fastener": 7,
+          "press": 6,
+          "multiple": 1
+        },
+        "_multiple": {
+          "fastener+press": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "cane": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 1,
+          "stick": 8,
+          "plant": 3,
+          "beat": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "plant": 3,
+          "stick": 9,
+          "beat": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 13,
+        "rate": 0.846
+      }
+    }
+  },
+  "cape": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "cloak": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cloak": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "capital": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "city": 8,
+          "letter": 3,
+          "multiple": 1,
+          "money": 1
+        },
+        "_multiple": {
+          "city+letter+money": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "city": 8,
+          "letter": 3,
+          "multiple": 1,
+          "money": 1
+        },
+        "_multiple": {
+          "city+letter+money": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "case": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "legal": 3,
+          "instance": 2,
+          "container": 6,
+          "other": 1,
+          "multiple": 1,
+          "investigation": 1
+        },
+        "_multiple": {
+          "container+instance+legal": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "legal": 3,
+          "instance": 2,
+          "container": 7,
+          "multiple": 1,
+          "investigation": 1
+        },
+        "_multiple": {
+          "container+legal": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "chest": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "body": 7,
+          "multiple": 2,
+          "box": 4
+        },
+        "_multiple": {
+          "body+box": 2
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "body": 7,
+          "multiple": 2,
+          "box": 4
+        },
+        "_multiple": {
+          "body+box": 2
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "coach": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "trainer": 13,
+          "tutor": 1,
+          "vehicle": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "trainer": 13,
+          "tutor": 1,
+          "vehicle": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "cobbler": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "shoemaker": 9,
+          "dessert": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "shoemaker": 9,
+          "dessert": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "apple": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "fruit": 13,
+          "company": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "fruit": 13,
+          "company": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "amazon": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "company": 4,
+          "rainforest": 8,
+          "river": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "company": 4,
+          "rainforest": 8,
+          "river": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "mars": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "candy": 1,
+          "planet": 10
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 3,
+          "candy": 1,
+          "planet": 10
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "jaguar": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "animal": 14,
+          "car": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 14,
+          "car": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "mustang": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "car": 5,
+          "horse": 9
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "car": 5,
+          "horse": 8,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "cobra": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "snake": 15
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 15
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "python": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "snake": 12,
+          "language": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 12,
+          "language": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "fox": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "animal": 14
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "cardinal": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "bird": 4,
+          "main": 5,
+          "clergy": 3,
+          "unclear": 1,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 5,
+          "main": 6,
+          "clergy": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 14,
+        "rate": 0.857
+      }
+    }
+  },
+  "ram": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "sheep": 7,
+          "other": 2,
+          "force": 4,
+          "memory": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sheep": 7,
+          "other": 2,
+          "force": 4,
+          "memory": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "paddle": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "oar": 8,
+          "unclear": 2,
+          "wade": 2,
+          "other": 1,
+          "bat": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "oar": 8,
+          "other": 4,
+          "wade": 1,
+          "bat": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 14,
+        "rate": 0.786
+      }
+    }
+  },
+  "staple": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "fastener": 9,
+          "other": 1,
+          "essential": 4,
+          "multiple": 1
+        },
+        "_multiple": {
+          "essential+fastener": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "fastener": 10,
+          "essential": 4,
+          "multiple": 1
+        },
+        "_multiple": {
+          "essential+fastener": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 15,
+        "rate": 0.933
+      }
+    }
+  },
+  "pitcher": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "baseball": 6,
+          "jug": 8
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "baseball": 6,
+          "jug": 8
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "shuttle": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 2,
+          "spacecraft": 2,
+          "transport": 9,
+          "badminton": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "transport": 10,
+          "spacecraft": 2,
+          "other": 1,
+          "badminton": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 15,
+        "rate": 0.933
+      }
+    }
+  },
+  "tap": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "hit": 9,
+          "faucet": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "hit": 9,
+          "faucet": 5
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "drill": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "tool": 7,
+          "exercise": 1,
+          "other": 6,
+          "multiple": 1
+        },
+        "_multiple": {
+          "exercise+tool": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 11,
+          "exercise": 2,
+          "multiple": 1,
+          "other": 1
+        },
+        "_multiple": {
+          "exercise+tool": 1
+        }
+      },
+      "_agreement": {
+        "same": 10,
+        "total": 15,
+        "rate": 0.667
+      }
+    }
+  },
+  "pump": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "inflate": 4,
+          "device": 10
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "inflate": 3,
+          "device": 11
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "socket": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "outlet": 13,
+          "joint": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "outlet": 13,
+          "joint": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "switch": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "control": 7,
+          "other": 2,
+          "change": 6,
+          "rod": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "control": 9,
+          "other": 1,
+          "change": 5,
+          "rod": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 16,
+        "rate": 0.875
+      }
+    }
+  },
+  "iron": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "metal": 4,
+          "press": 4,
+          "multiple": 3,
+          "appliance": 3
+        },
+        "_multiple": {
+          "appliance+metal+press": 3
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "metal": 4,
+          "press": 5,
+          "multiple": 2,
+          "appliance": 3
+        },
+        "_multiple": {
+          "appliance+metal+press": 1,
+          "metal+press": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "crown": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "headwear": 11,
+          "other": 1,
+          "top": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "headwear": 11,
+          "other": 1,
+          "top": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "scale": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "weigh": 9,
+          "other": 2,
+          "size": 2,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "weigh": 10,
+          "other": 2,
+          "size": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "plane": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "aircraft": 14
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "aircraft": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "fan": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "cooling": 8,
+          "admirer": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cooling": 8,
+          "admirer": 6
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "bridge": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 1,
+          "crossing": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 1,
+          "crossing": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "port": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 2,
+          "connector": 4,
+          "harbor": 8
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 1,
+          "connector": 4,
+          "harbor": 8,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "lodge": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "cabin": 12,
+          "file": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cabin": 12,
+          "file": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "mine": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "excavation": 5,
+          "possessive": 8,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "excavation": 5,
+          "possessive": 9
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "grave": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "burial": 8,
+          "serious": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "burial+serious": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "burial": 8,
+          "serious": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "burial+serious": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "cast": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 2,
+          "throw": 2,
+          "actors": 5,
+          "medical": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 2,
+          "throw": 2,
+          "actors": 5,
+          "medical": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "press": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "media": 2,
+          "other": 3,
+          "push": 8,
+          "printing": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "media": 2,
+          "push": 9,
+          "other": 2,
+          "printing": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "post": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "mail": 2,
+          "pole": 6,
+          "publish": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 2,
+          "mail": 2,
+          "pole": 7,
+          "publish": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "tip": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "advice": 5,
+          "gratuity": 8,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "advice": 5,
+          "gratuity": 8,
+          "point": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "will": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "future": 6,
+          "testament": 5,
+          "multiple": 1,
+          "volition": 1
+        },
+        "_multiple": {
+          "future+testament": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "volition": 2,
+          "testament": 5,
+          "future": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "future+testament": 1
+        }
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 13,
+        "rate": 0.923
+      }
+    }
+  },
+  "file": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "submit": 4,
+          "document": 8,
+          "unclear": 1,
+          "tool": 1,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "document": 13,
+          "submit": 1,
+          "tool": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 10,
+        "total": 15,
+        "rate": 0.667
+      }
+    }
+  },
+  "mortar": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "cement": 6,
+          "bowl": 5,
+          "other": 1,
+          "weapon": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cement": 7,
+          "bowl": 5,
+          "weapon": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "hide": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "conceal": 13
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "conceal": 13
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "tank": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "container": 6,
+          "vehicle": 8
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 6,
+          "vehicle": 8
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "seal": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "other": 2,
+          "close": 7,
+          "animal": 3,
+          "multiple": 1
+        },
+        "_multiple": {
+          "animal+stamp": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "close": 9,
+          "animal": 2,
+          "unclear": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "animal+stamp": 1
+        }
+      },
+      "_agreement": {
+        "same": 10,
+        "total": 13,
+        "rate": 0.769
+      }
+    }
+  },
+  "strike": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "labor": 10,
+          "hit": 4,
+          "bowling": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "labor": 10,
+          "hit": 4,
+          "bowling": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 15,
+        "rate": 1.0
+      }
+    }
+  },
+  "stock": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "broth": 2,
+          "shares": 5,
+          "supply": 7
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "broth": 2,
+          "shares": 5,
+          "supply": 7
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "bug": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "insect": 15,
+          "annoy": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "insect": 15,
+          "annoy": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 16,
+        "rate": 1.0
+      }
+    }
+  },
+  "fly": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "travel": 11,
+          "insect": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "travel": 11,
+          "insect": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "bat": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "animal": 6,
+          "sports": 7,
+          "hit": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 6,
+          "sports": 7,
+          "hit": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "pen": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "writing": 14
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "writing": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "pool": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "swimming": 12,
+          "other": 1,
+          "puddle": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "swimming": 12,
+          "shared": 1,
+          "puddle": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "rock": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "stone": 12,
+          "music": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "stone": 12,
+          "music": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 13,
+        "rate": 1.0
+      }
+    }
+  },
+  "fire": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "flames": 14
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "flames": 14
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 14,
+        "rate": 1.0
+      }
+    }
+  },
+  "match": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "pairing": 4,
+          "contest": 3,
+          "firestick": 5,
+          "other": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "firestick+pairing": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "pairing": 5,
+          "contest": 3,
+          "firestick": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "firestick+pairing": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 14,
+        "rate": 0.929
+      }
+    }
+  },
+  "tie": {
+    "human": {
+      "gpt": {
+        "_counts": {
+          "necktie": 7,
+          "other": 1,
+          "fasten": 4,
+          "multiple": 1
+        },
+        "_multiple": {
+          "fasten+necktie": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "necktie": 7,
+          "fasten": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "fasten+necktie": 1
+        }
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 13,
+        "rate": 0.923
+      }
+    }
+  }
+}

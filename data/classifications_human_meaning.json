@@ -1,0 +1,6389 @@
+{
+  "bank": {
+    "human": {
+      "0": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "1": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "3": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "4": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "5": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "6": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "7": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "finance",
+            "heap"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "finance",
+            "heap"
+          ]
+        }
+      },
+      "8": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "9": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "10": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "11": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "13": {
+        "gpt": "finance",
+        "gemini": "finance"
+      },
+      "12": {
+        "gpt": "finance",
+        "gemini": "finance"
+      }
+    }
+  },
+  "trunk": {
+    "human": {
+      "7": {
+        "gpt": "car",
+        "gemini": "luggage"
+      },
+      "0": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "2": {
+        "gpt": "luggage",
+        "gemini": "luggage"
+      },
+      "6": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "4": {
+        "gpt": "tree",
+        "gemini": "tree"
+      },
+      "5": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "3": {
+        "gpt": "luggage",
+        "gemini": "luggage"
+      },
+      "1": {
+        "gpt": "luggage",
+        "gemini": "luggage"
+      },
+      "9": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "10": {
+        "gpt": "elephant",
+        "gemini": "elephant"
+      },
+      "11": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "8": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "12": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "15": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "13": {
+        "gpt": "unclear",
+        "gemini": "luggage"
+      },
+      "14": {
+        "gpt": "elephant",
+        "gemini": "elephant"
+      }
+    }
+  },
+  "jordan": {
+    "human": {
+      "1": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "3": {
+        "gpt": "country",
+        "gemini": "country"
+      },
+      "4": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "0": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "2": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "6": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "5": {
+        "gpt": "country",
+        "gemini": "country"
+      },
+      "7": {
+        "gpt": "country",
+        "gemini": "country"
+      },
+      "10": {
+        "gpt": "person",
+        "gemini": "person"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "8": {
+        "gpt": "shoes",
+        "gemini": "shoes"
+      },
+      "12": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "11": {
+        "gpt": "person",
+        "gemini": "person"
+      }
+    }
+  },
+  "bolt": {
+    "human": {
+      "0": {
+        "gpt": "run",
+        "gemini": "run"
+      },
+      "2": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "3": {
+        "gpt": "run",
+        "gemini": "run"
+      },
+      "8": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "1": {
+        "gpt": "lightning",
+        "gemini": "lightning"
+      },
+      "5": {
+        "gpt": "lightning",
+        "gemini": "lightning"
+      },
+      "7": {
+        "gpt": "lightning",
+        "gemini": "lightning"
+      },
+      "4": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "9": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "10": {
+        "gpt": "fastener",
+        "gemini": "lock"
+      },
+      "6": {
+        "gpt": "lightning",
+        "gemini": "lightning"
+      },
+      "11": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "12": {
+        "gpt": "run",
+        "gemini": "run"
+      },
+      "13": {
+        "gpt": "run",
+        "gemini": "run"
+      }
+    }
+  },
+  "pitch": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "1": {
+        "gpt": "throw",
+        "gemini": "throw"
+      },
+      "3": {
+        "gpt": "other",
+        "gemini": "throw"
+      },
+      "2": {
+        "gpt": "field",
+        "gemini": "field"
+      },
+      "4": {
+        "gpt": "field",
+        "gemini": "field"
+      },
+      "5": {
+        "gpt": "field",
+        "gemini": "field"
+      },
+      "6": {
+        "gpt": "tone",
+        "gemini": "tone"
+      },
+      "8": {
+        "gpt": "throw",
+        "gemini": "throw"
+      },
+      "12": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "11": {
+        "gpt": "throw",
+        "gemini": "throw"
+      },
+      "7": {
+        "gpt": "field",
+        "gemini": "field"
+      },
+      "13": {
+        "gpt": "unclear",
+        "gemini": "unclear"
+      },
+      "10": {
+        "gpt": "throw",
+        "gemini": "throw"
+      },
+      "9": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "tone",
+            "field"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "field",
+            "tone"
+          ]
+        }
+      }
+    }
+  },
+  "bow": {
+    "human": {
+      "0": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "3": {
+        "gpt": "knot",
+        "gemini": "knot"
+      },
+      "4": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "1": {
+        "gpt": "bend",
+        "gemini": "bend"
+      },
+      "6": {
+        "gpt": "knot",
+        "gemini": "knot"
+      },
+      "5": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "2": {
+        "gpt": "bend",
+        "gemini": "bend"
+      },
+      "8": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "9": {
+        "gpt": "bend",
+        "gemini": "bend"
+      },
+      "7": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "10": {
+        "gpt": "bend",
+        "gemini": "bend"
+      },
+      "11": {
+        "gpt": "knot",
+        "gemini": "knot"
+      },
+      "13": {
+        "gpt": "knot",
+        "gemini": "knot"
+      },
+      "12": {
+        "gpt": "bend",
+        "gemini": "bend"
+      }
+    }
+  },
+  "spring": {
+    "human": {
+      "0": {
+        "gpt": "coil",
+        "gemini": "coil"
+      },
+      "1": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "3": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "2": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "4": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "5": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "6": {
+        "gpt": "coil",
+        "gemini": "coil"
+      },
+      "7": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "9": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "8": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "10": {
+        "gpt": "season",
+        "gemini": "season"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "season"
+      },
+      "12": {
+        "gpt": "water",
+        "gemini": "water"
+      }
+    }
+  },
+  "crane": {
+    "human": {
+      "1": {
+        "gpt": "machine",
+        "gemini": "unclear"
+      },
+      "0": {
+        "gpt": "unclear",
+        "gemini": "bird"
+      },
+      "2": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "4": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "7": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "8": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "6": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "3": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "5": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "10": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "9": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "11": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "12": {
+        "gpt": "machine",
+        "gemini": "machine"
+      },
+      "13": {
+        "gpt": "machine",
+        "gemini": "machine"
+      }
+    }
+  },
+  "club": {
+    "human": {
+      "0": {
+        "gpt": "organization",
+        "gemini": "organization"
+      },
+      "2": {
+        "gpt": "organization",
+        "gemini": "organization"
+      },
+      "1": {
+        "gpt": "organization",
+        "gemini": "organization"
+      },
+      "3": {
+        "gpt": "venue",
+        "gemini": "venue"
+      },
+      "5": {
+        "gpt": "venue",
+        "gemini": "venue"
+      },
+      "7": {
+        "gpt": "venue",
+        "gemini": "venue"
+      },
+      "4": {
+        "gpt": "golf",
+        "gemini": "golf"
+      },
+      "8": {
+        "gpt": "unclear",
+        "gemini": "unclear"
+      },
+      "9": {
+        "gpt": "organization",
+        "gemini": "organization"
+      },
+      "10": {
+        "gpt": "venue",
+        "gemini": "venue"
+      },
+      "12": {
+        "gpt": "venue",
+        "gemini": "venue"
+      },
+      "6": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "organization",
+            "venue",
+            "weapon"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "venue",
+            "weapon",
+            "organization"
+          ]
+        }
+      },
+      "13": {
+        "gpt": "organization",
+        "gemini": "organization"
+      },
+      "11": {
+        "gpt": "organization",
+        "gemini": "organization"
+      }
+    }
+  },
+  "turkey": {
+    "human": {
+      "0": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "4": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "6": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "1": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        }
+      },
+      "5": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        }
+      },
+      "8": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "9": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "10": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "7": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "12": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "13": {
+        "gpt": "food",
+        "gemini": "food"
+      },
+      "3": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        },
+        "gemini": "food"
+      },
+      "11": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "bird",
+            "food"
+          ]
+        }
+      }
+    }
+  },
+  "shot": {
+    "human": {
+      "0": {
+        "gpt": "gunfire",
+        "gemini": "gunfire"
+      },
+      "2": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "1": {
+        "gpt": "gunfire",
+        "gemini": "gunfire"
+      },
+      "3": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "4": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "5": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "6": {
+        "gpt": "drink",
+        "gemini": "drink"
+      },
+      "7": {
+        "gpt": "gunfire",
+        "gemini": "gunfire"
+      },
+      "8": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "9": {
+        "gpt": "attempt",
+        "gemini": "attempt"
+      },
+      "10": {
+        "gpt": "attempt",
+        "gemini": "other"
+      },
+      "11": {
+        "gpt": "gunfire",
+        "gemini": "other"
+      },
+      "12": {
+        "gpt": "gunfire",
+        "gemini": "gunfire"
+      }
+    }
+  },
+  "bar": {
+    "human": {
+      "1": {
+        "gpt": "block",
+        "gemini": "block"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "0": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "pub",
+            "block"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "pub",
+            "block"
+          ]
+        }
+      },
+      "3": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "4": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "6": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "8": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "9": {
+        "gpt": "rod",
+        "gemini": "rod"
+      },
+      "10": {
+        "gpt": "rod",
+        "gemini": "rod"
+      },
+      "7": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "11": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "12": {
+        "gpt": "pub",
+        "gemini": "pub"
+      },
+      "5": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "pub",
+            "rod"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "pub",
+            "rod"
+          ]
+        }
+      }
+    }
+  },
+  "mercury": {
+    "human": {
+      "0": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "3": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "1": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "4": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "2": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "5": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "6": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "7": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "10": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "8": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "12": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "13": {
+        "gpt": "element",
+        "gemini": "element"
+      },
+      "11": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "planet",
+            "element"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "planet",
+            "element"
+          ]
+        }
+      },
+      "9": {
+        "gpt": "unclear",
+        "gemini": "unclear"
+      }
+    }
+  },
+  "jack": {
+    "human": {
+      "0": {
+        "gpt": "connector",
+        "gemini": "connector"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "unclear"
+      },
+      "1": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "3": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "4": {
+        "gpt": "name",
+        "gemini": "name"
+      },
+      "6": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "5": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "8": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "11": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "9": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "10": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "13": {
+        "gpt": "lift",
+        "gemini": "lift"
+      },
+      "12": {
+        "gpt": "cards",
+        "gemini": "cards"
+      }
+    }
+  },
+  "mole": {
+    "human": {
+      "0": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "1": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "5": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "3": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "2": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "6": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "4": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "9": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "8": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "11": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "12": {
+        "gpt": "spy",
+        "gemini": "spy"
+      },
+      "10": {
+        "gpt": "skin",
+        "gemini": "skin"
+      },
+      "7": {
+        "gpt": "animal",
+        "gemini": "animal"
+      }
+    }
+  },
+  "charge": {
+    "human": {
+      "0": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "1": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "4": {
+        "gpt": "unclear",
+        "gemini": "unclear"
+      },
+      "5": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "2": {
+        "gpt": "accusation",
+        "gemini": "accusation"
+      },
+      "3": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "6": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "8": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "7": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "10": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "9": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "11": {
+        "gpt": "electric",
+        "gemini": "electric"
+      },
+      "12": {
+        "gpt": "rush",
+        "gemini": "rush"
+      }
+    }
+  },
+  "key": {
+    "human": {
+      "1": {
+        "gpt": "crucial",
+        "gemini": "crucial"
+      },
+      "2": {
+        "gpt": "crucial",
+        "gemini": "crucial"
+      },
+      "3": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "4": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "5": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "6": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "0": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "lock",
+            "crucial"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "crucial",
+            "lock"
+          ]
+        }
+      },
+      "9": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "7": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "8": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "12": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "11": {
+        "gpt": "lock",
+        "gemini": "lock"
+      },
+      "10": {
+        "gpt": "crucial",
+        "gemini": "crucial"
+      }
+    }
+  },
+  "watch": {
+    "human": {
+      "0": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "6": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "2": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "7": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "1": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "3": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "9": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "8": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "4": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "timepiece",
+            "guard"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "timepiece",
+            "observe"
+          ]
+        }
+      },
+      "10": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      },
+      "12": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "5": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "13": {
+        "gpt": "observe",
+        "gemini": "observe"
+      },
+      "11": {
+        "gpt": "timepiece",
+        "gemini": "timepiece"
+      }
+    }
+  },
+  "ring": {
+    "human": {
+      "0": {
+        "gpt": "unclear",
+        "gemini": "jewelry"
+      },
+      "1": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "3": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "2": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "4": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "5": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "6": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "7": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "8": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "10": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "12": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "11": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "9": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      },
+      "13": {
+        "gpt": "jewelry",
+        "gemini": "jewelry"
+      }
+    }
+  },
+  "nail": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "2": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "3": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "6": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "4": {
+        "gpt": "finger",
+        "gemini": "finger"
+      },
+      "1": {
+        "gpt": "succeed",
+        "gemini": "succeed"
+      },
+      "5": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "8": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "7": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "9": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "11": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "10": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "12": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      }
+    }
+  },
+  "chip": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "1": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "2": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "5": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "microchip",
+        "gemini": "microchip"
+      },
+      "4": {
+        "gpt": "microchip",
+        "gemini": "microchip"
+      },
+      "7": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "6": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "8": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "9": {
+        "gpt": "fragment",
+        "gemini": "fragment"
+      },
+      "12": {
+        "gpt": "snack",
+        "gemini": "snack"
+      },
+      "10": {
+        "gpt": "snack",
+        "gemini": "snack"
+      },
+      "13": {
+        "gpt": "snack",
+        "gemini": "snack"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "other"
+      }
+    }
+  },
+  "cell": {
+    "human": {
+      "1": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "0": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "3": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "6": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "7": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "5": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "9": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "8": {
+        "gpt": "spreadsheet",
+        "gemini": "spreadsheet"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "biology",
+            "prison"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "prison",
+            "biology"
+          ]
+        }
+      },
+      "4": {
+        "gpt": "prison",
+        "gemini": "prison"
+      },
+      "10": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "11": {
+        "gpt": "biology",
+        "gemini": "biology"
+      },
+      "12": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "biology",
+            "prison",
+            "phone"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "prison",
+            "phone",
+            "biology"
+          ]
+        }
+      },
+      "13": {
+        "gpt": "prison",
+        "gemini": "prison"
+      }
+    }
+  },
+  "toast": {
+    "human": {
+      "1": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "tribute",
+        "gemini": "tribute"
+      },
+      "4": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "6": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "5": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "0": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "bread",
+            "tribute"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "bread",
+            "tribute"
+          ]
+        }
+      },
+      "8": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "9": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "7": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "10": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "11": {
+        "gpt": "bread",
+        "gemini": "bread"
+      },
+      "12": {
+        "gpt": "bread",
+        "gemini": "bread"
+      }
+    }
+  },
+  "track": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "1": {
+        "gpt": "follow",
+        "gemini": "follow"
+      },
+      "2": {
+        "gpt": "follow",
+        "gemini": "follow"
+      },
+      "4": {
+        "gpt": "follow",
+        "gemini": "follow"
+      },
+      "6": {
+        "gpt": "follow",
+        "gemini": "follow"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "5": {
+        "gpt": "athletics",
+        "gemini": "athletics"
+      },
+      "3": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "follow",
+            "athletics"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "follow",
+            "athletics"
+          ]
+        }
+      },
+      "8": {
+        "gpt": "path",
+        "gemini": "path"
+      },
+      "9": {
+        "gpt": "song",
+        "gemini": "song"
+      },
+      "10": {
+        "gpt": "railroad",
+        "gemini": "railroad"
+      },
+      "12": {
+        "gpt": "athletics",
+        "gemini": "athletics"
+      },
+      "13": {
+        "gpt": "follow",
+        "gemini": "follow"
+      },
+      "11": {
+        "gpt": "song",
+        "gemini": "song"
+      }
+    }
+  },
+  "wave": {
+    "human": {
+      "1": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "0": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "2": {
+        "gpt": "water",
+        "gemini": "water"
+      },
+      "3": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "5": {
+        "gpt": "water",
+        "gemini": "water"
+      },
+      "7": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "4": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "8": {
+        "gpt": "water",
+        "gemini": "water"
+      },
+      "6": {
+        "gpt": "water",
+        "gemini": "water"
+      },
+      "9": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "10": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "11": {
+        "gpt": "surge",
+        "gemini": "surge"
+      },
+      "14": {
+        "gpt": "water",
+        "gemini": "water"
+      },
+      "13": {
+        "gpt": "gesture",
+        "gemini": "gesture"
+      },
+      "12": {
+        "gpt": "water",
+        "gemini": "water"
+      }
+    }
+  },
+  "train": {
+    "human": {
+      "0": {
+        "gpt": "teach",
+        "gemini": "teach"
+      },
+      "2": {
+        "gpt": "teach",
+        "gemini": "teach"
+      },
+      "1": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "3": {
+        "gpt": "teach",
+        "gemini": "teach"
+      },
+      "4": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "6": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "7": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "5": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "8": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "10": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "11": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "12": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "9": {
+        "gpt": "railway",
+        "gemini": "railway"
+      },
+      "13": {
+        "gpt": "railway",
+        "gemini": "railway"
+      }
+    }
+  },
+  "anchor": {
+    "human": {
+      "0": {
+        "gpt": "secure",
+        "gemini": "secure"
+      },
+      "1": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "2": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "6": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "4": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "3": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "5": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "8": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "secure"
+      },
+      "10": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "11": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "13": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "12": {
+        "gpt": "ship",
+        "gemini": "ship"
+      },
+      "9": {
+        "gpt": "ship",
+        "gemini": "ship"
+      }
+    }
+  },
+  "ash": {
+    "human": {
+      "0": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "2": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "1": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "4": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "6": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "3": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "5": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "9": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "10": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "8": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "7": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "11": {
+        "gpt": "residue",
+        "gemini": "residue"
+      },
+      "12": {
+        "gpt": "residue",
+        "gemini": "residue"
+      }
+    }
+  },
+  "ball": {
+    "human": {
+      "1": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "0": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "2": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "3": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "7": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "6": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "4": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "5": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "11": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "12": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "10": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "9": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "8": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      },
+      "13": {
+        "gpt": "sphere",
+        "gemini": "sphere"
+      }
+    }
+  },
+  "band": {
+    "human": {
+      "1": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "0": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "2": {
+        "gpt": "strip",
+        "gemini": "strip"
+      },
+      "3": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "10": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "5": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "4": {
+        "gpt": "strip",
+        "gemini": "strip"
+      },
+      "8": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "12": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "7": {
+        "gemini": "music",
+        "gpt": "music"
+      },
+      "11": {
+        "gpt": "unite",
+        "gemini": "unite"
+      },
+      "6": {
+        "gemini": "music",
+        "gpt": "music"
+      },
+      "9": {
+        "gemini": "music",
+        "gpt": "music"
+      }
+    }
+  },
+  "bark": {
+    "human": {
+      "1": {
+        "gpt": "tree",
+        "gemini": "tree"
+      },
+      "3": {
+        "gpt": "dog",
+        "gemini": "dog"
+      },
+      "0": {
+        "gemini": "tree",
+        "gpt": "tree"
+      },
+      "2": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "5": {
+        "gpt": "tree",
+        "gemini": "tree"
+      },
+      "11": {
+        "gpt": "dog",
+        "gemini": "dog"
+      },
+      "4": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "6": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "7": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "8": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "10": {
+        "gemini": "dog",
+        "gpt": "dog"
+      },
+      "12": {
+        "gpt": "tree",
+        "gemini": "tree"
+      },
+      "9": {
+        "gemini": "dog",
+        "gpt": "dog"
+      }
+    }
+  },
+  "barrel": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "cask"
+      },
+      "1": {
+        "gpt": "other",
+        "gemini": "cask"
+      },
+      "2": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "3": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "4": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "cask"
+      },
+      "8": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "10": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "5": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "6": {
+        "gemini": "cask",
+        "gpt": "cask"
+      },
+      "12": {
+        "gpt": "oil",
+        "gemini": "oil"
+      },
+      "15": {
+        "gpt": "cask",
+        "gemini": "cask"
+      },
+      "7": {
+        "gemini": "cask",
+        "gpt": "other"
+      },
+      "11": {
+        "gemini": "other",
+        "gpt": "other"
+      },
+      "14": {
+        "gemini": "cask",
+        "gpt": "cask"
+      },
+      "13": {
+        "gemini": "other",
+        "gpt": "other"
+      }
+    }
+  },
+  "basket": {
+    "human": {
+      "0": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "1": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "2": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "3": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "4": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "6": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "10": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "7": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "8": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "5": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "9": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "11": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "12": {
+        "gpt": "container",
+        "gemini": "container"
+      }
+    }
+  },
+  "bass": {
+    "human": {
+      "5": {
+        "gpt": "sound",
+        "gemini": "sound"
+      },
+      "0": {
+        "gemini": "fish",
+        "gpt": "fish"
+      },
+      "1": {
+        "gemini": "fish",
+        "gpt": "fish"
+      },
+      "6": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "sound",
+            "instrument"
+          ]
+        },
+        "gemini": "instrument"
+      },
+      "3": {
+        "gpt": "instrument",
+        "gemini": "instrument"
+      },
+      "2": {
+        "gemini": "sound",
+        "gpt": "sound"
+      },
+      "4": {
+        "gemini": "instrument",
+        "gpt": "instrument"
+      },
+      "9": {
+        "gpt": "sound",
+        "gemini": "sound"
+      },
+      "8": {
+        "gpt": "instrument",
+        "gemini": "instrument"
+      },
+      "12": {
+        "gemini": "fish",
+        "gpt": "fish"
+      },
+      "10": {
+        "gemini": "instrument",
+        "gpt": "instrument"
+      },
+      "13": {
+        "gemini": "fish",
+        "gpt": "fish"
+      },
+      "7": {
+        "gemini": "sound",
+        "gpt": "instrument"
+      },
+      "11": {
+        "gemini": "sound",
+        "gpt": "instrument"
+      }
+    }
+  },
+  "batter": {
+    "human": {
+      "1": {
+        "gpt": "cooking",
+        "gemini": "cooking"
+      },
+      "2": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "0": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "4": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "5": {
+        "gpt": "cooking",
+        "gemini": "cooking"
+      },
+      "6": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "7": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "9": {
+        "gemini": "baseball",
+        "gpt": "baseball"
+      },
+      "8": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "10": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "11": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      },
+      "3": {
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "baseball",
+            "cooking"
+          ]
+        },
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "baseball",
+            "cooking"
+          ]
+        }
+      },
+      "12": {
+        "gpt": "beat",
+        "gemini": "beat"
+      },
+      "13": {
+        "gemini": "cooking",
+        "gpt": "cooking"
+      }
+    }
+  },
+  "beam": {
+    "human": {
+      "4": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "2": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "6": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "0": {
+        "gemini": "support",
+        "gpt": "support"
+      },
+      "7": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "5": {
+        "gemini": "light",
+        "gpt": "light"
+      },
+      "3": {
+        "gemini": "support",
+        "gpt": "support"
+      },
+      "1": {
+        "gemini": "support",
+        "gpt": "support"
+      },
+      "9": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "10": {
+        "gpt": "light",
+        "gemini": "light"
+      },
+      "11": {
+        "gemini": "support",
+        "gpt": "support"
+      },
+      "8": {
+        "gemini": "light",
+        "gpt": "light"
+      },
+      "12": {
+        "gemini": "light",
+        "gpt": "light"
+      },
+      "13": {
+        "gemini": "support",
+        "gpt": "support"
+      }
+    }
+  },
+  "bench": {
+    "human": {
+      "0": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "1": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "2": {
+        "gemini": "seat",
+        "gpt": "seat"
+      },
+      "3": {
+        "gemini": "seat",
+        "gpt": "seat"
+      },
+      "4": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "8": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "7": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "6": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "9": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "10": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "12": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "11": {
+        "gpt": "seat",
+        "gemini": "seat"
+      },
+      "5": {
+        "gpt": "seat",
+        "gemini": "seat"
+      }
+    }
+  },
+  "block": {
+    "human": {
+      "0": {
+        "gpt": "solid",
+        "gemini": "solid"
+      },
+      "2": {
+        "gpt": "solid",
+        "gemini": "solid"
+      },
+      "1": {
+        "gpt": "solid",
+        "gemini": "solid"
+      },
+      "3": {
+        "gpt": "solid",
+        "gemini": "solid"
+      },
+      "4": {
+        "gpt": "solid",
+        "gemini": "solid"
+      },
+      "5": {
+        "gpt": "obstruct",
+        "gemini": "obstruct"
+      },
+      "7": {
+        "gpt": "obstruct",
+        "gemini": "obstruct"
+      },
+      "10": {
+        "gpt": "obstruct",
+        "gemini": "obstruct"
+      },
+      "9": {
+        "gpt": "obstruct",
+        "gemini": "obstruct"
+      },
+      "8": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "6": {
+        "gemini": "obstruct",
+        "gpt": "obstruct"
+      },
+      "13": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "obstruct"
+      },
+      "12": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "solid",
+            "obstruct",
+            "city"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "obstruct",
+            "city",
+            "solid"
+          ]
+        }
+      }
+    }
+  },
+  "bowl": {
+    "human": {
+      "1": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "0": {
+        "gpt": "roll",
+        "gemini": "roll"
+      },
+      "2": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "5": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "3": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "4": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "7": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "8": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "6": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "10": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "9": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "11": {
+        "gpt": "dish",
+        "gemini": "dish"
+      },
+      "12": {
+        "gpt": "dish",
+        "gemini": "dish"
+      }
+    }
+  },
+  "box": {
+    "human": {
+      "0": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "4": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "3": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "container"
+      },
+      "1": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "5": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "6": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "7": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "8": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "9": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "11": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "10": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "13": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "12": {
+        "gpt": "container",
+        "gemini": "container"
+      }
+    }
+  },
+  "brush": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "3": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "4": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "1": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "2": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "7": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "5": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "6": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "12": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "9": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "11": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "8": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "10": {
+        "gpt": "other",
+        "gemini": "tool"
+      }
+    }
+  },
+  "buck": {
+    "human": {
+      "0": {
+        "gpt": "resist",
+        "gemini": "resist"
+      },
+      "1": {
+        "gpt": "dollar",
+        "gemini": "dollar"
+      },
+      "4": {
+        "gpt": "resist",
+        "gemini": "resist"
+      },
+      "5": {
+        "gpt": "deer",
+        "gemini": "deer"
+      },
+      "6": {
+        "gpt": "resist",
+        "gemini": "resist"
+      },
+      "7": {
+        "gpt": "dollar",
+        "gemini": "dollar"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "deer",
+            "resist"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "deer",
+            "resist"
+          ]
+        }
+      },
+      "8": {
+        "gpt": "resist",
+        "gemini": "resist"
+      },
+      "3": {
+        "gpt": "deer",
+        "gemini": "deer"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "12": {
+        "gpt": "dollar",
+        "gemini": "dollar"
+      },
+      "11": {
+        "gpt": "deer",
+        "gemini": "deer"
+      },
+      "13": {
+        "gpt": "dollar",
+        "gemini": "dollar"
+      },
+      "10": {
+        "gpt": "deer",
+        "gemini": "deer"
+      },
+      "15": {
+        "gpt": "dollar",
+        "gemini": "dollar"
+      },
+      "14": {
+        "gpt": "deer",
+        "gemini": "deer"
+      }
+    }
+  },
+  "button": {
+    "human": {
+      "0": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "1": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "4": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "3": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "2": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "6": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "8": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "10": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "12": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "5": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "fastener",
+            "press"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "fastener",
+            "press"
+          ]
+        }
+      },
+      "7": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "13": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "9": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "11": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      }
+    }
+  },
+  "cane": {
+    "human": {
+      "2": {
+        "gpt": "other",
+        "gemini": "plant"
+      },
+      "1": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "0": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "3": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "4": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "6": {
+        "gpt": "plant",
+        "gemini": "stick"
+      },
+      "5": {
+        "gpt": "beat",
+        "gemini": "beat"
+      },
+      "7": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "11": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "8": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "9": {
+        "gpt": "stick",
+        "gemini": "stick"
+      },
+      "12": {
+        "gpt": "plant",
+        "gemini": "plant"
+      },
+      "10": {
+        "gpt": "plant",
+        "gemini": "plant"
+      }
+    }
+  },
+  "cape": {
+    "human": {
+      "1": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "0": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "2": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "6": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "4": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "5": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "3": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "7": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "8": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "10": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "9": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "12": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      },
+      "11": {
+        "gpt": "cloak",
+        "gemini": "cloak"
+      }
+    }
+  },
+  "capital": {
+    "human": {
+      "1": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "5": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "0": {
+        "gemini": "letter",
+        "gpt": "letter"
+      },
+      "4": {
+        "gpt": "letter",
+        "gemini": "letter"
+      },
+      "3": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "2": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "city",
+            "money",
+            "letter"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "city",
+            "money",
+            "letter"
+          ]
+        }
+      },
+      "6": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "8": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "7": {
+        "gpt": "money",
+        "gemini": "money"
+      },
+      "10": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "9": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "11": {
+        "gpt": "city",
+        "gemini": "city"
+      },
+      "12": {
+        "gpt": "letter",
+        "gemini": "letter"
+      }
+    }
+  },
+  "case": {
+    "human": {
+      "2": {
+        "gpt": "legal",
+        "gemini": "legal"
+      },
+      "0": {
+        "gpt": "instance",
+        "gemini": "instance"
+      },
+      "3": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "5": {
+        "gpt": "legal",
+        "gemini": "legal"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "container"
+      },
+      "6": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "8": {
+        "gpt": "legal",
+        "gemini": "legal"
+      },
+      "1": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "4": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "container",
+            "legal",
+            "instance"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "container",
+            "legal"
+          ]
+        }
+      },
+      "9": {
+        "gpt": "instance",
+        "gemini": "instance"
+      },
+      "10": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "13": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "11": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "12": {
+        "gpt": "investigation",
+        "gemini": "investigation"
+      }
+    }
+  },
+  "chest": {
+    "human": {
+      "0": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "3": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "1": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "body",
+            "box"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "body",
+            "box"
+          ]
+        }
+      },
+      "2": {
+        "gpt": "box",
+        "gemini": "box"
+      },
+      "6": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "5": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "8": {
+        "gpt": "box",
+        "gemini": "box"
+      },
+      "4": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "body",
+            "box"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "body",
+            "box"
+          ]
+        }
+      },
+      "9": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "11": {
+        "gpt": "box",
+        "gemini": "box"
+      },
+      "7": {
+        "gpt": "box",
+        "gemini": "box"
+      },
+      "10": {
+        "gpt": "body",
+        "gemini": "body"
+      },
+      "12": {
+        "gpt": "body",
+        "gemini": "body"
+      }
+    }
+  },
+  "coach": {
+    "human": {
+      "2": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "3": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "0": {
+        "gpt": "tutor",
+        "gemini": "tutor"
+      },
+      "1": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "4": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "5": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "6": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "8": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "7": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "9": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "10": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "11": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "14": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "13": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      },
+      "12": {
+        "gpt": "trainer",
+        "gemini": "trainer"
+      }
+    }
+  },
+  "cobbler": {
+    "human": {
+      "2": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "1": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "3": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "0": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "4": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "5": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "7": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "8": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "10": {
+        "gpt": "dessert",
+        "gemini": "dessert"
+      },
+      "9": {
+        "gpt": "shoemaker",
+        "gemini": "shoemaker"
+      },
+      "6": {
+        "gpt": "dessert",
+        "gemini": "dessert"
+      },
+      "11": {
+        "gpt": "dessert",
+        "gemini": "dessert"
+      },
+      "12": {
+        "gpt": "dessert",
+        "gemini": "dessert"
+      }
+    }
+  },
+  "apple": {
+    "human": {
+      "4": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "1": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "0": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "3": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "6": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "2": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "8": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "9": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "7": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "10": {
+        "gpt": "company",
+        "gemini": "company"
+      },
+      "12": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "5": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "11": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      },
+      "13": {
+        "gpt": "fruit",
+        "gemini": "fruit"
+      }
+    }
+  },
+  "amazon": {
+    "human": {
+      "4": {
+        "gpt": "company",
+        "gemini": "company"
+      },
+      "6": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "2": {
+        "gpt": "river",
+        "gemini": "river"
+      },
+      "1": {
+        "gpt": "company",
+        "gemini": "company"
+      },
+      "5": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "3": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "0": {
+        "gpt": "company",
+        "gemini": "company"
+      },
+      "7": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "10": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "9": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "8": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      },
+      "11": {
+        "gpt": "company",
+        "gemini": "company"
+      },
+      "12": {
+        "gpt": "river",
+        "gemini": "river"
+      },
+      "13": {
+        "gpt": "rainforest",
+        "gemini": "rainforest"
+      }
+    }
+  },
+  "mars": {
+    "human": {
+      "1": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "0": {
+        "gpt": "candy",
+        "gemini": "candy"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "5": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "6": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "8": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "7": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "9": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "11": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "12": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "10": {
+        "gpt": "planet",
+        "gemini": "planet"
+      },
+      "13": {
+        "gpt": "planet",
+        "gemini": "planet"
+      }
+    }
+  },
+  "jaguar": {
+    "human": {
+      "1": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "0": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "6": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "4": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "2": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "3": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "7": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "9": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "5": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "8": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "10": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "13": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "14": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "11": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "12": {
+        "gpt": "animal",
+        "gemini": "animal"
+      }
+    }
+  },
+  "mustang": {
+    "human": {
+      "0": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "1": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "3": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "2": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "5": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "6": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "4": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "7": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "8": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "10": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "9": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "11": {
+        "gpt": "horse",
+        "gemini": "horse"
+      },
+      "12": {
+        "gpt": "car",
+        "gemini": "car"
+      },
+      "13": {
+        "gpt": "horse",
+        "gemini": "unclear"
+      }
+    }
+  },
+  "cobra": {
+    "human": {
+      "1": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "0": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "3": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "5": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "4": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "2": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "6": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "8": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "7": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "9": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "10": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "11": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "14": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "12": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "13": {
+        "gpt": "snake",
+        "gemini": "snake"
+      }
+    }
+  },
+  "python": {
+    "human": {
+      "1": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "5": {
+        "gpt": "language",
+        "gemini": "language"
+      },
+      "2": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "4": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "0": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "6": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "3": {
+        "gpt": "language",
+        "gemini": "language"
+      },
+      "8": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "9": {
+        "gpt": "language",
+        "gemini": "language"
+      },
+      "7": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "10": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "11": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "12": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "13": {
+        "gpt": "snake",
+        "gemini": "snake"
+      },
+      "14": {
+        "gpt": "snake",
+        "gemini": "snake"
+      }
+    }
+  },
+  "fox": {
+    "human": {
+      "1": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "2": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "0": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "3": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "4": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "6": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "5": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "7": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "8": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "10": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "9": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "12": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "11": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "13": {
+        "gpt": "animal",
+        "gemini": "animal"
+      }
+    }
+  },
+  "cardinal": {
+    "human": {
+      "3": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "4": {
+        "gpt": "main",
+        "gemini": "main"
+      },
+      "2": {
+        "gpt": "clergy",
+        "gemini": "clergy"
+      },
+      "0": {
+        "gpt": "main",
+        "gemini": "main"
+      },
+      "6": {
+        "gpt": "clergy",
+        "gemini": "clergy"
+      },
+      "5": {
+        "gpt": "clergy",
+        "gemini": "clergy"
+      },
+      "1": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "9": {
+        "gpt": "main",
+        "gemini": "main"
+      },
+      "7": {
+        "gpt": "main",
+        "gemini": "main"
+      },
+      "10": {
+        "gpt": "unclear",
+        "gemini": "bird"
+      },
+      "8": {
+        "gpt": "main",
+        "gemini": "main"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "main"
+      },
+      "12": {
+        "gpt": "bird",
+        "gemini": "bird"
+      },
+      "13": {
+        "gpt": "bird",
+        "gemini": "bird"
+      }
+    }
+  },
+  "ram": {
+    "human": {
+      "0": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "5": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "4": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "3": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "1": {
+        "gpt": "force",
+        "gemini": "force"
+      },
+      "6": {
+        "gpt": "memory",
+        "gemini": "memory"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "8": {
+        "gpt": "force",
+        "gemini": "force"
+      },
+      "9": {
+        "gpt": "force",
+        "gemini": "force"
+      },
+      "11": {
+        "gpt": "force",
+        "gemini": "force"
+      },
+      "10": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "12": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      },
+      "13": {
+        "gpt": "sheep",
+        "gemini": "sheep"
+      }
+    }
+  },
+  "paddle": {
+    "human": {
+      "1": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "2": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "5": {
+        "gpt": "unclear",
+        "gemini": "other"
+      },
+      "0": {
+        "gpt": "wade",
+        "gemini": "wade"
+      },
+      "3": {
+        "gpt": "wade",
+        "gemini": "other"
+      },
+      "4": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "8": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "7": {
+        "gpt": "unclear",
+        "gemini": "other"
+      },
+      "6": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "9": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "10": {
+        "gpt": "bat",
+        "gemini": "bat"
+      },
+      "11": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "12": {
+        "gpt": "oar",
+        "gemini": "oar"
+      },
+      "13": {
+        "gpt": "oar",
+        "gemini": "oar"
+      }
+    }
+  },
+  "staple": {
+    "human": {
+      "0": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "1": {
+        "gpt": "other",
+        "gemini": "fastener"
+      },
+      "3": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "2": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "4": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "5": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "6": {
+        "gpt": "essential",
+        "gemini": "essential"
+      },
+      "8": {
+        "gpt": "essential",
+        "gemini": "essential"
+      },
+      "7": {
+        "gpt": "essential",
+        "gemini": "essential"
+      },
+      "12": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "11": {
+        "gpt": "essential",
+        "gemini": "essential"
+      },
+      "10": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "9": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "13": {
+        "gpt": "fastener",
+        "gemini": "fastener"
+      },
+      "14": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "essential",
+            "fastener"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "essential",
+            "fastener"
+          ]
+        }
+      }
+    }
+  },
+  "pitcher": {
+    "human": {
+      "0": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "1": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "2": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "3": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "5": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "4": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "6": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "8": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "9": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      },
+      "10": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "7": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "13": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "11": {
+        "gpt": "jug",
+        "gemini": "jug"
+      },
+      "12": {
+        "gpt": "baseball",
+        "gemini": "baseball"
+      }
+    }
+  },
+  "shuttle": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "transport"
+      },
+      "1": {
+        "gpt": "spacecraft",
+        "gemini": "spacecraft"
+      },
+      "3": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "2": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "4": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "5": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "6": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "7": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "8": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "11": {
+        "gpt": "badminton",
+        "gemini": "badminton"
+      },
+      "9": {
+        "gpt": "spacecraft",
+        "gemini": "spacecraft"
+      },
+      "10": {
+        "gpt": "badminton",
+        "gemini": "badminton"
+      },
+      "12": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "13": {
+        "gpt": "transport",
+        "gemini": "transport"
+      },
+      "14": {
+        "gpt": "transport",
+        "gemini": "transport"
+      }
+    }
+  },
+  "tap": {
+    "human": {
+      "5": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "2": {
+        "gpt": "faucet",
+        "gemini": "faucet"
+      },
+      "0": {
+        "gpt": "faucet",
+        "gemini": "faucet"
+      },
+      "3": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "1": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "6": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "4": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "7": {
+        "gpt": "faucet",
+        "gemini": "faucet"
+      },
+      "8": {
+        "gpt": "faucet",
+        "gemini": "faucet"
+      },
+      "10": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "9": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "11": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "12": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "13": {
+        "gpt": "faucet",
+        "gemini": "faucet"
+      }
+    }
+  },
+  "drill": {
+    "human": {
+      "5": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "1": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "2": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "0": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "6": {
+        "gpt": "exercise",
+        "gemini": "exercise"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "8": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "3": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "tool",
+            "exercise"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "tool",
+            "exercise"
+          ]
+        }
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "10": {
+        "gpt": "other",
+        "gemini": "exercise"
+      },
+      "11": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "12": {
+        "gpt": "other",
+        "gemini": "tool"
+      },
+      "13": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "14": {
+        "gpt": "tool",
+        "gemini": "tool"
+      }
+    }
+  },
+  "pump": {
+    "human": {
+      "0": {
+        "gpt": "inflate",
+        "gemini": "inflate"
+      },
+      "1": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "2": {
+        "gpt": "inflate",
+        "gemini": "inflate"
+      },
+      "3": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "4": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "6": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "5": {
+        "gpt": "inflate",
+        "gemini": "inflate"
+      },
+      "8": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "7": {
+        "gpt": "inflate",
+        "gemini": "device"
+      },
+      "9": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "11": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "13": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "12": {
+        "gpt": "device",
+        "gemini": "device"
+      },
+      "10": {
+        "gpt": "device",
+        "gemini": "device"
+      }
+    }
+  },
+  "socket": {
+    "human": {
+      "1": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "0": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "2": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "3": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "5": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "4": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "7": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "6": {
+        "gpt": "joint",
+        "gemini": "joint"
+      },
+      "10": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "12": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "8": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "11": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "9": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      },
+      "13": {
+        "gpt": "outlet",
+        "gemini": "outlet"
+      }
+    }
+  },
+  "switch": {
+    "human": {
+      "0": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "1": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "3": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "5": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "2": {
+        "gpt": "change",
+        "gemini": "change"
+      },
+      "7": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "6": {
+        "gpt": "change",
+        "gemini": "change"
+      },
+      "8": {
+        "gpt": "change",
+        "gemini": "control"
+      },
+      "10": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "11": {
+        "gpt": "change",
+        "gemini": "change"
+      },
+      "15": {
+        "gpt": "change",
+        "gemini": "change"
+      },
+      "14": {
+        "gpt": "other",
+        "gemini": "control"
+      },
+      "12": {
+        "gpt": "control",
+        "gemini": "control"
+      },
+      "9": {
+        "gpt": "change",
+        "gemini": "change"
+      },
+      "13": {
+        "gpt": "rod",
+        "gemini": "rod"
+      }
+    }
+  },
+  "iron": {
+    "human": {
+      "0": {
+        "gpt": "metal",
+        "gemini": "metal"
+      },
+      "1": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "5": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "3": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "metal",
+            "appliance",
+            "press"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "metal",
+            "appliance",
+            "press"
+          ]
+        }
+      },
+      "2": {
+        "gpt": "metal",
+        "gemini": "metal"
+      },
+      "7": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "6": {
+        "gpt": "appliance",
+        "gemini": "appliance"
+      },
+      "10": {
+        "gpt": "press",
+        "gemini": "press"
+      },
+      "4": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "metal",
+            "appliance",
+            "press"
+          ]
+        },
+        "gemini": "press"
+      },
+      "9": {
+        "gpt": "metal",
+        "gemini": "metal"
+      },
+      "8": {
+        "gpt": "appliance",
+        "gemini": "appliance"
+      },
+      "11": {
+        "gpt": "appliance",
+        "gemini": "appliance"
+      },
+      "12": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "metal",
+            "appliance",
+            "press"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "press",
+            "metal"
+          ]
+        }
+      },
+      "13": {
+        "gpt": "metal",
+        "gemini": "metal"
+      }
+    }
+  },
+  "crown": {
+    "human": {
+      "0": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "1": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "3": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "5": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "2": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "4": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "6": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "7": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "8": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "10": {
+        "gpt": "top",
+        "gemini": "top"
+      },
+      "11": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      },
+      "12": {
+        "gpt": "headwear",
+        "gemini": "headwear"
+      }
+    }
+  },
+  "scale": {
+    "human": {
+      "0": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "4": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "2": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "size",
+        "gemini": "size"
+      },
+      "1": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "8": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "6": {
+        "gpt": "size",
+        "gemini": "size"
+      },
+      "5": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "11": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "7": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "9": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "12": {
+        "gpt": "unclear",
+        "gemini": "weigh"
+      },
+      "10": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      },
+      "13": {
+        "gpt": "weigh",
+        "gemini": "weigh"
+      }
+    }
+  },
+  "plane": {
+    "human": {
+      "1": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "0": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "5": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "2": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "6": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "4": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "3": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "8": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "7": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "10": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "9": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "12": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "13": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      },
+      "11": {
+        "gpt": "aircraft",
+        "gemini": "aircraft"
+      }
+    }
+  },
+  "fan": {
+    "human": {
+      "3": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "0": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "1": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "2": {
+        "gpt": "admirer",
+        "gemini": "admirer"
+      },
+      "4": {
+        "gpt": "admirer",
+        "gemini": "admirer"
+      },
+      "7": {
+        "gpt": "admirer",
+        "gemini": "admirer"
+      },
+      "9": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "5": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "6": {
+        "gemini": "admirer",
+        "gpt": "admirer"
+      },
+      "10": {
+        "gpt": "admirer",
+        "gemini": "admirer"
+      },
+      "11": {
+        "gpt": "admirer",
+        "gemini": "admirer"
+      },
+      "13": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "8": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      },
+      "12": {
+        "gpt": "cooling",
+        "gemini": "cooling"
+      }
+    }
+  },
+  "bridge": {
+    "human": {
+      "1": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "2": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "0": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "3": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "5": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "6": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "7": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "4": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "8": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "10": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "9": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "12": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "11": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      },
+      "13": {
+        "gpt": "crossing",
+        "gemini": "crossing"
+      }
+    }
+  },
+  "port": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "unclear"
+      },
+      "1": {
+        "gpt": "connector",
+        "gemini": "connector"
+      },
+      "2": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "3": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "4": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "5": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "9": {
+        "gpt": "connector",
+        "gemini": "connector"
+      },
+      "7": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "8": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "10": {
+        "gpt": "connector",
+        "gemini": "connector"
+      },
+      "6": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "11": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      },
+      "12": {
+        "gpt": "connector",
+        "gemini": "connector"
+      },
+      "13": {
+        "gpt": "harbor",
+        "gemini": "harbor"
+      }
+    }
+  },
+  "lodge": {
+    "human": {
+      "0": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "2": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "4": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "3": {
+        "gpt": "file",
+        "gemini": "file"
+      },
+      "6": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "1": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "5": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "7": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "8": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "10": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "9": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "12": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "13": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "11": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      },
+      "14": {
+        "gpt": "cabin",
+        "gemini": "cabin"
+      }
+    }
+  },
+  "mine": {
+    "human": {
+      "0": {
+        "gpt": "excavation",
+        "gemini": "excavation"
+      },
+      "2": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "1": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "3": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "4": {
+        "gpt": "excavation",
+        "gemini": "excavation"
+      },
+      "5": {
+        "gpt": "excavation",
+        "gemini": "excavation"
+      },
+      "6": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "9": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "7": {
+        "gpt": "excavation",
+        "gemini": "excavation"
+      },
+      "8": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "10": {
+        "gpt": "unclear",
+        "gemini": "possessive"
+      },
+      "12": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      },
+      "13": {
+        "gpt": "excavation",
+        "gemini": "excavation"
+      },
+      "11": {
+        "gpt": "possessive",
+        "gemini": "possessive"
+      }
+    }
+  },
+  "grave": {
+    "human": {
+      "1": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "2": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "0": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "5": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "4": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "6": {
+        "gpt": "serious",
+        "gemini": "serious"
+      },
+      "7": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "3": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "burial",
+            "serious"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "burial",
+            "serious"
+          ]
+        }
+      },
+      "9": {
+        "gpt": "serious",
+        "gemini": "serious"
+      },
+      "8": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "12": {
+        "gpt": "burial",
+        "gemini": "burial"
+      },
+      "10": {
+        "gpt": "serious",
+        "gemini": "serious"
+      },
+      "11": {
+        "gpt": "serious",
+        "gemini": "serious"
+      },
+      "13": {
+        "gpt": "serious",
+        "gemini": "serious"
+      }
+    }
+  },
+  "cast": {
+    "human": {
+      "4": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "5": {
+        "gpt": "throw",
+        "gemini": "throw"
+      },
+      "2": {
+        "gpt": "actors",
+        "gemini": "actors"
+      },
+      "0": {
+        "gpt": "actors",
+        "gemini": "actors"
+      },
+      "3": {
+        "gpt": "actors",
+        "gemini": "actors"
+      },
+      "1": {
+        "gpt": "medical",
+        "gemini": "medical"
+      },
+      "6": {
+        "gpt": "medical",
+        "gemini": "medical"
+      },
+      "7": {
+        "gpt": "medical",
+        "gemini": "medical"
+      },
+      "10": {
+        "gpt": "actors",
+        "gemini": "actors"
+      },
+      "9": {
+        "gpt": "actors",
+        "gemini": "actors"
+      },
+      "8": {
+        "gpt": "medical",
+        "gemini": "medical"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "12": {
+        "gpt": "throw",
+        "gemini": "throw"
+      }
+    }
+  },
+  "press": {
+    "human": {
+      "1": {
+        "gpt": "media",
+        "gemini": "media"
+      },
+      "0": {
+        "gpt": "other",
+        "gemini": "push"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "5": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "6": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "2": {
+        "gemini": "printing",
+        "gpt": "printing"
+      },
+      "7": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "9": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "8": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "11": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "10": {
+        "gpt": "media",
+        "gemini": "media"
+      },
+      "13": {
+        "gpt": "push",
+        "gemini": "push"
+      },
+      "12": {
+        "gpt": "push",
+        "gemini": "push"
+      }
+    }
+  },
+  "post": {
+    "human": {
+      "0": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "3": {
+        "gpt": "mail",
+        "gemini": "mail"
+      },
+      "1": {
+        "gpt": "mail",
+        "gemini": "mail"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "other"
+      },
+      "6": {
+        "gpt": "other",
+        "gemini": "pole"
+      },
+      "2": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "7": {
+        "gpt": "publish",
+        "gemini": "publish"
+      },
+      "5": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "9": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "13": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "10": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "8": {
+        "gpt": "pole",
+        "gemini": "pole"
+      },
+      "12": {
+        "gpt": "publish",
+        "gemini": "publish"
+      },
+      "11": {
+        "gpt": "publish",
+        "gemini": "publish"
+      }
+    }
+  },
+  "tip": {
+    "human": {
+      "0": {
+        "gpt": "advice",
+        "gemini": "advice"
+      },
+      "4": {
+        "gpt": "advice",
+        "gemini": "advice"
+      },
+      "3": {
+        "gpt": "advice",
+        "gemini": "advice"
+      },
+      "1": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "5": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "2": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "9": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "6": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "10": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "8": {
+        "gpt": "advice",
+        "gemini": "advice"
+      },
+      "7": {
+        "gpt": "other",
+        "gemini": "point"
+      },
+      "11": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      },
+      "12": {
+        "gpt": "advice",
+        "gemini": "advice"
+      },
+      "13": {
+        "gpt": "gratuity",
+        "gemini": "gratuity"
+      }
+    }
+  },
+  "will": {
+    "human": {
+      "0": {
+        "gpt": "future",
+        "gemini": "volition"
+      },
+      "4": {
+        "gpt": "testament",
+        "gemini": "testament"
+      },
+      "1": {
+        "gpt": "future",
+        "gemini": "future"
+      },
+      "3": {
+        "gpt": "future",
+        "gemini": "future"
+      },
+      "2": {
+        "gpt": "testament",
+        "gemini": "testament"
+      },
+      "6": {
+        "gpt": "future",
+        "gemini": "future"
+      },
+      "5": {
+        "gpt": "testament",
+        "gemini": "testament"
+      },
+      "9": {
+        "gpt": "testament",
+        "gemini": "testament"
+      },
+      "8": {
+        "gpt": "future",
+        "gemini": "future"
+      },
+      "12": {
+        "gpt": "testament",
+        "gemini": "testament"
+      },
+      "7": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "testament",
+            "future"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "testament",
+            "future"
+          ]
+        }
+      },
+      "10": {
+        "gpt": "volition",
+        "gemini": "volition"
+      },
+      "11": {
+        "gpt": "future",
+        "gemini": "future"
+      }
+    }
+  },
+  "file": {
+    "human": {
+      "0": {
+        "gpt": "submit",
+        "gemini": "document"
+      },
+      "1": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "5": {
+        "gpt": "submit",
+        "gemini": "document"
+      },
+      "6": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "2": {
+        "gpt": "submit",
+        "gemini": "submit"
+      },
+      "3": {
+        "gpt": "unclear",
+        "gemini": "document"
+      },
+      "4": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "9": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "7": {
+        "gpt": "tool",
+        "gemini": "tool"
+      },
+      "8": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "11": {
+        "gpt": "other",
+        "gemini": "document"
+      },
+      "10": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "12": {
+        "gpt": "document",
+        "gemini": "document"
+      },
+      "13": {
+        "gpt": "submit",
+        "gemini": "document"
+      },
+      "14": {
+        "gpt": "document",
+        "gemini": "document"
+      }
+    }
+  },
+  "mortar": {
+    "human": {
+      "0": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "1": {
+        "gpt": "bowl",
+        "gemini": "bowl"
+      },
+      "2": {
+        "gpt": "bowl",
+        "gemini": "bowl"
+      },
+      "4": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "6": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "7": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "5": {
+        "gpt": "bowl",
+        "gemini": "bowl"
+      },
+      "9": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "3": {
+        "gpt": "other",
+        "gemini": "cement"
+      },
+      "8": {
+        "gpt": "bowl",
+        "gemini": "bowl"
+      },
+      "10": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      },
+      "12": {
+        "gpt": "cement",
+        "gemini": "cement"
+      },
+      "11": {
+        "gpt": "bowl",
+        "gemini": "bowl"
+      },
+      "13": {
+        "gpt": "weapon",
+        "gemini": "weapon"
+      }
+    }
+  },
+  "hide": {
+    "human": {
+      "1": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "0": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "2": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "5": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "9": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "6": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "10": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "3": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "8": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "7": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "4": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "12": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      },
+      "11": {
+        "gpt": "conceal",
+        "gemini": "conceal"
+      }
+    }
+  },
+  "tank": {
+    "human": {
+      "0": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "1": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "5": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "2": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "4": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "6": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "7": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "9": {
+        "gpt": "container",
+        "gemini": "container"
+      },
+      "8": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "12": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "3": {
+        "gemini": "vehicle",
+        "gpt": "vehicle"
+      },
+      "11": {
+        "gpt": "vehicle",
+        "gemini": "vehicle"
+      },
+      "10": {
+        "gemini": "container",
+        "gpt": "container"
+      },
+      "13": {
+        "gpt": "container",
+        "gemini": "container"
+      }
+    }
+  },
+  "seal": {
+    "human": {
+      "2": {
+        "gpt": "other",
+        "gemini": "close"
+      },
+      "0": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "3": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "5": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "4": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "8": {
+        "gpt": "other",
+        "gemini": "close"
+      },
+      "7": {
+        "gpt": "animal",
+        "gemini": "unclear"
+      },
+      "9": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "11": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "12": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "1": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "animal",
+            "stamp"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "animal",
+            "stamp"
+          ]
+        }
+      },
+      "6": {
+        "gpt": "close",
+        "gemini": "close"
+      },
+      "10": {
+        "gemini": "close",
+        "gpt": "close"
+      }
+    }
+  },
+  "strike": {
+    "human": {
+      "2": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "1": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "0": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "3": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "4": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "5": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "6": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "7": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "8": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "10": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "9": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "11": {
+        "gpt": "bowling",
+        "gemini": "bowling"
+      },
+      "13": {
+        "gpt": "labor",
+        "gemini": "labor"
+      },
+      "12": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "14": {
+        "gpt": "labor",
+        "gemini": "labor"
+      }
+    }
+  },
+  "stock": {
+    "human": {
+      "1": {
+        "gpt": "broth",
+        "gemini": "broth"
+      },
+      "0": {
+        "gpt": "shares",
+        "gemini": "shares"
+      },
+      "2": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "4": {
+        "gpt": "broth",
+        "gemini": "broth"
+      },
+      "3": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "9": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "6": {
+        "gpt": "shares",
+        "gemini": "shares"
+      },
+      "5": {
+        "gpt": "shares",
+        "gemini": "shares"
+      },
+      "12": {
+        "gpt": "shares",
+        "gemini": "shares"
+      },
+      "7": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "10": {
+        "gpt": "shares",
+        "gemini": "shares"
+      },
+      "8": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "11": {
+        "gpt": "supply",
+        "gemini": "supply"
+      },
+      "13": {
+        "gpt": "supply",
+        "gemini": "supply"
+      }
+    }
+  },
+  "bug": {
+    "human": {
+      "1": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "2": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "3": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "4": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "6": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "5": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "7": {
+        "gpt": "annoy",
+        "gemini": "annoy"
+      },
+      "9": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "8": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "10": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "11": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "14": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "0": {
+        "gemini": "insect",
+        "gpt": "insect"
+      },
+      "12": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "15": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "13": {
+        "gpt": "insect",
+        "gemini": "insect"
+      }
+    }
+  },
+  "fly": {
+    "human": {
+      "1": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "2": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "0": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "3": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "5": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "4": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "6": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "7": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "8": {
+        "gpt": "insect",
+        "gemini": "insect"
+      },
+      "9": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "10": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "11": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "13": {
+        "gpt": "travel",
+        "gemini": "travel"
+      },
+      "12": {
+        "gpt": "travel",
+        "gemini": "travel"
+      }
+    }
+  },
+  "bat": {
+    "human": {
+      "0": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "1": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "2": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "3": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "8": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "11": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "6": {
+        "gpt": "hit",
+        "gemini": "hit"
+      },
+      "7": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "5": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "4": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "9": {
+        "gpt": "animal",
+        "gemini": "animal"
+      },
+      "10": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "13": {
+        "gpt": "sports",
+        "gemini": "sports"
+      },
+      "12": {
+        "gpt": "animal",
+        "gemini": "animal"
+      }
+    }
+  },
+  "pen": {
+    "human": {
+      "0": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "1": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "2": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "3": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "5": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "4": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "7": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "6": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "8": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "11": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "9": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "12": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "10": {
+        "gpt": "writing",
+        "gemini": "writing"
+      },
+      "13": {
+        "gpt": "writing",
+        "gemini": "writing"
+      }
+    }
+  },
+  "pool": {
+    "human": {
+      "2": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "1": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "0": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "4": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "3": {
+        "gpt": "other",
+        "gemini": "shared"
+      },
+      "5": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "7": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "6": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "11": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "13": {
+        "gpt": "puddle",
+        "gemini": "puddle"
+      },
+      "12": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "9": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "10": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      },
+      "8": {
+        "gpt": "swimming",
+        "gemini": "swimming"
+      }
+    }
+  },
+  "rock": {
+    "human": {
+      "0": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "1": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "2": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "3": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "4": {
+        "gpt": "music",
+        "gemini": "music"
+      },
+      "7": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "5": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "8": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "6": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "11": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "10": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "12": {
+        "gpt": "stone",
+        "gemini": "stone"
+      },
+      "9": {
+        "gpt": "stone",
+        "gemini": "stone"
+      }
+    }
+  },
+  "fire": {
+    "human": {
+      "1": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "0": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "2": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "6": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "4": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "3": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "5": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "7": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "9": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "8": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "11": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "10": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "12": {
+        "gpt": "flames",
+        "gemini": "flames"
+      },
+      "13": {
+        "gpt": "flames",
+        "gemini": "flames"
+      }
+    }
+  },
+  "match": {
+    "human": {
+      "0": {
+        "gpt": "pairing",
+        "gemini": "pairing"
+      },
+      "1": {
+        "gpt": "pairing",
+        "gemini": "pairing"
+      },
+      "2": {
+        "gpt": "contest",
+        "gemini": "contest"
+      },
+      "4": {
+        "gpt": "firestick",
+        "gemini": "firestick"
+      },
+      "3": {
+        "gpt": "firestick",
+        "gemini": "firestick"
+      },
+      "5": {
+        "gpt": "other",
+        "gemini": "pairing"
+      },
+      "6": {
+        "gpt": "contest",
+        "gemini": "contest"
+      },
+      "8": {
+        "gpt": "pairing",
+        "gemini": "pairing"
+      },
+      "9": {
+        "gpt": "firestick",
+        "gemini": "firestick"
+      },
+      "7": {
+        "gpt": "pairing",
+        "gemini": "pairing"
+      },
+      "10": {
+        "gpt": "firestick",
+        "gemini": "firestick"
+      },
+      "12": {
+        "gpt": "firestick",
+        "gemini": "firestick"
+      },
+      "13": {
+        "gpt": "contest",
+        "gemini": "contest"
+      },
+      "11": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "firestick",
+            "pairing"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "pairing",
+            "firestick"
+          ]
+        }
+      }
+    }
+  },
+  "tie": {
+    "human": {
+      "0": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "2": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "1": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "3": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "4": {
+        "gpt": "other",
+        "gemini": "fasten"
+      },
+      "7": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "6": {
+        "gpt": "fasten",
+        "gemini": "fasten"
+      },
+      "8": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "9": {
+        "gpt": "necktie",
+        "gemini": "necktie"
+      },
+      "12": {
+        "gpt": "fasten",
+        "gemini": "fasten"
+      },
+      "10": {
+        "gpt": "fasten",
+        "gemini": "fasten"
+      },
+      "11": {
+        "gpt": "fasten",
+        "gemini": "fasten"
+      },
+      "5": {
+        "gpt": {
+          "label": "multiple",
+          "senses": [
+            "necktie",
+            "fasten"
+          ]
+        },
+        "gemini": {
+          "label": "multiple",
+          "senses": [
+            "fasten",
+            "necktie"
+          ]
+        }
+      }
+    }
+  }
+}
