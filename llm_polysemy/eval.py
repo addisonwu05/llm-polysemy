@@ -37,14 +37,18 @@ def load_words(lang: str = "en") -> list[str]:
 def cli_main(default_modality: str | None = None):
     load_dotenv()
     p = argparse.ArgumentParser()
-    p.add_argument("--modality", choices=["image", "text"],
+    p.add_argument("--modality", choices=["image", "text", "text-imagine"],
                    default=default_modality or "image")
     p.add_argument("--lang", choices=["en", "tr", "fr"], default="en",
                    help="word list + generation-prompt language (default: en)")
     p.add_argument("--model", default=None, help="run only this model_key (default: all)")
     args = p.parse_args()
 
-    keys = models_for(args.modality)
+    if args.modality == "text-imagine" and args.lang != "en":
+        p.error("--modality text-imagine is English only")
+
+    # text-imagine reuses the text models (it is a prompt variant, not a new modality).
+    keys = models_for("text" if args.modality == "text-imagine" else args.modality)
     if args.model:
         if args.model not in keys:
             p.error(f"--model {args.model!r} is not a {args.modality} model; "

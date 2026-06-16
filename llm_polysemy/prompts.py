@@ -25,6 +25,18 @@ TEXT_PROMPT_TEMPLATES = {
 # Back-compat alias (English) for any importer of the old constant.
 TEXT_PROMPT_TEMPLATE = TEXT_PROMPT_TEMPLATES["en"]
 
+# "text-imagine" condition: same text models, but asked what image the word evokes
+# (instead of to use it in a sentence). Wording mirrors the human Prolific `image`
+# survey verbatim so LLM-vs-human is a clean, framing-matched comparison; only the
+# `Reply with only…` tail is added (an LLM preambles, a person typing a box doesn't).
+# English only by design — it is a control against the English image-sampling signal.
+IMAGINE_PROMPT_TEMPLATES = {
+    "en": (
+        'What image comes to mind when you think of the word "{word}"? Describe it briefly.\n'
+        "Reply with only the description and nothing else."
+    ),
+}
+
 
 def gen_prompt_image(word: str) -> str:
     return word  # the prompt sent to an image model is the bare word
@@ -32,6 +44,10 @@ def gen_prompt_image(word: str) -> str:
 
 def gen_prompt_text(word: str, lang: str = "en") -> str:
     return TEXT_PROMPT_TEMPLATES[lang].format(word=word)
+
+
+def gen_prompt_imagine(word: str, lang: str = "en") -> str:
+    return IMAGINE_PROMPT_TEMPLATES[lang].format(word=word)
 
 
 # ── Judge prompts ──────────────────────────────────────────────────────────────
@@ -86,6 +102,32 @@ def text_multi(meanings: dict, word: str, sentence: str) -> str:
         f'This sentence (generated from the single word "{word}") clearly uses two or '
         f'more distinct meanings of "{word}" together:\n\n"{sentence}"\n\n'
         f'Of the meanings below, list every one that is actually present in the sentence:\n{opts}\n\n'
+        f'Return the senses that apply (at least two).'
+    )
+
+
+# "text-imagine" judge prompts: an LLM was asked what image the word evokes and
+# described it. Deliberately mirrors human_image_prompt/_multi (swapping "A person"
+# -> "A language model") so the label set + framing match the human `image`
+# condition, keeping histograms_text_imagine directly comparable to it.
+
+def imagine_prompt(meanings: dict, word: str, description: str) -> str:
+    opts = _human_label_lines(meanings, word, "described image")
+    return (
+        f'A language model was given only the single word "{word}", with no other context, '
+        f'and asked to briefly describe the image that comes to mind. Here is its '
+        f'description:\n\n"{description}"\n\n'
+        f'Decide which meaning of "{word}" the image it describes corresponds to.\n\n'
+        f'Choose exactly one of these labels:\n{opts}\n\nRespond with only the label.'
+    )
+
+
+def imagine_multi(meanings: dict, word: str, description: str) -> str:
+    opts = _sense_lines(meanings, word)
+    return (
+        f'This description (of the image a language model pictured for the single word "{word}") '
+        f'clearly evokes two or more distinct meanings of "{word}" together:\n\n"{description}"\n\n'
+        f'Of the meanings below, list every one that is actually present:\n{opts}\n\n'
         f'Return the senses that apply (at least two).'
     )
 

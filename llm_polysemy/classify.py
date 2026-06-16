@@ -22,7 +22,7 @@ from .meanings import load_meanings
 def cli_main(default_modality: str | None = None):
     load_dotenv()
     p = argparse.ArgumentParser()
-    p.add_argument("--modality", choices=["image", "text"],
+    p.add_argument("--modality", choices=["image", "text", "text-imagine"],
                    default=default_modality or "image")
     p.add_argument("--lang", choices=["en", "tr", "fr"], default="en",
                    help="which language's outputs + meanings to classify (default: en)")

@@ -82,6 +82,7 @@ python -m llm_polysemy.eval --modality image                 # all image models
 python -m llm_polysemy.eval --modality text                  # all text models
 python -m llm_polysemy.eval --modality text --model openai_55 # one model
 python -m llm_polysemy.eval --modality text --lang tr        # Turkish word list + Turkish prompt
+python -m llm_polysemy.eval --modality text-imagine          # text models, "what image comes to mind?" (en only)
 ```
 Resume is automatic & filesystem-driven: only missing outputs are regenerated
 (delete an output file to re-queue just that sample).
@@ -97,6 +98,14 @@ FLUX families** (`LANG_EXCLUDE_FAMILIES` in `eval.py`) — image `tr` runs 10 mo
 text `tr` runs 12; `fr` currently runs all families. An explicit `--model KEY` still
 runs any single model.
 
+**`--modality text-imagine`** is a third generation condition (English only): the
+same text models, but prompted *"What image comes to mind when you think of the word
+`<word>`? Describe it briefly."* — the verbatim wording of the human Prolific `image`
+survey. It's a framing-matched control: holding the substrate fixed (still an LLM) it
+isolates *task framing* (depict vs use-in-a-sentence) from *modality*, so its sense
+distribution (`histograms_text_imagine.json`) is directly comparable to both the human
+`image` baseline and the real image models. Outputs/logs use `_text_imagine` paths.
+
 ### Classify
 
 ```bash
@@ -105,6 +114,8 @@ python -m llm_polysemy.classify --modality text --word bank --n 1      # cheap t
 python -m llm_polysemy.classify --modality image --judge gemini        # one judge
 python -m llm_polysemy.classify --modality image --histograms          # build histograms
 python -m llm_polysemy.classify --modality text  --histograms
+python -m llm_polysemy.classify --modality text-imagine                # classify the imagine run
+python -m llm_polysemy.classify --modality text-imagine --histograms   # -> histograms_text_imagine.json
 python -m llm_polysemy.classify --modality text --lang tr              # classify the Turkish run
 python -m llm_polysemy.classify --modality text --lang tr --histograms
 ```
@@ -197,9 +208,10 @@ All generated data lives under `data/`, all figures under `figures/`:
 |---|---|
 | `data/outputs_image/<word>/<model>/<NN>.png` | generated images |
 | `data/outputs_text/<word>/<model>/<NN>.txt` | generated sentences |
-| `data/results_{image,text}.json` | per-sample generation status log |
-| `data/classifications_{image,text}.json` | per-sample judge labels |
-| `data/histograms_{image,text}.json` | aggregated sense distributions |
+| `data/outputs_text_imagine/<word>/<model>/<NN>.txt` | `text-imagine` mental-image descriptions (en) |
+| `data/results_{image,text,text_imagine}.json` | per-sample generation status log |
+| `data/classifications_{image,text,text_imagine}.json` | per-sample judge labels |
+| `data/histograms_{image,text,text_imagine}.json` | aggregated sense distributions |
 | `data/meanings.json` | candidate senses per word |
 | `data/synonyms.txt` | the word list (first 100 used) |
 | `data/synonyms_{tr,fr}.txt` | Turkish / French word lists (25 words each, `--lang {tr,fr}`) |

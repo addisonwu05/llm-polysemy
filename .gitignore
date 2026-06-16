@@ -1,6 +1,7 @@
 .env
 data/outputs_image/
 data/outputs_text/
+data/outputs_text_imagine/
 *.log
 __pycache__/
 

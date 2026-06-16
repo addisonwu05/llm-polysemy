@@ -76,6 +76,17 @@ LANG_SUFFIX = {"en": "", "tr": "_tr", "fr": "_fr"}
 
 def gen_modality(name: str, lang: str = "en") -> GenModality:
     suf = LANG_SUFFIX[lang]
+    if name == "text-imagine":
+        # Same text models, but prompted for the image the word evokes. English
+        # only (control against the English image-sampling signal); no lang suffix.
+        return GenModality(
+            name="text-imagine",
+            output_dir=DATA / "outputs_text_imagine",
+            results_file=DATA / "results_text_imagine.json",
+            ext="txt", retry_token="no text", artifact_word="descriptions",
+            save=lambda path, data: path.write_text(data), temperature=TEXT_TEMPERATURE,
+            gen_prompt=prompts.gen_prompt_imagine,
+        )
     if name == "image":
         return GenModality(
             name="image", lang=lang,
@@ -98,6 +109,17 @@ def gen_modality(name: str, lang: str = "en") -> GenModality:
 def cls_modality(name: str, lang: str = "en") -> ClassifyModality:
     suf = LANG_SUFFIX[lang]
     meanings_file = DATA / f"meanings{suf}.json"
+    if name == "text-imagine":
+        return ClassifyModality(
+            name="text-imagine",
+            output_dir=DATA / "outputs_text_imagine",
+            class_file=DATA / "classifications_text_imagine.json",
+            hist_file=DATA / "histograms_text_imagine.json",
+            ext="txt", load_artifact=lambda p: p.read_text().strip(),
+            build_prompt=lambda meanings, word, artifact: prompts.imagine_prompt(meanings, word, artifact),
+            build_multiple_prompt=lambda meanings, word, artifact: prompts.imagine_multi(meanings, word, artifact),
+            judge_input_kind="text", meanings_file=DATA / "meanings.json",
+        )
     if name == "image":
         return ClassifyModality(
             name="image", lang=lang,
@@ -149,5 +171,8 @@ TEXT_GEN = gen_modality("text")
 IMAGE_CLS = cls_modality("image")
 TEXT_CLS = cls_modality("text")
 
-GEN = {"image": IMAGE_GEN, "text": TEXT_GEN}
-CLS = {"image": IMAGE_CLS, "text": TEXT_CLS}
+TEXT_IMAGINE_GEN = gen_modality("text-imagine")
+TEXT_IMAGINE_CLS = cls_modality("text-imagine")
+
+GEN = {"image": IMAGE_GEN, "text": TEXT_GEN, "text-imagine": TEXT_IMAGINE_GEN}
+CLS = {"image": IMAGE_CLS, "text": TEXT_CLS, "text-imagine": TEXT_IMAGINE_CLS}
