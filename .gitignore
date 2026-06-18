@@ -2,6 +2,10 @@
 data/outputs_image/
 data/outputs_text/
 data/outputs_text_imagine/
+# Large uploaded source folders for added models (raw repo/PNGs/exports);
+# their distilled labels live in the committed histograms/classifications.
+data/janus_imggen/
+data/anole_distributions/
 *.log
 __pycache__/
 
