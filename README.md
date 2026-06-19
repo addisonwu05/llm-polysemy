@@ -158,6 +158,19 @@ python -m llm_polysemy.plots.generation_trend  --modality text --prior manual   
 python -m llm_polysemy.plots.cross_modality    --agg mean                # image-vs-text per family (needs both)
 ```
 
+### Telephone game (iterated image↔text sense drift)
+
+Family-wise telephone chains — each family's best image model ⇄ its best captioner
+(`word → image → caption → image → …`, 5 iterations × 30 chains per word, seeded by each
+image model's own top-entropy words). Every production is sense-judged; the metric is
+sense-entropy vs iteration (the collapse curve). See `analysis.ipynb` §13.
+
+```bash
+python -m llm_polysemy.telephone --phase {generate,classify,histograms,all} [--family openai|gemini|grok|all]
+# outputs: data/telephone/<family>/<word>/c<NN>/i<t>.{png,txt}  (gitignored, large)
+#          data/telephone/{classifications,histograms,curves}.json   (committed results)
+```
+
 ### Frequency priors (for the `vs_textfreq` / `generation_trend` plots)
 
 ```bash

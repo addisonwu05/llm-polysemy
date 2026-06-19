@@ -1,0 +1,996 @@
+{
+ "openai": {
+  "button": {
+   "0": {
+    "image": {
+     "fastener": 22,
+     "press": 8
+    },
+    "caption": {
+     "fastener": 22,
+     "press": 6,
+     "badge": 2
+    }
+   },
+   "1": {
+    "image": {
+     "fastener": 22,
+     "press": 8
+    },
+    "caption": {
+     "fastener": 22,
+     "press": 6,
+     "badge": 2
+    }
+   },
+   "2": {
+    "image": {
+     "fastener": 22,
+     "press": 8
+    },
+    "caption": {
+     "fastener": 22,
+     "press": 6,
+     "badge": 2
+    }
+   },
+   "3": {
+    "image": {
+     "fastener": 22,
+     "press": 8
+    },
+    "caption": {
+     "fastener": 22,
+     "press": 6,
+     "badge": 2
+    }
+   },
+   "4": {
+    "image": {
+     "fastener": 22,
+     "press": 8
+    },
+    "caption": {
+     "fastener": 22,
+     "press": 6,
+     "badge": 2
+    }
+   }
+  },
+  "bark": {
+   "0": {
+    "image": {
+     "tree": 15,
+     "dog": 15
+    },
+    "caption": {
+     "tree": 15,
+     "dog": 15
+    }
+   },
+   "1": {
+    "image": {
+     "tree": 14,
+     "dog": 15
+    },
+    "caption": {
+     "tree": 14,
+     "dog": 15
+    }
+   },
+   "2": {
+    "image": {
+     "tree": 10,
+     "dog": 15
+    },
+    "caption": {
+     "tree": 10,
+     "dog": 15
+    }
+   },
+   "3": {
+    "image": {
+     "dog": 15,
+     "tree": 8
+    },
+    "caption": {
+     "dog": 15,
+     "tree": 8
+    }
+   },
+   "4": {
+    "image": {
+     "dog": 15,
+     "tree": 6
+    },
+    "caption": {
+     "dog": 15,
+     "tree": 6
+    }
+   }
+  },
+  "trunk": {
+   "0": {
+    "image": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    },
+    "caption": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    }
+   },
+   "1": {
+    "image": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    },
+    "caption": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    }
+   },
+   "2": {
+    "image": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    },
+    "caption": {
+     "car": 26,
+     "luggage": 1,
+     "elephant": 1,
+     "tree": 2
+    }
+   },
+   "3": {
+    "image": {
+     "car": 24,
+     "luggage": 1,
+     "tree": 2
+    },
+    "caption": {
+     "car": 24,
+     "luggage": 1,
+     "tree": 2
+    }
+   },
+   "4": {
+    "image": {
+     "car": 24,
+     "luggage": 1,
+     "tree": 2
+    },
+    "caption": {
+     "car": 24,
+     "luggage": 1,
+     "tree": 2
+    }
+   }
+  },
+  "post": {
+   "0": {
+    "image": {
+     "unclear": 28,
+     "other": 2
+    },
+    "caption": {
+     "unclear": 27,
+     "publish": 3
+    }
+   },
+   "1": {
+    "image": {
+     "unclear": 25,
+     "pole": 2,
+     "other": 2,
+     "publish": 1
+    },
+    "caption": {
+     "unclear": 22,
+     "pole": 2,
+     "publish": 4,
+     "other": 2
+    }
+   },
+   "2": {
+    "image": {
+     "unclear": 20,
+     "pole": 6,
+     "publish": 2,
+     "other": 1
+    },
+    "caption": {
+     "unclear": 22,
+     "pole": 2,
+     "publish": 4,
+     "station": 1
+    }
+   },
+   "3": {
+    "image": {
+     "unclear": 18,
+     "pole": 4,
+     "other": 3,
+     "publish": 1
+    },
+    "caption": {
+     "unclear": 20,
+     "pole": 1,
+     "publish": 3,
+     "other": 2
+    }
+   },
+   "4": {
+    "image": {
+     "unclear": 21,
+     "pole": 3,
+     "other": 2
+    },
+    "caption": {
+     "publish": 4,
+     "pole": 1,
+     "other": 1,
+     "unclear": 19,
+     "station": 1
+    }
+   }
+  },
+  "pitch": {
+   "0": {
+    "image": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    },
+    "caption": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    }
+   },
+   "1": {
+    "image": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    },
+    "caption": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    }
+   },
+   "2": {
+    "image": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    },
+    "caption": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    }
+   },
+   "3": {
+    "image": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    },
+    "caption": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    }
+   },
+   "4": {
+    "image": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    },
+    "caption": {
+     "sales": 19,
+     "tone": 10,
+     "throw": 1
+    }
+   }
+  }
+ },
+ "gemini": {
+  "python": {
+   "0": {
+    "image": {
+     "multiple": 13,
+     "snake": 17
+    },
+    "caption": {
+     "multiple": 13,
+     "snake": 17
+    }
+   },
+   "1": {
+    "image": {
+     "multiple": 11,
+     "snake": 17
+    },
+    "caption": {
+     "multiple": 11,
+     "snake": 17
+    }
+   },
+   "2": {
+    "image": {
+     "multiple": 11,
+     "snake": 17
+    },
+    "caption": {
+     "multiple": 11,
+     "snake": 17
+    }
+   },
+   "3": {
+    "image": {
+     "multiple": 8,
+     "snake": 15
+    },
+    "caption": {
+     "multiple": 8,
+     "snake": 15
+    }
+   },
+   "4": {
+    "image": {
+     "multiple": 8,
+     "snake": 15
+    },
+    "caption": {
+     "snake": 16,
+     "multiple": 6,
+     "language": 1
+    }
+   }
+  },
+  "jordan": {
+   "0": {
+    "image": {
+     "country": 20,
+     "person": 6,
+     "multiple": 3,
+     "shoes": 1
+    },
+    "caption": {
+     "country": 20,
+     "person": 6,
+     "unclear": 1,
+     "multiple": 2,
+     "shoes": 1
+    }
+   },
+   "1": {
+    "image": {
+     "country": 21,
+     "person": 7,
+     "multiple": 1,
+     "shoes": 1
+    },
+    "caption": {
+     "country": 22,
+     "person": 6,
+     "unclear": 1,
+     "shoes": 1
+    }
+   },
+   "2": {
+    "image": {
+     "country": 20,
+     "unclear": 2,
+     "person": 7,
+     "shoes": 1
+    },
+    "caption": {
+     "country": 21,
+     "unclear": 2,
+     "person": 6,
+     "shoes": 1
+    }
+   },
+   "3": {
+    "image": {
+     "country": 21,
+     "person": 7,
+     "shoes": 1
+    },
+    "caption": {
+     "country": 20,
+     "unclear": 2,
+     "person": 6,
+     "shoes": 1
+    }
+   },
+   "4": {
+    "image": {
+     "country": 21,
+     "person": 6,
+     "unclear": 1,
+     "shoes": 1
+    },
+    "caption": {
+     "country": 21,
+     "person": 6,
+     "unclear": 1,
+     "shoes": 1
+    }
+   }
+  },
+  "shot": {
+   "0": {
+    "image": {
+     "drink": 8,
+     "photo": 11,
+     "multiple": 3,
+     "other": 3,
+     "attempt": 4,
+     "injection": 1
+    },
+    "caption": {
+     "other": 4,
+     "photo": 13,
+     "drink": 6,
+     "multiple": 1,
+     "attempt": 5,
+     "injection": 1
+    }
+   },
+   "1": {
+    "image": {
+     "unclear": 1,
+     "photo": 12,
+     "drink": 8,
+     "multiple": 2,
+     "attempt": 5,
+     "other": 1,
+     "injection": 1
+    },
+    "caption": {
+     "unclear": 1,
+     "photo": 13,
+     "drink": 5,
+     "multiple": 2,
+     "attempt": 5,
+     "other": 3,
+     "injection": 1
+    }
+   },
+   "2": {
+    "image": {
+     "unclear": 1,
+     "photo": 13,
+     "drink": 8,
+     "attempt": 4,
+     "other": 2,
+     "injection": 1,
+     "multiple": 1
+    },
+    "caption": {
+     "photo": 17,
+     "drink": 5,
+     "attempt": 5,
+     "unclear": 1,
+     "other": 1,
+     "injection": 1
+    }
+   },
+   "3": {
+    "image": {
+     "drink": 8,
+     "photo": 14,
+     "attempt": 4,
+     "other": 2,
+     "unclear": 1,
+     "injection": 1
+    },
+    "caption": {
+     "photo": 17,
+     "drink": 5,
+     "attempt": 5,
+     "other": 2,
+     "injection": 1
+    }
+   },
+   "4": {
+    "image": {
+     "photo": 15,
+     "drink": 8,
+     "other": 3,
+     "attempt": 3,
+     "injection": 1
+    },
+    "caption": {
+     "photo": 16,
+     "drink": 5,
+     "attempt": 5,
+     "unclear": 3,
+     "injection": 1
+    }
+   }
+  },
+  "crane": {
+   "0": {
+    "image": {
+     "bird": 9,
+     "machine": 18,
+     "multiple": 3
+    },
+    "caption": {
+     "bird": 9,
+     "machine": 18,
+     "multiple": 3
+    }
+   },
+   "1": {
+    "image": {
+     "bird": 9,
+     "machine": 19,
+     "multiple": 2
+    },
+    "caption": {
+     "bird": 9,
+     "machine": 18,
+     "multiple": 2,
+     "unclear": 1
+    }
+   },
+   "2": {
+    "image": {
+     "bird": 9,
+     "machine": 19,
+     "multiple": 2
+    },
+    "caption": {
+     "bird": 9,
+     "machine": 17,
+     "multiple": 2,
+     "unclear": 2
+    }
+   },
+   "3": {
+    "image": {
+     "bird": 9,
+     "machine": 18,
+     "multiple": 2,
+     "unclear": 1
+    },
+    "caption": {
+     "bird": 9,
+     "unclear": 3,
+     "machine": 16,
+     "multiple": 2
+    }
+   },
+   "4": {
+    "image": {
+     "bird": 10,
+     "unclear": 2,
+     "machine": 17,
+     "multiple": 1
+    },
+    "caption": {
+     "bird": 10,
+     "unclear": 3,
+     "machine": 16,
+     "multiple": 1
+    }
+   }
+  },
+  "batter": {
+   "0": {
+    "image": {
+     "baseball": 30
+    },
+    "caption": {
+     "baseball": 30
+    }
+   },
+   "1": {
+    "image": {
+     "baseball": 28
+    },
+    "caption": {
+     "baseball": 28
+    }
+   },
+   "2": {
+    "image": {
+     "baseball": 28
+    },
+    "caption": {
+     "baseball": 28
+    }
+   },
+   "3": {
+    "image": {
+     "baseball": 28
+    },
+    "caption": {
+     "baseball": 28
+    }
+   },
+   "4": {
+    "image": {
+     "baseball": 28
+    },
+    "caption": {
+     "baseball": 28
+    }
+   }
+  }
+ },
+ "grok": {
+  "pitcher": {
+   "0": {
+    "image": {
+     "baseball": 11,
+     "jug": 19
+    },
+    "caption": {
+     "baseball": 11,
+     "jug": 18,
+     "other": 1
+    }
+   },
+   "1": {
+    "image": {
+     "baseball": 11,
+     "jug": 19
+    },
+    "caption": {
+     "baseball": 11,
+     "jug": 19
+    }
+   },
+   "2": {
+    "image": {
+     "baseball": 11,
+     "jug": 19
+    },
+    "caption": {
+     "baseball": 11,
+     "jug": 18,
+     "unclear": 1
+    }
+   },
+   "3": {
+    "image": {
+     "baseball": 11,
+     "jug": 19
+    },
+    "caption": {
+     "baseball": 11,
+     "jug": 18,
+     "unclear": 1
+    }
+   },
+   "4": {
+    "image": {
+     "baseball": 11,
+     "jug": 19
+    },
+    "caption": {
+     "baseball": 11,
+     "jug": 19
+    }
+   }
+  },
+  "match": {
+   "0": {
+    "image": {
+     "firestick": 27,
+     "contest": 3
+    },
+    "caption": {
+     "firestick": 25,
+     "pairing": 1,
+     "contest": 3,
+     "multiple": 1
+    }
+   },
+   "1": {
+    "image": {
+     "firestick": 27,
+     "contest": 3
+    },
+    "caption": {
+     "other": 1,
+     "multiple": 3,
+     "firestick": 23,
+     "contest": 3
+    }
+   },
+   "2": {
+    "image": {
+     "firestick": 26,
+     "contest": 3,
+     "multiple": 1
+    },
+    "caption": {
+     "firestick": 23,
+     "pairing": 1,
+     "contest": 4,
+     "multiple": 2
+    }
+   },
+   "3": {
+    "image": {
+     "firestick": 25,
+     "contest": 4,
+     "multiple": 1
+    },
+    "caption": {
+     "firestick": 22,
+     "pairing": 1,
+     "contest": 5,
+     "multiple": 2
+    }
+   },
+   "4": {
+    "image": {
+     "firestick": 24,
+     "contest": 4,
+     "multiple": 1,
+     "other": 1
+    },
+    "caption": {
+     "firestick": 24,
+     "multiple": 2,
+     "contest": 4
+    }
+   }
+  },
+  "capital": {
+   "0": {
+    "image": {
+     "other": 9,
+     "city": 14,
+     "letter": 3,
+     "multiple": 3,
+     "money": 1
+    },
+    "caption": {
+     "other": 10,
+     "multiple": 4,
+     "city": 13,
+     "letter": 2,
+     "money": 1
+    }
+   },
+   "1": {
+    "image": {
+     "other": 10,
+     "multiple": 4,
+     "city": 12,
+     "letter": 3,
+     "money": 1
+    },
+    "caption": {
+     "other": 10,
+     "city": 15,
+     "letter": 2,
+     "multiple": 3
+    }
+   },
+   "2": {
+    "image": {
+     "other": 9,
+     "city": 14,
+     "letter": 4,
+     "multiple": 3
+    },
+    "caption": {
+     "other": 9,
+     "city": 16,
+     "letter": 2,
+     "multiple": 1,
+     "money": 2
+    }
+   },
+   "3": {
+    "image": {
+     "other": 9,
+     "city": 14,
+     "letter": 3,
+     "multiple": 1,
+     "money": 3
+    },
+    "caption": {
+     "other": 9,
+     "city": 16,
+     "letter": 1,
+     "multiple": 2,
+     "money": 2
+    }
+   },
+   "4": {
+    "image": {
+     "other": 10,
+     "city": 13,
+     "letter": 3,
+     "money": 2,
+     "multiple": 2
+    },
+    "caption": {
+     "other": 10,
+     "city": 16,
+     "multiple": 1,
+     "money": 3
+    }
+   }
+  },
+  "mortar": {
+   "0": {
+    "image": {
+     "cement": 20,
+     "multiple": 2,
+     "bowl": 8
+    },
+    "caption": {
+     "cement": 20,
+     "multiple": 7,
+     "bowl": 3
+    }
+   },
+   "1": {
+    "image": {
+     "cement": 21,
+     "bowl": 4,
+     "multiple": 5
+    },
+    "caption": {
+     "cement": 21,
+     "bowl": 4,
+     "multiple": 5
+    }
+   },
+   "2": {
+    "image": {
+     "cement": 23,
+     "bowl": 4,
+     "multiple": 3
+    },
+    "caption": {
+     "cement": 21,
+     "bowl": 4,
+     "other": 1,
+     "multiple": 4
+    }
+   },
+   "3": {
+    "image": {
+     "cement": 25,
+     "bowl": 4,
+     "multiple": 1
+    },
+    "caption": {
+     "cement": 23,
+     "bowl": 4,
+     "multiple": 3
+    }
+   },
+   "4": {
+    "image": {
+     "cement": 25,
+     "bowl": 4,
+     "multiple": 1
+    },
+    "caption": {
+     "cement": 25,
+     "bowl": 4,
+     "multiple": 1
+    }
+   }
+  },
+  "will": {
+   "0": {
+    "image": {
+     "future": 2,
+     "testament": 10,
+     "multiple": 2,
+     "unclear": 9,
+     "volition": 6,
+     "other": 1
+    },
+    "caption": {
+     "other": 6,
+     "testament": 10,
+     "volition": 3,
+     "multiple": 3,
+     "unclear": 7,
+     "future": 1
+    }
+   },
+   "1": {
+    "image": {
+     "future": 7,
+     "testament": 10,
+     "volition": 5,
+     "unclear": 6,
+     "other": 1,
+     "multiple": 1
+    },
+    "caption": {
+     "other": 6,
+     "testament": 10,
+     "volition": 2,
+     "multiple": 4,
+     "future": 3,
+     "unclear": 5
+    }
+   },
+   "2": {
+    "image": {
+     "future": 7,
+     "testament": 14,
+     "volition": 4,
+     "unclear": 2,
+     "other": 2,
+     "multiple": 1
+    },
+    "caption": {
+     "future": 3,
+     "testament": 13,
+     "volition": 3,
+     "multiple": 3,
+     "unclear": 5,
+     "other": 3
+    }
+   },
+   "3": {
+    "image": {
+     "future": 8,
+     "testament": 11,
+     "volition": 5,
+     "unclear": 3,
+     "other": 1,
+     "multiple": 1
+    },
+    "caption": {
+     "other": 3,
+     "testament": 14,
+     "volition": 3,
+     "future": 3,
+     "unclear": 4,
+     "multiple": 2
+    }
+   },
+   "4": {
+    "image": {
+     "future": 6,
+     "testament": 12,
+     "unclear": 4,
+     "volition": 5,
+     "other": 1,
+     "multiple": 1
+    },
+    "caption": {
+     "other": 4,
+     "testament": 13,
+     "volition": 3,
+     "future": 5,
+     "unclear": 2,
+     "multiple": 2
+    }
+   }
+  }
+ }
+}

@@ -40,13 +40,17 @@ FAMILY_PROVIDER = {
     "gemini": {"sdk": "google_genai", "base_url": None,                         "key_prefix": "gemini_api_key"},
     "qwen":   {"sdk": "openai_sdk",   "base_url": "https://api.together.xyz/v1", "key_prefix": "together_api_key_qwen"},
     "flux":   {"sdk": "openai_sdk",   "base_url": "https://api.together.xyz/v1", "key_prefix": "together_api_key_bf"},
+    # GLM (zai-org) served on Together. Draws from ALL Together keys (the broad
+    # `together_api_key` prefix unions the _bf + _qwen pools) — fine because the
+    # Qwen/FLUX runs are complete, so the shared pool is uncontended.
+    "glm":    {"sdk": "openai_sdk",   "base_url": "https://api.together.xyz/v1", "key_prefix": "together_api_key"},
 }
 
-FAMILY_ORDER = ["openai", "grok", "gemini", "qwen", "flux"]
-FAMILY_DISPLAY = {"openai": "OpenAI", "grok": "Grok", "gemini": "Gemini", "qwen": "Qwen", "flux": "FLUX"}
+FAMILY_ORDER = ["openai", "grok", "gemini", "qwen", "flux", "glm"]
+FAMILY_DISPLAY = {"openai": "OpenAI", "grok": "Grok", "gemini": "Gemini", "qwen": "Qwen", "flux": "FLUX", "glm": "GLM"}
 FAMILY_COLOR = {
     "openai": "#DD8452", "grok": "#C44E52", "gemini": "#55A868",
-    "qwen": "#8172B3", "flux": "#4C72B0",
+    "qwen": "#8172B3", "flux": "#4C72B0", "glm": "#937860",
 }
 
 # Sense colors: listed senses cycle through PALETTE; the extra labels are fixed grays.
@@ -106,6 +110,12 @@ _SPECS = [
     ModelSpec("qwen_25_7b",  "Qwen/Qwen2.5-7B-Instruct-Turbo", "qwen", "text", "Qwen2.5-7B",   1),
     ModelSpec("qwen_35_9b",  "Qwen/Qwen3.5-9B",                "qwen", "text", "Qwen3.5-9B",    2),
     ModelSpec("qwen_35_397b","Qwen/Qwen3.5-397B-A17B",         "qwen", "text", "Qwen3.5-397B",  2.5),
+    # GLM (zai-org, via Together) — text only. 5.1 → 5.2.
+    # GLM-4.7 is NOT serverless on Together (needs a dedicated endpoint); disabled
+    # until one is created. Re-enable by uncommenting once the endpoint is live.
+    # ModelSpec("glm_47",    "zai-org/GLM-4.7",                "glm",  "text", "GLM-4.7",       1),
+    ModelSpec("glm_51",      "zai-org/GLM-5.1",                "glm",  "text", "GLM-5.1",       2),
+    ModelSpec("glm_52",      "zai-org/GLM-5.2",                "glm",  "text", "GLM-5.2",       3),
 ]
 
 MODELS: dict[str, ModelSpec] = {s.key: s for s in _SPECS}

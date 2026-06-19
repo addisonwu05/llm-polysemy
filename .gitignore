@@ -6,6 +6,7 @@ data/outputs_text_imagine/
 # their distilled labels live in the committed histograms/classifications.
 data/janus_imggen/
 data/anole_distributions/
+data/glm_image_distributions/
 *.log
 __pycache__/
 
@@ -35,3 +36,7 @@ run_fr_after_tr.sh
 data/human_responses.json
 data/outputs_human_meaning/
 data/outputs_human_image/
+data/local_image_distributions/
+data/telephone/openai/
+data/telephone/gemini/
+data/telephone/grok/
