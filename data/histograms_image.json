@@ -601,6 +601,54 @@
         "total": 30,
         "rate": 0.733
       }
+    },
+    "simplear_sft": {
+      "gemini": {
+        "_counts": {
+          "luggage": 25,
+          "multiple": 5
+        },
+        "_multiple": {
+          "luggage+tree": 2,
+          "car+luggage+tree": 2,
+          "car+luggage": 1
+        }
+      },
+      "gpt": {
+        "_counts": {
+          "luggage": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
+      }
+    },
+    "simplear_rl": {
+      "gemini": {
+        "_counts": {
+          "luggage": 26,
+          "multiple": 4
+        },
+        "_multiple": {
+          "luggage+tree": 2,
+          "car+luggage": 1,
+          "car+luggage+tree": 1
+        }
+      },
+      "gpt": {
+        "_counts": {
+          "luggage": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "jordan": {
@@ -1191,6 +1239,46 @@
         "total": 30,
         "rate": 0.667
       }
+    },
+    "simplear_sft": {
+      "gemini": {
+        "_counts": {
+          "shoes": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gpt": {
+        "_counts": {
+          "shoes": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "shoes": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "shoes": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "bolt": {
@@ -1741,6 +1829,57 @@
         "total": 30,
         "rate": 0.333
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 5,
+          "unclear": 18,
+          "fastener": 2,
+          "lock": 4,
+          "lightning": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "fastener": 8,
+          "unclear": 15,
+          "lock": 5,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 30,
+        "rate": 0.5
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "lock": 4,
+          "unclear": 18,
+          "fastener": 3,
+          "other": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "lock": 5,
+          "unclear": 14,
+          "fastener": 7,
+          "other": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 30,
+        "rate": 0.433
+      }
     }
   },
   "bank": {
@@ -2229,6 +2368,45 @@
         "same": 8,
         "total": 30,
         "rate": 0.267
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "finance": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "finance": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "finance": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "finance": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -2834,6 +3012,56 @@
         "total": 30,
         "rate": 0.567
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "field": 7,
+          "unclear": 6,
+          "other": 16,
+          "tone": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "field": 12,
+          "unclear": 10,
+          "multiple": 1,
+          "other": 7
+        },
+        "_multiple": {
+          "field+tone": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 8,
+          "other": 16,
+          "field": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 14,
+          "field": 11,
+          "other": 5
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 30,
+        "rate": 0.5
+      }
     }
   },
   "bow": {
@@ -3390,6 +3618,46 @@
         "total": 30,
         "rate": 1.0
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "knot": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "knot": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "knot": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "knot": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "spring": {
@@ -3865,6 +4133,44 @@
         "same": 12,
         "total": 30,
         "rate": 0.4
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "season": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "season": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "season": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "season": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -4380,6 +4686,47 @@
         "total": 30,
         "rate": 0.8
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bird+machine+stretch": 1
+        }
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "club": {
@@ -4879,6 +5226,47 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "venue": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "venue": 29,
+          "organization": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "venue": 29,
+          "organization": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "venue": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
       }
     }
   },
@@ -5433,6 +5821,53 @@
         "same": 20,
         "total": 30,
         "rate": 0.667
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "bird": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bird+food": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bird+food": 1
+        }
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "bird": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bird+food": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
       }
     }
   },
@@ -6055,6 +6490,56 @@
         "total": 30,
         "rate": 0.5
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 9,
+          "unclear": 11,
+          "drink": 9,
+          "attempt": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "photo": 17,
+          "drink": 7,
+          "unclear": 4,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 9,
+        "total": 30,
+        "rate": 0.3
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "drink": 16,
+          "unclear": 8,
+          "photo": 2,
+          "other": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 5,
+          "drink": 12,
+          "photo": 12,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
     }
   },
   "bar": {
@@ -6537,6 +7022,44 @@
         "same": 14,
         "total": 30,
         "rate": 0.467
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "pub": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "pub": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "pub": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "pub": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -7102,6 +7625,53 @@
         "total": 30,
         "rate": 0.1
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 7,
+          "other": 23
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 2,
+          "unclear": 25,
+          "element": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 6,
+        "total": 30,
+        "rate": 0.2
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 15,
+          "unclear": 11,
+          "element": 2,
+          "planet": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 22,
+          "element": 6,
+          "other": 1,
+          "planet": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 8,
+        "total": 30,
+        "rate": 0.267
+      }
     }
   },
   "jack": {
@@ -7629,6 +8199,52 @@
         "total": 30,
         "rate": 0.967
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 8,
+          "name": 17,
+          "unclear": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 11,
+          "name": 17,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 20,
+        "total": 30,
+        "rate": 0.667
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "name": 28,
+          "unclear": 1,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "name": 27,
+          "unclear": 2,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
     }
   },
   "mole": {
@@ -8150,6 +8766,45 @@
         "same": 16,
         "total": 30,
         "rate": 0.533
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "animal": 27
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -8746,6 +9401,69 @@
         "total": 30,
         "rate": 0.8
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 14,
+          "other": 7,
+          "rush": 4,
+          "electric": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "electric": 5,
+          "unclear": 16,
+          "rush": 7,
+          "multiple": 1,
+          "fee": 1
+        },
+        "_multiple": {
+          "electric+rush": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 16,
+          "electric": 3,
+          "rush": 4,
+          "fee": 3,
+          "other": 3,
+          "multiple": 1
+        },
+        "_multiple": {
+          "electric+rush": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "electric": 7,
+          "unclear": 14,
+          "rush": 4,
+          "accusation": 1,
+          "other": 1,
+          "fee": 1,
+          "responsibility": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "electric+rush": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
     }
   },
   "key": {
@@ -9246,6 +9964,51 @@
         "total": 30,
         "rate": 0.1
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 5,
+          "lock": 19,
+          "other": 5,
+          "keyboard": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 4,
+          "lock": 26
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 21,
+        "total": 30,
+        "rate": 0.7
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 4,
+          "lock": 23,
+          "other": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 6,
+          "lock": 24
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
     }
   },
   "watch": {
@@ -9737,6 +10500,46 @@
         "total": 30,
         "rate": 1.0
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "timepiece": 29,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "timepiece": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "timepiece": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "timepiece": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
     }
   },
   "ring": {
@@ -10199,6 +11002,45 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "jewelry": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "jewelry": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "jewelry": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "jewelry": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "jewelry": 30
@@ -10717,6 +11559,44 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "finger": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "finger": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "finger": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "finger": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "finger": 30
@@ -11275,6 +12155,58 @@
         "total": 30,
         "rate": 0.433
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "snack": 13,
+          "unclear": 12,
+          "other": 3,
+          "microchip": 1,
+          "fragment": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snack": 15,
+          "multiple": 2,
+          "unclear": 8,
+          "fragment": 4,
+          "token": 1
+        },
+        "_multiple": {
+          "snack+token": 2
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 30,
+        "rate": 0.433
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 6,
+          "snack": 17,
+          "other": 5,
+          "fragment": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 10,
+          "snack": 20
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 18,
+        "total": 30,
+        "rate": 0.6
+      }
     }
   },
   "cell": {
@@ -11797,6 +12729,62 @@
         "total": 30,
         "rate": 0.967
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 9,
+          "battery": 3,
+          "phone": 14,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 12,
+          "phone": 10,
+          "multiple": 2,
+          "battery": 1,
+          "biology": 5
+        },
+        "_multiple": {
+          "biology+phone": 2
+        }
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 30,
+        "rate": 0.367
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 8,
+          "unclear": 4,
+          "phone": 15,
+          "battery": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "biology": 6,
+          "unclear": 8,
+          "phone": 14,
+          "battery": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "phone+prison": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
     }
   },
   "toast": {
@@ -12297,6 +13285,47 @@
         "same": 18,
         "total": 30,
         "rate": 0.6
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "bread": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bread": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "bread+tribute": 1
+        }
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "bread": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bread": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -12889,6 +13918,69 @@
         "total": 30,
         "rate": 0.333
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "railroad": 14,
+          "path": 3,
+          "athletics": 11,
+          "multiple": 1,
+          "unclear": 1
+        },
+        "_multiple": {
+          "athletics+railroad": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "other": 4,
+          "railroad": 14,
+          "athletics": 6,
+          "unclear": 2,
+          "multiple": 3,
+          "path": 1
+        },
+        "_multiple": {
+          "athletics+railroad": 3
+        }
+      },
+      "_agreement": {
+        "same": 19,
+        "total": 30,
+        "rate": 0.633
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "railroad": 18,
+          "athletics": 7,
+          "unclear": 2,
+          "multiple": 3
+        },
+        "_multiple": {
+          "athletics+railroad": 2,
+          "athletics+path+railroad": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "railroad": 17,
+          "multiple": 5,
+          "unclear": 1,
+          "athletics": 3,
+          "other": 4
+        },
+        "_multiple": {
+          "athletics+railroad": 5
+        }
+      },
+      "_agreement": {
+        "same": 21,
+        "total": 30,
+        "rate": 0.7
+      }
     }
   },
   "wave": {
@@ -13378,6 +14470,44 @@
         "total": 30,
         "rate": 0.667
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "water": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "water": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "water": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "water": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "train": {
@@ -13843,6 +14973,44 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "railway": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "railway": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "railway": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "railway": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -14331,6 +15499,47 @@
         "same": 12,
         "total": 30,
         "rate": 0.4
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "ship": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "ship": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "ship": 28,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "ship": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
       }
     }
   },
@@ -14851,6 +16060,51 @@
         "total": 30,
         "rate": 0.333
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 25,
+          "tree": 1,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 21,
+          "tree": 3,
+          "unclear": 6
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 24,
+          "unclear": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 22,
+          "unclear": 7,
+          "tree": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
     }
   },
   "ball": {
@@ -15337,6 +16591,48 @@
         "total": 30,
         "rate": 0.367
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "sphere": 26,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sphere": 26,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "sphere": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sphere": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
     }
   },
   "band": {
@@ -15802,6 +17098,46 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "music": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "music": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "music": 29,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "music": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "music": 30
@@ -16362,6 +17698,47 @@
         "total": 30,
         "rate": 0.8
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "tree": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tree": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "dog+tree": 1
+        }
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "tree": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tree": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "barrel": {
@@ -16843,6 +18220,49 @@
         "same": 29,
         "total": 30,
         "rate": 0.967
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 2,
+          "cask": 26,
+          "gun": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 4,
+          "cask": 26
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "cask": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cask": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
       }
     }
   },
@@ -17345,6 +18765,44 @@
         "same": 27,
         "total": 30,
         "rate": 0.9
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -17908,6 +19366,51 @@
         "total": 30,
         "rate": 0.4
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "instrument": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "multiple": 7,
+          "instrument": 23
+        },
+        "_multiple": {
+          "fish+instrument": 7
+        }
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "instrument": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "instrument": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "fish+instrument": 1
+        }
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
     }
   },
   "batter": {
@@ -18456,6 +19959,45 @@
         "same": 28,
         "total": 30,
         "rate": 0.933
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "cooking": 29,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cooking": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "cooking": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cooking": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -19016,6 +20558,63 @@
         "total": 30,
         "rate": 0.667
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "light": 20,
+          "support": 5,
+          "unclear": 3,
+          "multiple": 1,
+          "other": 1
+        },
+        "_multiple": {
+          "light+support": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "light": 17,
+          "support": 5,
+          "unclear": 4,
+          "multiple": 4
+        },
+        "_multiple": {
+          "light+support": 4
+        }
+      },
+      "_agreement": {
+        "same": 21,
+        "total": 30,
+        "rate": 0.7
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "light": 25,
+          "multiple": 3,
+          "support": 2
+        },
+        "_multiple": {
+          "light+support": 3
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "light": 25,
+          "multiple": 4,
+          "support": 1
+        },
+        "_multiple": {
+          "light+support": 4
+        }
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
+      }
     }
   },
   "bench": {
@@ -19493,6 +21092,44 @@
         "same": 18,
         "total": 30,
         "rate": 0.6
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "seat": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "seat": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "seat": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "seat": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -20018,6 +21655,46 @@
         "total": 30,
         "rate": 0.1
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "solid": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "solid": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "solid": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "solid": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "bowl": {
@@ -20494,6 +22171,44 @@
         "same": 27,
         "total": 30,
         "rate": 0.9
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "dish": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "dish": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "dish": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "dish": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -20976,6 +22691,45 @@
         "same": 8,
         "total": 30,
         "rate": 0.267
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 29,
+          "rectangle": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -21469,6 +23223,52 @@
         "total": 30,
         "rate": 0.733
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 6,
+          "tool": 20,
+          "other": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 20,
+          "unclear": 7,
+          "touch": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 20,
+        "total": 30,
+        "rate": 0.667
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "tool": 28,
+          "other": 1,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 26,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
     }
   },
   "buck": {
@@ -21931,6 +23731,44 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "deer": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "deer": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "deer": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "deer": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "deer": 30
@@ -22496,6 +24334,68 @@
         "total": 30,
         "rate": 0.5
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "fastener": 7,
+          "badge": 5,
+          "press": 14,
+          "unclear": 3,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "fastener": 6,
+          "multiple": 5,
+          "unclear": 5,
+          "press": 14
+        },
+        "_multiple": {
+          "badge+fastener": 2,
+          "badge+fastener+press": 2,
+          "fastener+press": 1
+        }
+      },
+      "_agreement": {
+        "same": 17,
+        "total": 30,
+        "rate": 0.567
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 4,
+          "press": 15,
+          "fastener": 6,
+          "badge": 2,
+          "multiple": 3
+        },
+        "_multiple": {
+          "badge+fastener+press": 2,
+          "fastener+press": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "press": 12,
+          "fastener": 10,
+          "unclear": 5,
+          "multiple": 2,
+          "badge": 1
+        },
+        "_multiple": {
+          "fastener+press": 2
+        }
+      },
+      "_agreement": {
+        "same": 18,
+        "total": 30,
+        "rate": 0.6
+      }
     }
   },
   "cane": {
@@ -22997,6 +24897,64 @@
         "same": 18,
         "total": 30,
         "rate": 0.6
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "stick": 16,
+          "other": 2,
+          "plant": 12
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "plant": 15,
+          "unclear": 5,
+          "stick": 7,
+          "multiple": 1,
+          "other": 2
+        },
+        "_multiple": {
+          "plant+stick": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 30,
+        "rate": 0.467
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "stick": 17,
+          "plant": 8,
+          "other": 3,
+          "multiple": 2
+        },
+        "_multiple": {
+          "plant+stick": 2
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "plant": 17,
+          "stick": 7,
+          "beat": 1,
+          "other": 2,
+          "unclear": 1,
+          "multiple": 2
+        },
+        "_multiple": {
+          "plant+stick": 2
+        }
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 30,
+        "rate": 0.5
       }
     }
   },
@@ -23555,6 +25513,57 @@
         "same": 18,
         "total": 30,
         "rate": 0.6
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "land": 22,
+          "unclear": 7,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "land": 25,
+          "unclear": 3,
+          "multiple": 2
+        },
+        "_multiple": {
+          "cloak+land": 2
+        }
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "land": 26,
+          "unclear": 3,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "land": 26,
+          "cloak": 1,
+          "unclear": 1,
+          "multiple": 2
+        },
+        "_multiple": {
+          "cloak+land": 2
+        }
+      },
+      "_agreement": {
+        "same": 24,
+        "total": 30,
+        "rate": 0.8
       }
     }
   },
@@ -24185,6 +26194,55 @@
         "total": 30,
         "rate": 0.067
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "city": 25,
+          "unclear": 1,
+          "other": 1,
+          "letter": 2,
+          "money": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "city": 26,
+          "unclear": 2,
+          "letter": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "city": 25,
+          "other": 2,
+          "unclear": 1,
+          "letter": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "city": 27,
+          "unclear": 2,
+          "letter": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "case": {
@@ -24782,6 +26840,46 @@
         "total": 30,
         "rate": 0.367
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 1,
+          "container": 29
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 3,
+          "container": 27
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "container": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "chest": {
@@ -25302,6 +27400,45 @@
         "same": 26,
         "total": 30,
         "rate": 0.867
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "box": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "box": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "box": 29,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "box": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
       }
     }
   },
@@ -25825,6 +27962,56 @@
         "same": 11,
         "total": 30,
         "rate": 0.367
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 6,
+          "other": 23,
+          "vehicle": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "trainer": 2,
+          "other": 21,
+          "unclear": 6,
+          "class": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 21,
+        "total": 30,
+        "rate": 0.7
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 24,
+          "unclear": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "other": 19,
+          "unclear": 6,
+          "trainer": 2,
+          "vehicle": 2,
+          "multiple": 1
+        },
+        "_multiple": {
+          "trainer+vehicle": 1
+        }
+      },
+      "_agreement": {
+        "same": 21,
+        "total": 30,
+        "rate": 0.7
       }
     }
   },
@@ -26350,6 +28537,53 @@
         "total": 30,
         "rate": 0.4
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 6,
+          "unclear": 8,
+          "dessert": 16
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "dessert": 21,
+          "unclear": 9
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 19,
+        "total": 30,
+        "rate": 0.633
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 8,
+          "other": 6,
+          "dessert": 16
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "dessert": 21,
+          "unclear": 7,
+          "multiple": 2
+        },
+        "_multiple": {
+          "dessert+shoemaker": 2
+        }
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 30,
+        "rate": 0.367
+      }
     }
   },
   "apple": {
@@ -26858,6 +29092,44 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "fruit": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "fruit": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "fruit": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "fruit": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -27387,6 +29659,55 @@
         "total": 30,
         "rate": 1.0
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 9,
+          "company": 18,
+          "other": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "company": 23,
+          "unclear": 6,
+          "rainforest": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 18,
+        "total": 30,
+        "rate": 0.6
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 10,
+          "company": 18,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "company": 23,
+          "unclear": 5,
+          "rainforest": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "company+rainforest": 1
+        }
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
     }
   },
   "mars": {
@@ -27861,6 +30182,52 @@
         "same": 29,
         "total": 30,
         "rate": 0.967
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "planet": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "planet": 29,
+          "multiple": 1
+        },
+        "_multiple": {
+          "candy+planet": 1
+        }
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "planet": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "planet": 27,
+          "multiple": 3
+        },
+        "_multiple": {
+          "candy+planet": 2,
+          "god+planet": 1
+        }
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
       }
     }
   },
@@ -28353,6 +30720,44 @@
         "same": 29,
         "total": 30,
         "rate": 0.967
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -28871,6 +31276,44 @@
         "total": 30,
         "rate": 0.133
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "car": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "car": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "car": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "car": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "cobra": {
@@ -29343,6 +31786,47 @@
         "same": 7,
         "total": 30,
         "rate": 0.233
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 28,
+          "multiple": 2
+        },
+        "_multiple": {
+          "snake+yoga": 2
+        }
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -29905,6 +32389,44 @@
         "total": 30,
         "rate": 0.467
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "snake": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "fox": {
@@ -30398,6 +32920,44 @@
         "total": 30,
         "rate": 0.467
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "cardinal": {
@@ -30870,6 +33430,47 @@
         "same": 8,
         "total": 30,
         "rate": 0.267
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "bird": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 28,
+          "unclear": 1,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bird": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -31375,6 +33976,46 @@
         "same": 9,
         "total": 30,
         "rate": 0.3
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "sheep": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sheep": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "sheep": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "sheep": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -31937,6 +34578,56 @@
         "total": 30,
         "rate": 0.467
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 6,
+          "oar": 20,
+          "other": 2,
+          "multiple": 2
+        },
+        "_multiple": {
+          "bat+oar+wade": 1,
+          "bat+oar": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 4,
+          "oar": 24,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 20,
+        "total": 30,
+        "rate": 0.667
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "oar": 24,
+          "other": 5,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "oar": 27,
+          "other": 2,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 23,
+        "total": 30,
+        "rate": 0.767
+      }
     }
   },
   "staple": {
@@ -32457,6 +35148,56 @@
         "total": 30,
         "rate": 0.667
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 22,
+          "fastener": 5,
+          "essential": 1,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 16,
+          "fastener": 4,
+          "essential": 9,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 20,
+        "total": 30,
+        "rate": 0.667
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 3,
+          "unclear": 20,
+          "fastener": 6,
+          "essential": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "essential": 6,
+          "unclear": 20,
+          "other": 1,
+          "fastener": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 19,
+        "total": 30,
+        "rate": 0.633
+      }
     }
   },
   "pitcher": {
@@ -32976,6 +35717,57 @@
         "total": 30,
         "rate": 1.0
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "baseball": 26,
+          "other": 1,
+          "unclear": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "baseball": 22,
+          "multiple": 6,
+          "unclear": 2
+        },
+        "_multiple": {
+          "baseball+jug": 6
+        }
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "baseball": 27,
+          "unclear": 2,
+          "jug": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "multiple": 2,
+          "baseball": 25,
+          "unclear": 2,
+          "jug": 1
+        },
+        "_multiple": {
+          "baseball+jug": 2
+        }
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "shuttle": {
@@ -33469,6 +36261,60 @@
         "same": 23,
         "total": 30,
         "rate": 0.767
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "spacecraft": 27,
+          "multiple": 2,
+          "unclear": 1
+        },
+        "_multiple": {
+          "spacecraft+transport": 2
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "spacecraft": 24,
+          "multiple": 5,
+          "unclear": 1
+        },
+        "_multiple": {
+          "spacecraft+transport": 2,
+          "badminton+spacecraft": 1,
+          "badminton+spacecraft+weaving": 2
+        }
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "spacecraft": 26,
+          "multiple": 4
+        },
+        "_multiple": {
+          "spacecraft+transport": 4
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "spacecraft": 28,
+          "multiple": 2
+        },
+        "_multiple": {
+          "spacecraft+transport": 2
+        }
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
       }
     }
   },
@@ -34012,6 +36858,53 @@
         "total": 30,
         "rate": 0.5
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "faucet": 21,
+          "unclear": 2,
+          "other": 7
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 5,
+          "faucet": 25
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "faucet": 24,
+          "other": 1,
+          "unclear": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "faucet": 26,
+          "unclear": 3,
+          "multiple": 1
+        },
+        "_multiple": {
+          "dance+faucet": 1
+        }
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "drill": {
@@ -34502,6 +37395,52 @@
         "same": 23,
         "total": 30,
         "rate": 0.767
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "tool": 22,
+          "other": 2,
+          "unclear": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 27,
+          "unclear": 2,
+          "multiple": 1
+        },
+        "_multiple": {
+          "military+tool": 1
+        }
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "tool": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "tool": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 29,
+        "total": 30,
+        "rate": 0.967
       }
     }
   },
@@ -35007,6 +37946,54 @@
         "total": 30,
         "rate": 0.633
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 5,
+          "device": 25
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 2,
+          "device": 26,
+          "multiple": 2
+        },
+        "_multiple": {
+          "device+shoe": 2
+        }
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 3,
+          "device": 27
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 4,
+          "device": 24,
+          "multiple": 2
+        },
+        "_multiple": {
+          "device+shoe": 2
+        }
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "socket": {
@@ -35491,6 +38478,61 @@
         "same": 24,
         "total": 30,
         "rate": 0.8
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "tool": 12,
+          "unclear": 10,
+          "other": 7,
+          "outlet": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 20,
+          "tool": 7,
+          "joint": 1,
+          "other": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "outlet+tool": 1
+        }
+      },
+      "_agreement": {
+        "same": 16,
+        "total": 30,
+        "rate": 0.533
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "tool": 18,
+          "unclear": 8,
+          "other": 2,
+          "outlet": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 21,
+          "tool": 7,
+          "multiple": 1,
+          "joint": 1
+        },
+        "_multiple": {
+          "outlet+tool": 1
+        }
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 30,
+        "rate": 0.367
       }
     }
   },
@@ -36003,6 +39045,44 @@
         "same": 6,
         "total": 30,
         "rate": 0.2
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "control": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "control": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "control": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "control": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -36546,6 +39626,57 @@
         "total": 30,
         "rate": 0.167
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 16,
+          "other": 13,
+          "metal": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 5,
+          "metal": 17,
+          "appliance": 6,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 7,
+        "total": 30,
+        "rate": 0.233
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 14,
+          "unclear": 13,
+          "metal": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "metal": 18,
+          "multiple": 1,
+          "other": 3,
+          "unclear": 6,
+          "appliance": 2
+        },
+        "_multiple": {
+          "appliance+golf+metal": 1
+        }
+      },
+      "_agreement": {
+        "same": 10,
+        "total": 30,
+        "rate": 0.333
+      }
     }
   },
   "crown": {
@@ -37036,6 +40167,44 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "headwear": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "headwear": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "headwear": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "headwear": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -37643,6 +40812,50 @@
         "total": 30,
         "rate": 0.3
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 9,
+          "weigh": 19,
+          "skin": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "weigh": 20,
+          "skin": 2,
+          "unclear": 6,
+          "size": 1,
+          "music": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 27,
+        "total": 30,
+        "rate": 0.9
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "weigh": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "weigh": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "plane": {
@@ -38117,6 +41330,47 @@
         "same": 25,
         "total": 30,
         "rate": 0.833
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "aircraft": 28,
+          "unclear": 1,
+          "surface": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "aircraft": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "aircraft": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "aircraft": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -38640,6 +41894,65 @@
         "total": 30,
         "rate": 0.6
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "cooling": 9,
+          "other": 12,
+          "unclear": 3,
+          "admirer": 6
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "multiple": 4,
+          "cooling": 18,
+          "admirer": 7,
+          "unclear": 1
+        },
+        "_multiple": {
+          "admirer+cooling": 2,
+          "admirer+spread": 2
+        }
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 30,
+        "rate": 0.4
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 4,
+          "admirer": 7,
+          "other": 13,
+          "cooling": 5,
+          "multiple": 1
+        },
+        "_multiple": {
+          "cooling+spread": 1
+        }
+      },
+      "gemini": {
+        "_counts": {
+          "admirer": 6,
+          "multiple": 3,
+          "cooling": 17,
+          "unclear": 3,
+          "spread": 1
+        },
+        "_multiple": {
+          "admirer+cooling+spread": 3
+        }
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 30,
+        "rate": 0.367
+      }
     }
   },
   "bridge": {
@@ -39116,6 +42429,44 @@
         "same": 29,
         "total": 30,
         "rate": 0.967
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "crossing": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "crossing": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "crossing": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "crossing": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -39626,6 +42977,44 @@
         "total": 30,
         "rate": 0.067
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "harbor": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "harbor": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "harbor": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "harbor": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "lodge": {
@@ -40092,6 +43481,44 @@
         "_counts": {
           "unclear": 29,
           "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "cabin": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cabin": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "cabin": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cabin": 30
         },
         "_multiple": {}
       },
@@ -40647,6 +44074,49 @@
         "total": 30,
         "rate": 0.2
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "excavation": 20,
+          "unclear": 8,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "excavation": 27,
+          "unclear": 3
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 22,
+        "total": 30,
+        "rate": 0.733
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 3,
+          "excavation": 26,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "excavation": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 26,
+        "total": 30,
+        "rate": 0.867
+      }
     }
   },
   "grave": {
@@ -41127,6 +44597,44 @@
         "same": 27,
         "total": 30,
         "rate": 0.9
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "burial": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "burial": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "burial": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "burial": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -41707,6 +45215,50 @@
         "same": 30,
         "total": 30,
         "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 5,
+          "other": 5,
+          "actors": 20
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 8,
+          "actors": 21,
+          "mold": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 23,
+        "total": 30,
+        "rate": 0.767
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 8,
+          "actors": 22
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 3,
+          "actors": 27
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 25,
+        "total": 30,
+        "rate": 0.833
       }
     }
   },
@@ -42307,6 +45859,57 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 19,
+          "unclear": 5,
+          "media": 2,
+          "printing": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 14,
+          "media": 5,
+          "other": 9,
+          "push": 1,
+          "printing": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 30,
+        "rate": 0.433
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 18,
+          "unclear": 4,
+          "printing": 7,
+          "media": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "media": 8,
+          "unclear": 12,
+          "other": 8,
+          "printing": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 11,
+        "total": 30,
+        "rate": 0.367
       }
     }
   },
@@ -42924,6 +46527,63 @@
         "total": 30,
         "rate": 0.567
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "mail": 9,
+          "pole": 12,
+          "unclear": 7,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "mail": 13,
+          "multiple": 2,
+          "pole": 7,
+          "unclear": 8
+        },
+        "_multiple": {
+          "mail+pole": 2
+        }
+      },
+      "_agreement": {
+        "same": 19,
+        "total": 30,
+        "rate": 0.633
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 5,
+          "mail": 14,
+          "station": 5,
+          "pole": 4,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "pole": 6,
+          "mail": 9,
+          "station": 5,
+          "unclear": 7,
+          "multiple": 3
+        },
+        "_multiple": {
+          "mail+pole+station": 1,
+          "mail+pole": 2
+        }
+      },
+      "_agreement": {
+        "same": 18,
+        "total": 30,
+        "rate": 0.6
+      }
     }
   },
   "tip": {
@@ -43522,6 +47182,59 @@
         "total": 30,
         "rate": 0.367
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 18,
+          "unclear": 7,
+          "gratuity": 1,
+          "point": 3,
+          "advice": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 18,
+          "point": 4,
+          "gratuity": 4,
+          "tilt": 2,
+          "advice": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 9,
+        "total": 30,
+        "rate": 0.3
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "other": 14,
+          "tilt": 2,
+          "unclear": 9,
+          "point": 2,
+          "gratuity": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 22,
+          "gratuity": 4,
+          "point": 2,
+          "tilt": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 30,
+        "rate": 0.467
+      }
     }
   },
   "will": {
@@ -44084,6 +47797,53 @@
         "total": 30,
         "rate": 0.5
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 19,
+          "other": 10,
+          "future": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 27,
+          "future": 2,
+          "testament": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 17,
+        "total": 30,
+        "rate": 0.567
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 15,
+          "testament": 1,
+          "other": 13,
+          "volition": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 21,
+          "testament": 2,
+          "future": 7
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 12,
+        "total": 30,
+        "rate": 0.4
+      }
     }
   },
   "file": {
@@ -44600,6 +48360,57 @@
         "same": 22,
         "total": 30,
         "rate": 0.733
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "other": 8,
+          "unclear": 16,
+          "tool": 1,
+          "document": 5
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 19,
+          "tool": 1,
+          "document": 10
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 18,
+        "total": 30,
+        "rate": 0.6
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 9,
+          "document": 7,
+          "other": 13,
+          "tool": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "document": 7,
+          "unclear": 21,
+          "other": 1,
+          "multiple": 1
+        },
+        "_multiple": {
+          "document+tool": 1
+        }
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 30,
+        "rate": 0.433
       }
     }
   },
@@ -45193,6 +49004,51 @@
         "total": 30,
         "rate": 0.7
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 5,
+          "bowl": 22,
+          "other": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "cement": 1,
+          "bowl": 25,
+          "unclear": 4
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 24,
+        "total": 30,
+        "rate": 0.8
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "bowl": 27,
+          "cement": 1,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "bowl": 28,
+          "unclear": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
     }
   },
   "hide": {
@@ -45710,6 +49566,62 @@
         "total": 30,
         "rate": 0.5
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 12,
+          "other": 5,
+          "conceal": 10,
+          "skin": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 8,
+          "other": 1,
+          "conceal": 15,
+          "multiple": 1,
+          "skin": 5
+        },
+        "_multiple": {
+          "conceal+skin": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 30,
+        "rate": 0.467
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 12,
+          "conceal": 11,
+          "other": 4,
+          "skin": 3
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "conceal": 17,
+          "other": 4,
+          "multiple": 1,
+          "skin": 4,
+          "unclear": 4
+        },
+        "_multiple": {
+          "conceal+skin": 1
+        }
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 30,
+        "rate": 0.467
+      }
     }
   },
   "tank": {
@@ -46186,6 +50098,44 @@
         "same": 5,
         "total": 30,
         "rate": 0.167
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "vehicle": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "vehicle": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "vehicle": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "vehicle": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -46684,6 +50634,44 @@
         "same": 19,
         "total": 30,
         "rate": 0.633
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -47274,6 +51262,55 @@
         "total": 30,
         "rate": 0.633
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 19,
+          "baseball": 1,
+          "other": 8,
+          "labor": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 20,
+          "labor": 7,
+          "baseball": 2,
+          "other": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 15,
+        "total": 30,
+        "rate": 0.5
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 18,
+          "labor": 8,
+          "other": 4
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 21,
+          "labor": 6,
+          "bowling": 1,
+          "baseball": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 20,
+        "total": 30,
+        "rate": 0.667
+      }
     }
   },
   "stock": {
@@ -47831,6 +51868,52 @@
         "total": 30,
         "rate": 0.533
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 10,
+          "other": 19,
+          "broth": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 19,
+          "shares": 4,
+          "other": 7
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 14,
+        "total": 30,
+        "rate": 0.467
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 8,
+          "other": 21,
+          "broth": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 21,
+          "broth": 1,
+          "other": 8
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 13,
+        "total": 30,
+        "rate": 0.433
+      }
     }
   },
   "bug": {
@@ -48344,6 +52427,44 @@
         "total": 30,
         "rate": 0.567
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "fly": {
@@ -48841,6 +52962,44 @@
         "same": 16,
         "total": 30,
         "rate": 0.533
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "insect": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   },
@@ -49352,6 +53511,46 @@
         "total": 30,
         "rate": 0.633
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "animal": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 29,
+          "unclear": 1
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "animal": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "pen": {
@@ -49804,6 +54003,45 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "writing": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "writing": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "writing": 28,
+          "other": 2
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "writing": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 28,
+        "total": 30,
+        "rate": 0.933
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "writing": 30
@@ -50302,6 +54540,44 @@
         "total": 30,
         "rate": 0.633
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "swimming": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "swimming": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "swimming": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "swimming": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "rock": {
@@ -50788,6 +55064,44 @@
         "total": 30,
         "rate": 0.867
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "stone": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "stone": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "stone": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "stone": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
     }
   },
   "fire": {
@@ -51248,6 +55562,44 @@
       }
     },
     "llamagen_t2i": {
+      "gpt": {
+        "_counts": {
+          "flames": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "flames": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "flames": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "flames": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
       "gpt": {
         "_counts": {
           "flames": 30
@@ -51832,6 +56184,52 @@
         "total": 30,
         "rate": 0.267
       }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "unclear": 12,
+          "other": 17,
+          "pairing": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "pairing": 3,
+          "unclear": 25,
+          "firestick": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 9,
+        "total": 30,
+        "rate": 0.3
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "unclear": 10,
+          "other": 19,
+          "firestick": 1
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "unclear": 24,
+          "pairing": 4,
+          "firestick": 2
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 9,
+        "total": 30,
+        "rate": 0.3
+      }
     }
   },
   "tie": {
@@ -52320,6 +56718,44 @@
         "same": 26,
         "total": 30,
         "rate": 0.867
+      }
+    },
+    "simplear_sft": {
+      "gpt": {
+        "_counts": {
+          "necktie": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "necktie": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
+      }
+    },
+    "simplear_rl": {
+      "gpt": {
+        "_counts": {
+          "necktie": 30
+        },
+        "_multiple": {}
+      },
+      "gemini": {
+        "_counts": {
+          "necktie": 30
+        },
+        "_multiple": {}
+      },
+      "_agreement": {
+        "same": 30,
+        "total": 30,
+        "rate": 1.0
       }
     }
   }
