@@ -4,8 +4,6 @@ data/outputs_text/
 data/outputs_text_imagine/
 # Large uploaded source folders for added models (raw repo/PNGs/exports);
 # their distilled labels live in the committed histograms/classifications.
-data/janus_imggen/
-data/anole_distributions/
 data/glm_image_distributions/
 *.log
 __pycache__/
@@ -41,3 +39,11 @@ data/telephone/openai/
 data/telephone/gemini/
 data/telephone/grok/
 data/simplear_distributions/
+
+# staging tree built by upload_dataset.sh (hardlinks, not real data)
+.hf_staging/
+
+# SLURM job output + transient array state under models/ (scripts ARE tracked)
+models/**/*.out
+models/**/*.log
+models/**/.array_jobid*

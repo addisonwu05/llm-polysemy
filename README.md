@@ -87,6 +87,46 @@ python -m llm_polysemy.eval --modality text-imagine          # text models, "wha
 Resume is automatic & filesystem-driven: only missing outputs are regenerated
 (delete an output file to re-queue just that sample).
 
+**GLM-Image (local diffusion text-to-image, image modality only).** A local GPU model
+with no API path, so it does **not** go through `eval` — it has its own generator that
+writes into the same canonical layout, and it's a true text-to-image diffusion model
+(diffusers `GlmImagePipeline`), so the prompt is the **bare word** (no
+instruction wrapper). Writes `outputs_image/<word>/glm_image/`, model key `glm_image`.
+Needs the `glm` conda env (official git `transformers`+`diffusers`), built via
+`models/glm-image/build_env.sh`; weights at `models/glm-image/`. Run it on a della GPU
+node, not the login node:
+```bash
+sbatch models/glm-image/run_glm_array.slurm        # one job per word (100-task array)
+python -m llm_polysemy.gen_glm_image --limit 3 --n 1   # smoke test (in the `glm` env, on a GPU)
+```
+Then classify with the normal `classify --modality image` (judges discover the
+`glm_image` dirs on disk).
+
+**RLHF ablation pairs (local GPU, image modality).** Two base-vs-RLHF model pairs
+where the *only* difference between the two members is the preference/RL tuning stage,
+so the change in sense selection isolates the effect of RLHF:
+
+| pair | base key | tuned key | env | what differs |
+|------|----------|-----------|-----|--------------|
+| SDXL Diffusion-DPO | `sdxl_base` | `sdxl_dpo` | `glm` | UNet swapped for the DPO-tuned UNet |
+| SimpleAR | `simplear_sft` | `simplear_rl` | `simplear` | full checkpoint after the RL stage |
+
+Each runs as a 100-task per-word array (`--variant` picks the member); both members
+share identical sampler/VQ/prompt so the diff is purely the weights:
+```bash
+sbatch models/sdxl/run_sdxl_array.slurm       {base,dpo}
+sbatch models/simplear/run_simplear_array.slurm {sft,rl}
+# smoke (inside the matching conda env, on a GPU):
+python -m llm_polysemy.gen_simplear --variant rl --limit 2 --n 1
+```
+SimpleAR is a Qwen2-based AR model + the NVIDIA **Cosmos** VQ decoder
+(`models/cosmos-DV8x16x16/`, a gated repo — accept the license once on HF); weights at
+`models/simplear-{sft,rl}/` (`Daniel0724/SimpleAR-1.5B-{SFT,RL}`), repo at
+`models/simplear-repo/`, env built via
+`models/simplear/build_env.sh` (transformers pinned to the repo's git commit — it imports
+`LogitsWarper`, removed in newer releases). Classify all four keys with the usual
+`classify --modality image --model KEY` then `--histograms`.
+
 **Languages (`--lang {en,tr,fr}`, default `en`).** `en` uses `data/synonyms.txt`
 (100 words) with the English prompt and the original output paths. `tr` / `fr`
 use `data/synonyms_{tr,fr}.txt` (25 words each) with a Turkish / French generation
@@ -210,8 +250,32 @@ python -m llm_polysemy.analysis.t4_cross_pca
 ### Publish the corpus
 
 ```bash
-./upload_dataset.sh image      # or: ./upload_dataset.sh text
+./upload_dataset.sh image              # or: text, human_image, image_tr, text_imagine, ...
+./upload_dataset.sh image --dry-run    # print the routing plan, upload nothing
+./upload_dataset.sh --all              # every sector present locally
 ```
+
+Uploads to the HF dataset `addisonwu05/llm-polysemy-outputs` (override with `HF_REPO=`).
+
+The dataset is organized into numbered **sectors**, not flat `outputs_*` dirs, and
+`hf upload-large-folder` has no `--path-in-repo` flag — it mirrors relative paths to the
+repo root. So the script stages a tree whose relative paths *are* the target repo paths
+(using hard links, so the ~20 GB corpus is not duplicated) and uploads that root:
+
+| local | repo sector |
+|---|---|
+| `data/outputs_image` | `01_main_english/image` |
+| `data/outputs_text` | `01_main_english/text` |
+| `data/outputs_human_{image,meaning}` | `02_human_baseline/{image,meaning}` |
+| `data/outputs_{image,text}_tr` | `03_cross_lingual/turkish/{image,text}` |
+| `data/outputs_{image,text}_fr` | `03_cross_lingual/french/{image,text}` |
+| `data/outputs_text_imagine` | `04_stated_vs_revealed/text_imagine` |
+
+Within the image modality, model keys are routed by the lists at the top of the script:
+`sdxl_base`, `sdxl_dpo`, `simplear_sft`, `simplear_rl` go to
+`05_ablations/preference_tuning/` instead of the main panel. Run `--dry-run` first
+to confirm the routing. Uploads are resumable — re-running skips committed files, and the
+Hub's 429 rate-limit messages are normal back-off, not failures.
 
 ## What you get (artifacts)
 
