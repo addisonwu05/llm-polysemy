@@ -69,6 +69,70 @@ TOGETHER_API_KEY_BF=...                            # FLUX   (Together.ai / Black
 ```
 A provider family runs exactly as many concurrent requests as it has keys.
 
+## Reproduce from scratch (open models, no cluster required)
+
+The five open-weight image models need **no API keys** — all weights download from the
+Hugging Face Hub on first run and cache in `~/.cache/huggingface` (set `HF_HOME` to
+relocate). Nothing is hardcoded to a cluster path; SLURM is optional.
+
+**Requirements:** an NVIDIA GPU with ≥24 GB VRAM (SDXL and GLM-Image fit in less;
+SimpleAR at 1024px is the heaviest), CUDA drivers, `git`, and `conda`.
+
+**1. Clone and build the envs.** Two conda envs, because SimpleAR pins an older
+`transformers` than GLM-Image needs:
+
+```bash
+git clone https://github.com/addisonwu05/llm-polysemy.git && cd llm-polysemy
+bash models/glm-image/build_env.sh     # env 'glm'      -> SDXL + GLM-Image
+bash models/simplear/build_env.sh      # env 'simplear' -> SimpleAR (also clones its
+                                       #                  inference code, see below)
+```
+
+`build_env.sh` for SimpleAR clones `github.com/wdrink/SimpleAR` (pinned to commit
+`d56b6e5c`) into `third_party/SimpleAR` — gitignored, and overridable with
+`SIMPLEAR_REPO=/some/dir`. The generators find it automatically.
+
+**2. Checkpoints.** Defaults are baked in; override any of them with the flag or env var:
+
+| model_key | HF repo id | override |
+|---|---|---|
+| `sdxl_base` | `stabilityai/stable-diffusion-xl-base-1.0` | `--base-id` / `SDXL_BASE_ID` |
+| `sdxl_dpo` | base above + UNet from `mhdang/dpo-sdxl-text2image-v1` (`subfolder="unet"`) | `--dpo-id` / `SDXL_DPO_ID` |
+| `simplear_sft` | `Daniel0724/SimpleAR-1.5B-SFT` | `--ckpt` / `SIMPLEAR_SFT_ID` |
+| `simplear_rl` | `Daniel0724/SimpleAR-1.5B-RL` | `--ckpt` / `SIMPLEAR_RL_ID` |
+| (SimpleAR VQ decoder) | `nvidia/Cosmos-0.1-Tokenizer-DV8x16x16` | `--cosmos` / `COSMOS_ID` |
+| `glm_image` | `zai-org/GLM-Image` | `--model-path` / `GLM_IMAGE_ID` |
+
+None of these are gated — no license click-through, no HF token needed to download.
+
+**3. Generate.** Plain Python, no SLURM. `--limit`/`--n` shrink the run for a smoke test;
+omit both for the full 100 words × 30 samples:
+
+```bash
+conda activate glm
+python -m llm_polysemy.gen_sdxl --variant base --limit 1 --n 1   # smoke: 1 image
+python -m llm_polysemy.gen_sdxl --variant base                   # full 3000
+python -m llm_polysemy.gen_sdxl --variant dpo
+python -m llm_polysemy.gen_glm_image
+
+conda activate simplear
+python -m llm_polysemy.gen_simplear --variant sft
+python -m llm_polysemy.gen_simplear --variant rl
+```
+
+Resume is filesystem-driven — rerun after an interruption and only missing files are
+regenerated. `--shard i --num-shards N` splits the word list if you *do* have a scheduler
+(the `models/*/run_*_array.slurm` scripts wrap exactly this).
+
+**4. Classify → histograms → figures.** Needs `OPENAI_API_KEY` and `GEMINI_API_KEY`
+(the two judges):
+
+```bash
+python -m llm_polysemy.classify --modality image --model sdxl_base   # per model, or omit --model for all
+python -m llm_polysemy.classify --modality image --histograms        # -> data/histograms_image.json
+python -m llm_polysemy.plots.similarity --modality image             # figures/ (any module under plots/)
+```
+
 ## Commands
 
 All commands take `--modality {image,text}`. Canonical form is `python -m
@@ -119,12 +183,11 @@ sbatch models/simplear/run_simplear_array.slurm {sft,rl}
 # smoke (inside the matching conda env, on a GPU):
 python -m llm_polysemy.gen_simplear --variant rl --limit 2 --n 1
 ```
-SimpleAR is a Qwen2-based AR model + the NVIDIA **Cosmos** VQ decoder
-(`models/cosmos-DV8x16x16/`, a gated repo — accept the license once on HF); weights at
-`models/simplear-{sft,rl}/` (`Daniel0724/SimpleAR-1.5B-{SFT,RL}`), repo at
-`models/simplear-repo/`, env built via
-`models/simplear/build_env.sh` (transformers pinned to the repo's git commit — it imports
-`LogitsWarper`, removed in newer releases). Classify all four keys with the usual
+SimpleAR is a Qwen2-based AR model + the NVIDIA **Cosmos** VQ decoder. All weights come
+from the Hub on first run (see *Reproduce from scratch* below); its env is built via
+`models/simplear/build_env.sh`, which also clones the SimpleAR inference code
+(transformers is pinned to the repo's git commit — it imports `LogitsWarper`, removed in
+newer releases). Classify all four keys with the usual
 `classify --modality image --model KEY` then `--histograms`.
 
 **Languages (`--lang {en,tr,fr}`, default `en`).** `en` uses `data/synonyms.txt`

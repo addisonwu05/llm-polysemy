@@ -15,25 +15,34 @@ which the Cosmos VQ decoder turns into pixels. The prompt is wrapped in the mode
 T2I control tokens (`<|t2i|> A highly realistic image of {word} <|soi|>`) — a fixed neutral
 wrapper applied to every word, so no sense-disambiguating context is added (benchmark protocol).
 
-Runs in the `simplear` conda env on a GPU (no internet needed — all weights are local).
+Runs in the `simplear` conda env on a GPU. Weights download from the Hub on first use
+and are cached in ~/.cache/huggingface (override with HF_HOME).
 
     python -m llm_polysemy.gen_simplear --variant rl  --shard 0 --num-shards 100
     python -m llm_polysemy.gen_simplear --variant sft --limit 2 --n 1     # smoke
+
+The SimpleAR *inference code* is a git repo, not a pip package, so it is cloned rather
+than downloaded from the Hub -- see models/simplear/build_env.sh. Point SIMPLEAR_REPO at
+the clone if it isn't at the default ./third_party/SimpleAR.
 """
 
 import argparse
 import io
+import os
 import sys
 from pathlib import Path
 
 from . import config, runner
 
-REPO = "/scratch/gpfs/GRIFFITHS/aw2418/models/simplear-repo"
+# Public HF checkpoints (override via --ckpt / --cosmos or the env vars below).
 CKPT = {
-    "sft": "/scratch/gpfs/GRIFFITHS/aw2418/models/simplear-sft",
-    "rl":  "/scratch/gpfs/GRIFFITHS/aw2418/models/simplear-rl",
+    "sft": os.environ.get("SIMPLEAR_SFT_ID", "Daniel0724/SimpleAR-1.5B-SFT"),
+    "rl":  os.environ.get("SIMPLEAR_RL_ID",  "Daniel0724/SimpleAR-1.5B-RL"),
 }
-COSMOS = "/scratch/gpfs/GRIFFITHS/aw2418/models/cosmos-DV8x16x16"
+COSMOS_ID = os.environ.get("COSMOS_ID", "nvidia/Cosmos-0.1-Tokenizer-DV8x16x16")
+# SimpleAR's inference code (git clone; see models/simplear/build_env.sh).
+DEFAULT_REPO = Path(__file__).resolve().parent.parent / "third_party" / "SimpleAR"
+REPO = os.environ.get("SIMPLEAR_REPO", str(DEFAULT_REPO))
 MODEL_KEY = {"sft": "simplear_sft", "rl": "simplear_rl"}
 
 IMAGE_SIZE = 1024              # SimpleAR's primary training resolution
@@ -52,26 +61,42 @@ def load_words(limit):
     return words[:limit] if limit else words
 
 
-def load_model(variant):
+def resolve_cosmos(cosmos_id):
+    """Cosmos ships bare .jit files, so fetch the snapshot dir rather than from_pretrained.
+
+    Accepts either an HF repo id (downloaded + cached) or an already-local directory.
+    """
+    if Path(cosmos_id).is_dir():
+        return cosmos_id
+    from huggingface_hub import snapshot_download
+    print(f"[simplear] fetching Cosmos VQ tokenizer {cosmos_id} ...", flush=True)
+    return snapshot_download(repo_id=cosmos_id, allow_patterns=["*.jit", "*.json", "*.yaml"])
+
+
+def load_model(variant, ckpt_id, cosmos_id, repo_path):
     import torch
-    sys.path.insert(0, REPO)
+    if not Path(repo_path).is_dir():
+        sys.exit(f"SimpleAR inference code not found at {repo_path}.\n"
+                 f"Run models/simplear/build_env.sh, or set SIMPLEAR_REPO / --repo to the clone.")
+    sys.path.insert(0, str(repo_path))
     from simpar.model.builder import load_pretrained_model
     from simpar.model.tokenizer.cosmos_tokenizer.networks import TokenizerConfigs
     from simpar.model.tokenizer.cosmos_tokenizer.video_lib import CausalVideoTokenizer as CosmosTokenizer
 
+    cosmos_dir = resolve_cosmos(cosmos_id)
     print(f"[simplear:{variant}] loading Cosmos VQ tokenizer ...", flush=True)
     cfg = TokenizerConfigs["DV"].value
     cfg.update(dict(spatial_compression=16, temporal_compression=8))
     vq_model = CosmosTokenizer(
-        checkpoint_enc=f"{COSMOS}/encoder.jit",
-        checkpoint_dec=f"{COSMOS}/decoder.jit",
+        checkpoint_enc=f"{cosmos_dir}/encoder.jit",
+        checkpoint_dec=f"{cosmos_dir}/decoder.jit",
         tokenizer_config=cfg)
     vq_model.eval()
     vq_model.requires_grad_(False)
 
-    print(f"[simplear:{variant}] loading LLM {CKPT[variant]} ...", flush=True)
+    print(f"[simplear:{variant}] loading LLM {ckpt_id} ...", flush=True)
     tokenizer, model, _, _ = load_pretrained_model(
-        CKPT[variant], attn_implementation="sdpa", device_map="cuda:0")
+        ckpt_id, attn_implementation="sdpa", device_map="cuda:0")
     model.eval()
     print(f"[simplear:{variant}] ready", flush=True)
     return model, tokenizer, vq_model
@@ -109,11 +134,18 @@ def gen_image(model, tokenizer, vq_model, word, idx):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--variant", choices=["sft", "rl"], required=True)
+    p.add_argument("--ckpt", default=None,
+                   help="HF repo id or local dir for this variant (default: the public SimpleAR id)")
+    p.add_argument("--cosmos", default=COSMOS_ID,
+                   help="HF repo id or local dir of the Cosmos VQ tokenizer")
+    p.add_argument("--repo", default=REPO,
+                   help="path to the SimpleAR inference-code clone")
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--n", type=int, default=None)
     p.add_argument("--shard", type=int, default=0)
     p.add_argument("--num-shards", type=int, default=1)
     args = p.parse_args()
+    ckpt_id = args.ckpt or CKPT[args.variant]
 
     mod = config.gen_modality("image")
     model_key = MODEL_KEY[args.variant]
@@ -123,7 +155,7 @@ def main():
         words = words[args.shard::args.num_shards]
         print(f"[simplear:{args.variant}] shard {args.shard}/{args.num_shards}: {len(words)} words", flush=True)
 
-    model, tokenizer, vq_model = load_model(args.variant)
+    model, tokenizer, vq_model = load_model(args.variant, ckpt_id, args.cosmos, args.repo)
 
     n_ok = n_err = n_skip = 0
     for w_i, word in enumerate(words):

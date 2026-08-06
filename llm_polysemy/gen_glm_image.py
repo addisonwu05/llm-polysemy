@@ -21,13 +21,16 @@ models/glm-image/build_env.sh and models/glm-image/run_glm_array.slurm.
 
 import argparse
 import io
+import os
 import sys
 from pathlib import Path
 
 from . import config, prompts, runner
 
 MODEL_KEY = "glm_image"
-DEFAULT_MODEL_PATH = "/scratch/gpfs/GRIFFITHS/aw2418/models/glm-image"
+# Public HF checkpoint (override via --model-path or GLM_IMAGE_ID). Weights download on
+# first use and cache in ~/.cache/huggingface (override with HF_HOME).
+DEFAULT_MODEL_PATH = os.environ.get("GLM_IMAGE_ID", "zai-org/GLM-Image")
 # Recipe defaults from the model card (the resolution/steps GLM-Image is tuned for).
 H, W = 1024, 1152
 STEPS, GUIDANCE = 50, 1.5

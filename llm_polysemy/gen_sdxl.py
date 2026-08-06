@@ -14,14 +14,17 @@ identical to the other local generators.
 
 import argparse
 import io
+import os
 import sys
 from pathlib import Path
 
 from . import config, runner
 
 MODEL_KEY = {"base": "sdxl_base", "dpo": "sdxl_dpo"}
-SDXL_BASE = "/scratch/gpfs/GRIFFITHS/aw2418/models/sdxl-base"
-DPO_UNET = "/scratch/gpfs/GRIFFITHS/aw2418/models/sdxl-dpo"
+# Public HF checkpoints (override via --base-id / --dpo-id or these env vars).
+# Weights download on first use and cache in ~/.cache/huggingface (override with HF_HOME).
+SDXL_BASE = os.environ.get("SDXL_BASE_ID", "stabilityai/stable-diffusion-xl-base-1.0")
+DPO_UNET = os.environ.get("SDXL_DPO_ID", "mhdang/dpo-sdxl-text2image-v1")
 STEPS, GUIDANCE = 40, 5.0   # identical settings for both variants -> the only diff is the UNet
 
 
@@ -30,16 +33,16 @@ def load_words(limit):
     return words[:limit] if limit else words
 
 
-def load_pipe(variant):
+def load_pipe(variant, base_id, dpo_id):
     import torch
     from diffusers import StableDiffusionXLPipeline, UNet2DConditionModel
-    print(f"[sdxl:{variant}] loading base pipeline ...", flush=True)
+    print(f"[sdxl:{variant}] loading base pipeline {base_id} ...", flush=True)
     pipe = StableDiffusionXLPipeline.from_pretrained(
-        SDXL_BASE, torch_dtype=torch.float16, variant="fp16", use_safetensors=True).to("cuda")
+        base_id, torch_dtype=torch.float16, variant="fp16", use_safetensors=True).to("cuda")
     if variant == "dpo":
-        print("[sdxl:dpo] swapping in DPO-tuned UNet ...", flush=True)
+        print(f"[sdxl:dpo] swapping in DPO-tuned UNet {dpo_id} ...", flush=True)
         unet = UNet2DConditionModel.from_pretrained(
-            DPO_UNET, subfolder="unet", torch_dtype=torch.float16)
+            dpo_id, subfolder="unet", torch_dtype=torch.float16)
         pipe.unet = unet.to("cuda")
     pipe.set_progress_bar_config(disable=True)
     print(f"[sdxl:{variant}] loaded", flush=True)
@@ -59,6 +62,10 @@ def gen_image(pipe, word, idx):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--variant", choices=["base", "dpo"], required=True)
+    p.add_argument("--base-id", default=SDXL_BASE,
+                   help="HF repo id or local dir for the SDXL base pipeline")
+    p.add_argument("--dpo-id", default=DPO_UNET,
+                   help="HF repo id or local dir holding the Diffusion-DPO UNet (subfolder 'unet')")
     p.add_argument("--limit", type=int, default=None)
     p.add_argument("--n", type=int, default=None)
     p.add_argument("--shard", type=int, default=0)
@@ -73,7 +80,7 @@ def main():
         words = words[args.shard::args.num_shards]
         print(f"[sdxl:{args.variant}] shard {args.shard}/{args.num_shards}: {len(words)} words", flush=True)
 
-    pipe = load_pipe(args.variant)
+    pipe = load_pipe(args.variant, args.base_id, args.dpo_id)
 
     n_ok = n_err = n_skip = 0
     for w_i, word in enumerate(words):

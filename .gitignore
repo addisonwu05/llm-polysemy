@@ -47,3 +47,6 @@ data/simplear_distributions/
 models/**/*.out
 models/**/*.log
 models/**/.array_jobid*
+
+# cloned third-party inference code (SimpleAR); weights come from the Hub
+third_party/
