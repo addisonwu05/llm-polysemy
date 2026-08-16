@@ -1,0 +1,1 @@
+Use the word "{word}" in a sentence that clearly shows its meaning. Avoid vague sentences that could fit any word.

@@ -1,0 +1,545 @@
+{
+  "trunk": {
+    "tree": 0.3,
+    "car": 0.3,
+    "elephant": 0.25,
+    "body": 0.05,
+    "luggage": 0.1
+  },
+  "jordan": {
+    "country": 0.35,
+    "person": 0.55,
+    "shoes": 0.1
+  },
+  "bolt": {
+    "fastener": 0.4,
+    "lightning": 0.4,
+    "run": 0.1,
+    "lock": 0.1
+  },
+  "bank": {
+    "finance": 0.7,
+    "river": 0.25,
+    "tilt": 0.03,
+    "heap": 0.02
+  },
+  "pitch": {
+    "throw": 0.2,
+    "tone": 0.2,
+    "sales": 0.25,
+    "field": 0.35
+  },
+  "bow": {
+    "bend": 0.2,
+    "weapon": 0.35,
+    "knot": 0.25,
+    "ship": 0.1,
+    "violin": 0.1
+  },
+  "spring": {
+    "season": 0.6,
+    "coil": 0.15,
+    "water": 0.15,
+    "leap": 0.1
+  },
+  "crane": {
+    "bird": 0.3,
+    "machine": 0.6,
+    "stretch": 0.1
+  },
+  "club": {
+    "organization": 0.3,
+    "venue": 0.25,
+    "weapon": 0.1,
+    "golf": 0.25,
+    "cards": 0.1
+  },
+  "turkey": {
+    "bird": 0.2,
+    "country": 0.3,
+    "food": 0.35,
+    "bowling": 0.05,
+    "failure": 0.1
+  },
+  "shot": {
+    "gunfire": 0.15,
+    "injection": 0.15,
+    "attempt": 0.25,
+    "drink": 0.2,
+    "photo": 0.25
+  },
+  "bar": {
+    "pub": 0.35,
+    "rod": 0.2,
+    "block": 0.1,
+    "law": 0.2,
+    "music": 0.15
+  },
+  "mercury": {
+    "planet": 0.35,
+    "element": 0.45,
+    "god": 0.2
+  },
+  "jack": {
+    "lift": 0.25,
+    "cards": 0.25,
+    "name": 0.35,
+    "connector": 0.15
+  },
+  "mole": {
+    "animal": 0.3,
+    "skin": 0.35,
+    "spy": 0.15,
+    "chemistry": 0.15,
+    "sauce": 0.05
+  },
+  "charge": {
+    "electric": 0.25,
+    "fee": 0.2,
+    "rush": 0.15,
+    "accusation": 0.2,
+    "responsibility": 0.2
+  },
+  "key": {
+    "lock": 0.3,
+    "crucial": 0.3,
+    "music": 0.15,
+    "keyboard": 0.15,
+    "legend": 0.1
+  },
+  "watch": {
+    "timepiece": 0.4,
+    "observe": 0.5,
+    "guard": 0.1
+  },
+  "ring": {
+    "jewelry": 0.35,
+    "sound": 0.2,
+    "circle": 0.15,
+    "arena": 0.15,
+    "call": 0.15
+  },
+  "nail": {
+    "finger": 0.4,
+    "fastener": 0.45,
+    "succeed": 0.15
+  },
+  "chip": {
+    "fragment": 0.15,
+    "microchip": 0.3,
+    "snack": 0.4,
+    "token": 0.15
+  },
+  "cell": {
+    "biology": 0.25,
+    "prison": 0.15,
+    "phone": 0.35,
+    "battery": 0.1,
+    "spreadsheet": 0.15
+  },
+  "toast": {
+    "bread": 0.45,
+    "tribute": 0.4,
+    "doomed": 0.15
+  },
+  "track": {
+    "path": 0.15,
+    "railroad": 0.15,
+    "song": 0.3,
+    "follow": 0.2,
+    "athletics": 0.2
+  },
+  "wave": {
+    "water": 0.4,
+    "gesture": 0.3,
+    "physics": 0.2,
+    "surge": 0.1
+  },
+  "train": {
+    "railway": 0.6,
+    "teach": 0.25,
+    "gown": 0.05,
+    "sequence": 0.1
+  },
+  "anchor": {
+    "ship": 0.35,
+    "news": 0.45,
+    "secure": 0.2
+  },
+  "ash": {
+    "residue": 0.65,
+    "tree": 0.35
+  },
+  "ball": {
+    "sphere": 0.55,
+    "dance": 0.25,
+    "fun": 0.2
+  },
+  "band": {
+    "music": 0.45,
+    "strip": 0.25,
+    "unite": 0.15,
+    "frequency": 0.15
+  },
+  "bark": {
+    "dog": 0.4,
+    "tree": 0.5,
+    "ship": 0.1
+  },
+  "barrel": {
+    "cask": 0.35,
+    "gun": 0.2,
+    "oil": 0.45
+  },
+  "basket": {
+    "container": 0.65,
+    "basketball": 0.35
+  },
+  "bass": {
+    "sound": 0.3,
+    "fish": 0.25,
+    "instrument": 0.45
+  },
+  "batter": {
+    "baseball": 0.35,
+    "cooking": 0.45,
+    "beat": 0.2
+  },
+  "beam": {
+    "light": 0.35,
+    "support": 0.35,
+    "smile": 0.2,
+    "transmit": 0.1
+  },
+  "bench": {
+    "seat": 0.4,
+    "sports": 0.25,
+    "court": 0.2,
+    "workbench": 0.15
+  },
+  "block": {
+    "solid": 0.25,
+    "obstruct": 0.3,
+    "city": 0.45
+  },
+  "bowl": {
+    "dish": 0.5,
+    "roll": 0.2,
+    "stadium": 0.3
+  },
+  "box": {
+    "container": 0.6,
+    "fight": 0.25,
+    "rectangle": 0.15
+  },
+  "brush": {
+    "tool": 0.55,
+    "touch": 0.3,
+    "shrubs": 0.15
+  },
+  "buck": {
+    "deer": 0.25,
+    "dollar": 0.55,
+    "resist": 0.2
+  },
+  "button": {
+    "fastener": 0.35,
+    "press": 0.45,
+    "badge": 0.2
+  },
+  "cane": {
+    "stick": 0.4,
+    "plant": 0.4,
+    "beat": 0.2
+  },
+  "cape": {
+    "cloak": 0.35,
+    "land": 0.65
+  },
+  "capital": {
+    "city": 0.45,
+    "money": 0.25,
+    "letter": 0.15,
+    "punishment": 0.15
+  },
+  "case": {
+    "container": 0.15,
+    "legal": 0.3,
+    "instance": 0.35,
+    "investigation": 0.2
+  },
+  "chest": {
+    "body": 0.55,
+    "box": 0.45
+  },
+  "coach": {
+    "trainer": 0.45,
+    "vehicle": 0.25,
+    "tutor": 0.2,
+    "class": 0.1
+  },
+  "cobbler": {
+    "shoemaker": 0.5,
+    "dessert": 0.5
+  },
+  "apple": {
+    "fruit": 0.3,
+    "company": 0.7
+  },
+  "amazon": {
+    "river": 0.1,
+    "rainforest": 0.15,
+    "company": 0.7,
+    "warrior": 0.05
+  },
+  "mars": {
+    "planet": 0.45,
+    "god": 0.2,
+    "candy": 0.35
+  },
+  "jaguar": {
+    "animal": 0.45,
+    "car": 0.55
+  },
+  "mustang": {
+    "horse": 0.35,
+    "car": 0.65
+  },
+  "cobra": {
+    "snake": 0.85,
+    "yoga": 0.15
+  },
+  "python": {
+    "snake": 0.3,
+    "language": 0.7
+  },
+  "fox": {
+    "animal": 0.45,
+    "cunning": 0.15,
+    "network": 0.4
+  },
+  "cardinal": {
+    "bird": 0.35,
+    "clergy": 0.35,
+    "main": 0.2,
+    "number": 0.1
+  },
+  "ram": {
+    "sheep": 0.3,
+    "force": 0.2,
+    "memory": 0.5
+  },
+  "paddle": {
+    "oar": 0.5,
+    "bat": 0.25,
+    "wade": 0.25
+  },
+  "staple": {
+    "fastener": 0.4,
+    "essential": 0.6
+  },
+  "pitcher": {
+    "baseball": 0.5,
+    "jug": 0.5
+  },
+  "shuttle": {
+    "transport": 0.35,
+    "spacecraft": 0.4,
+    "badminton": 0.15,
+    "weaving": 0.1
+  },
+  "tap": {
+    "faucet": 0.3,
+    "hit": 0.3,
+    "dance": 0.2,
+    "access": 0.2
+  },
+  "drill": {
+    "tool": 0.45,
+    "exercise": 0.35,
+    "military": 0.2
+  },
+  "pump": {
+    "device": 0.5,
+    "shoe": 0.25,
+    "inflate": 0.25
+  },
+  "socket": {
+    "outlet": 0.45,
+    "joint": 0.25,
+    "tool": 0.3
+  },
+  "switch": {
+    "control": 0.45,
+    "change": 0.45,
+    "rod": 0.1
+  },
+  "iron": {
+    "metal": 0.35,
+    "appliance": 0.3,
+    "press": 0.1,
+    "golf": 0.25
+  },
+  "crown": {
+    "headwear": 0.3,
+    "top": 0.2,
+    "monarchy": 0.5
+  },
+  "scale": {
+    "weigh": 0.25,
+    "skin": 0.15,
+    "music": 0.15,
+    "size": 0.3,
+    "climb": 0.15
+  },
+  "plane": {
+    "aircraft": 0.65,
+    "surface": 0.2,
+    "tool": 0.15
+  },
+  "fan": {
+    "cooling": 0.3,
+    "admirer": 0.55,
+    "spread": 0.15
+  },
+  "bridge": {
+    "crossing": 0.55,
+    "card game": 0.2,
+    "nose": 0.15,
+    "ship": 0.1
+  },
+  "port": {
+    "harbor": 0.35,
+    "left": 0.15,
+    "wine": 0.2,
+    "connector": 0.3
+  },
+  "lodge": {
+    "cabin": 0.55,
+    "file": 0.25,
+    "stuck": 0.2
+  },
+  "mine": {
+    "excavation": 0.25,
+    "explosive": 0.25,
+    "possessive": 0.5
+  },
+  "grave": {
+    "burial": 0.5,
+    "serious": 0.5
+  },
+  "cast": {
+    "actors": 0.35,
+    "throw": 0.2,
+    "medical": 0.35,
+    "mold": 0.1
+  },
+  "press": {
+    "media": 0.45,
+    "push": 0.35,
+    "printing": 0.2
+  },
+  "post": {
+    "mail": 0.25,
+    "pole": 0.15,
+    "job": 0.2,
+    "publish": 0.25,
+    "station": 0.15
+  },
+  "tip": {
+    "gratuity": 0.3,
+    "point": 0.25,
+    "advice": 0.3,
+    "tilt": 0.15
+  },
+  "will": {
+    "volition": 0.15,
+    "testament": 0.15,
+    "future": 0.7
+  },
+  "file": {
+    "document": 0.5,
+    "submit": 0.2,
+    "tool": 0.15,
+    "line": 0.15
+  },
+  "mortar": {
+    "cement": 0.45,
+    "bowl": 0.2,
+    "weapon": 0.35
+  },
+  "hide": {
+    "conceal": 0.55,
+    "skin": 0.45
+  },
+  "tank": {
+    "container": 0.3,
+    "vehicle": 0.55,
+    "fail": 0.15
+  },
+  "seal": {
+    "animal": 0.35,
+    "close": 0.4,
+    "stamp": 0.25
+  },
+  "strike": {
+    "hit": 0.3,
+    "labor": 0.3,
+    "baseball": 0.2,
+    "bowling": 0.2
+  },
+  "stock": {
+    "shares": 0.4,
+    "supply": 0.2,
+    "broth": 0.2,
+    "livestock": 0.2
+  },
+  "bug": {
+    "insect": 0.3,
+    "defect": 0.4,
+    "annoy": 0.2,
+    "surveillance": 0.1
+  },
+  "fly": {
+    "insect": 0.35,
+    "travel": 0.5,
+    "zipper": 0.15
+  },
+  "bat": {
+    "animal": 0.35,
+    "sports": 0.5,
+    "hit": 0.15
+  },
+  "pen": {
+    "writing": 0.6,
+    "enclosure": 0.2,
+    "prison": 0.2
+  },
+  "pool": {
+    "swimming": 0.45,
+    "billiards": 0.2,
+    "shared": 0.25,
+    "puddle": 0.1
+  },
+  "rock": {
+    "stone": 0.4,
+    "music": 0.45,
+    "sway": 0.15
+  },
+  "fire": {
+    "flames": 0.55,
+    "dismiss": 0.25,
+    "shoot": 0.2
+  },
+  "match": {
+    "firestick": 0.25,
+    "contest": 0.45,
+    "pairing": 0.3
+  },
+  "tie": {
+    "necktie": 0.4,
+    "fasten": 0.15,
+    "draw": 0.25,
+    "bond": 0.2
+  }
+}

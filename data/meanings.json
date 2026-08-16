@@ -1,0 +1,545 @@
+{
+  "trunk": [
+    {"sense": "tree", "meaning": "the main woody stem of a tree"},
+    {"sense": "car", "meaning": "the rear storage compartment of a car"},
+    {"sense": "elephant", "meaning": "an elephant's long flexible nose"},
+    {"sense": "body", "meaning": "the torso of the human body"},
+    {"sense": "luggage", "meaning": "a large box or chest for storage/travel"}
+  ],
+  "jordan": [
+    {"sense": "country", "meaning": "the Middle Eastern country"},
+    {"sense": "person", "meaning": "given name, e.g. basketball player Michael Jordan"},
+    {"sense": "shoes", "meaning": "the Air Jordan sneaker brand"}
+  ],
+  "bolt": [
+    {"sense": "fastener", "meaning": "a threaded metal pin used with a nut"},
+    {"sense": "lightning", "meaning": "a flash/discharge of lightning"},
+    {"sense": "run", "meaning": "to dash or flee suddenly"},
+    {"sense": "lock", "meaning": "a sliding bar that fastens a door"}
+  ],
+  "bank": [
+    {"sense": "finance", "meaning": "a financial institution holding money"},
+    {"sense": "river", "meaning": "the land edge alongside a river"},
+    {"sense": "tilt", "meaning": "to tilt an aircraft when turning"},
+    {"sense": "heap", "meaning": "a mound or pile, e.g. a snowbank"}
+  ],
+  "pitch": [
+    {"sense": "throw", "meaning": "to throw a ball, as in baseball"},
+    {"sense": "tone", "meaning": "the highness or lowness of a sound"},
+    {"sense": "sales", "meaning": "a persuasive sales presentation"},
+    {"sense": "field", "meaning": "a sports playing field (e.g. soccer)"}
+  ],
+  "bow": [
+    {"sense": "bend", "meaning": "to bend forward as a gesture of respect"},
+    {"sense": "weapon", "meaning": "a curved weapon for shooting arrows"},
+    {"sense": "knot", "meaning": "a looped ribbon or knot"},
+    {"sense": "ship", "meaning": "the front of a ship"},
+    {"sense": "violin", "meaning": "the rod used to play string instruments"}
+  ],
+  "spring": [
+    {"sense": "season", "meaning": "the season between winter and summer"},
+    {"sense": "coil", "meaning": "a coiled elastic metal device"},
+    {"sense": "water", "meaning": "a natural source of water from the ground"},
+    {"sense": "leap", "meaning": "to jump or leap suddenly"}
+  ],
+  "crane": [
+    {"sense": "bird", "meaning": "a tall long-legged wading bird"},
+    {"sense": "machine", "meaning": "a tall machine for lifting heavy loads"},
+    {"sense": "stretch", "meaning": "to stretch out one's neck to see"}
+  ],
+  "club": [
+    {"sense": "organization", "meaning": "an association of members with shared interests"},
+    {"sense": "venue", "meaning": "a nightclub for music and dancing"},
+    {"sense": "weapon", "meaning": "a heavy stick used as a weapon"},
+    {"sense": "golf", "meaning": "a stick used to hit a golf ball"},
+    {"sense": "cards", "meaning": "a black suit in a deck of cards"}
+  ],
+  "turkey": [
+    {"sense": "bird", "meaning": "a large domesticated fowl"},
+    {"sense": "country", "meaning": "the country between Europe and Asia"},
+    {"sense": "food", "meaning": "the roasted bird eaten at holidays"},
+    {"sense": "bowling", "meaning": "three consecutive strikes in bowling"},
+    {"sense": "failure", "meaning": "a flop or failure (informal)"}
+  ],
+  "shot": [
+    {"sense": "gunfire", "meaning": "the firing of a gun"},
+    {"sense": "injection", "meaning": "a medical injection"},
+    {"sense": "attempt", "meaning": "a try or attempt at something"},
+    {"sense": "drink", "meaning": "a small measure of liquor"},
+    {"sense": "photo", "meaning": "a photograph or camera frame"}
+  ],
+  "bar": [
+    {"sense": "pub", "meaning": "an establishment serving drinks"},
+    {"sense": "rod", "meaning": "a long rigid piece of metal or wood"},
+    {"sense": "block", "meaning": "to prevent or prohibit"},
+    {"sense": "law", "meaning": "the legal profession / lawyers collectively"},
+    {"sense": "music", "meaning": "a measure in written music"}
+  ],
+  "mercury": [
+    {"sense": "planet", "meaning": "the closest planet to the Sun"},
+    {"sense": "element", "meaning": "the liquid metal chemical element"},
+    {"sense": "god", "meaning": "the Roman messenger god"}
+  ],
+  "jack": [
+    {"sense": "lift", "meaning": "a device for lifting heavy objects"},
+    {"sense": "cards", "meaning": "a playing card ranked below the queen"},
+    {"sense": "name", "meaning": "a male given name"},
+    {"sense": "connector", "meaning": "a socket for a plug, e.g. headphone jack"}
+  ],
+  "mole": [
+    {"sense": "animal", "meaning": "a small burrowing mammal"},
+    {"sense": "skin", "meaning": "a dark spot or blemish on the skin"},
+    {"sense": "spy", "meaning": "a hidden infiltrator or double agent"},
+    {"sense": "chemistry", "meaning": "the SI unit for amount of substance"},
+    {"sense": "sauce", "meaning": "a rich Mexican chili sauce"}
+  ],
+  "charge": [
+    {"sense": "electric", "meaning": "electrical charge or to power a battery"},
+    {"sense": "fee", "meaning": "a price or cost demanded"},
+    {"sense": "rush", "meaning": "to rush forward in attack"},
+    {"sense": "accusation", "meaning": "a formal accusation of wrongdoing"},
+    {"sense": "responsibility", "meaning": "care or control of something (in charge)"}
+  ],
+  "key": [
+    {"sense": "lock", "meaning": "a device for opening a lock"},
+    {"sense": "crucial", "meaning": "essential or most important"},
+    {"sense": "music", "meaning": "a system of tones around a tonic note"},
+    {"sense": "keyboard", "meaning": "a button on a keyboard or instrument"},
+    {"sense": "legend", "meaning": "an explanatory legend on a map/chart"}
+  ],
+  "watch": [
+    {"sense": "timepiece", "meaning": "a small clock worn on the wrist"},
+    {"sense": "observe", "meaning": "to look at or monitor"},
+    {"sense": "guard", "meaning": "a period or person on guard duty"}
+  ],
+  "ring": [
+    {"sense": "jewelry", "meaning": "a circular band worn on a finger"},
+    {"sense": "sound", "meaning": "the sound a bell makes"},
+    {"sense": "circle", "meaning": "a circular shape or arrangement"},
+    {"sense": "arena", "meaning": "the roped enclosure for boxing"},
+    {"sense": "call", "meaning": "to telephone someone"}
+  ],
+  "nail": [
+    {"sense": "finger", "meaning": "the hard covering at a finger/toe tip"},
+    {"sense": "fastener", "meaning": "a thin metal spike hammered to join things"},
+    {"sense": "succeed", "meaning": "to do something perfectly (informal)"}
+  ],
+  "chip": [
+    {"sense": "fragment", "meaning": "a small broken-off piece"},
+    {"sense": "microchip", "meaning": "a small integrated circuit"},
+    {"sense": "snack", "meaning": "a thin crispy slice of fried potato"},
+    {"sense": "token", "meaning": "a counter used in gambling"}
+  ],
+  "cell": [
+    {"sense": "biology", "meaning": "the basic unit of a living organism"},
+    {"sense": "prison", "meaning": "a small room confining a prisoner"},
+    {"sense": "phone", "meaning": "a mobile/cellular phone"},
+    {"sense": "battery", "meaning": "a unit producing electric current"},
+    {"sense": "spreadsheet", "meaning": "a box in a grid/table"}
+  ],
+  "toast": [
+    {"sense": "bread", "meaning": "browned heated slices of bread"},
+    {"sense": "tribute", "meaning": "a drink raised in honor of someone"},
+    {"sense": "doomed", "meaning": "finished or in serious trouble (informal)"}
+  ],
+  "track": [
+    {"sense": "path", "meaning": "a rough path or trail"},
+    {"sense": "railroad", "meaning": "the rails a train runs on"},
+    {"sense": "song", "meaning": "a recorded piece of music"},
+    {"sense": "follow", "meaning": "to follow or monitor something"},
+    {"sense": "athletics", "meaning": "a course for running races"}
+  ],
+  "wave": [
+    {"sense": "water", "meaning": "a ridge of moving water on the sea"},
+    {"sense": "gesture", "meaning": "a hand movement in greeting"},
+    {"sense": "physics", "meaning": "a periodic disturbance carrying energy"},
+    {"sense": "surge", "meaning": "a sudden increase (e.g. crime wave)"}
+  ],
+  "train": [
+    {"sense": "railway", "meaning": "linked railway cars pulled by a locomotive"},
+    {"sense": "teach", "meaning": "to instruct or coach through practice"},
+    {"sense": "gown", "meaning": "the trailing part of a long dress/robe"},
+    {"sense": "sequence", "meaning": "a connected series (e.g. train of thought)"}
+  ],
+  "anchor": [
+    {"sense": "ship", "meaning": "a heavy device that holds a ship in place"},
+    {"sense": "news", "meaning": "the main presenter of a news broadcast"},
+    {"sense": "secure", "meaning": "to fix firmly or provide stability"}
+  ],
+  "ash": [
+    {"sense": "residue", "meaning": "the powdery residue left after burning"},
+    {"sense": "tree", "meaning": "a deciduous hardwood tree"}
+  ],
+  "ball": [
+    {"sense": "sphere", "meaning": "a round object used in games/sports"},
+    {"sense": "dance", "meaning": "a formal social dancing event"},
+    {"sense": "fun", "meaning": "a very enjoyable time (have a ball)"}
+  ],
+  "band": [
+    {"sense": "music", "meaning": "a group of musicians"},
+    {"sense": "strip", "meaning": "a loop or strip of material"},
+    {"sense": "unite", "meaning": "to join together as a group"},
+    {"sense": "frequency", "meaning": "a range of radio frequencies"}
+  ],
+  "bark": [
+    {"sense": "dog", "meaning": "the sharp sound a dog makes"},
+    {"sense": "tree", "meaning": "the tough outer covering of a tree"},
+    {"sense": "ship", "meaning": "a type of sailing vessel (barque)"}
+  ],
+  "barrel": [
+    {"sense": "cask", "meaning": "a large rounded container for liquids"},
+    {"sense": "gun", "meaning": "the tube of a gun through which a shot fires"},
+    {"sense": "oil", "meaning": "a unit of volume for crude oil"}
+  ],
+  "basket": [
+    {"sense": "container", "meaning": "a woven container for carrying things"},
+    {"sense": "basketball", "meaning": "the hoop/net, or a score in basketball"}
+  ],
+  "bass": [
+    {"sense": "sound", "meaning": "low-frequency sound or tones"},
+    {"sense": "fish", "meaning": "a type of edible freshwater/sea fish"},
+    {"sense": "instrument", "meaning": "a bass guitar or double bass"}
+  ],
+  "batter": [
+    {"sense": "baseball", "meaning": "the player whose turn it is to hit"},
+    {"sense": "cooking", "meaning": "a liquid mixture of flour for cooking"},
+    {"sense": "beat", "meaning": "to strike repeatedly and violently"}
+  ],
+  "beam": [
+    {"sense": "light", "meaning": "a ray or shaft of light"},
+    {"sense": "support", "meaning": "a long structural timber or girder"},
+    {"sense": "smile", "meaning": "to smile broadly and radiantly"},
+    {"sense": "transmit", "meaning": "to transmit a signal"}
+  ],
+  "bench": [
+    {"sense": "seat", "meaning": "a long seat for several people"},
+    {"sense": "sports", "meaning": "the substitute/reserve players"},
+    {"sense": "court", "meaning": "the judge or judges collectively"},
+    {"sense": "workbench", "meaning": "a sturdy table for working"}
+  ],
+  "block": [
+    {"sense": "solid", "meaning": "a solid rectangular piece of material"},
+    {"sense": "obstruct", "meaning": "to obstruct or prevent passage"},
+    {"sense": "city", "meaning": "a section of a town between streets"}
+  ],
+  "bowl": [
+    {"sense": "dish", "meaning": "a round deep dish for food"},
+    {"sense": "roll", "meaning": "to roll a ball, as in bowling/cricket"},
+    {"sense": "stadium", "meaning": "a bowl-shaped arena or major game (Super Bowl)"}
+  ],
+  "box": [
+    {"sense": "container", "meaning": "a rectangular container with sides"},
+    {"sense": "fight", "meaning": "to fight with fists (boxing)"},
+    {"sense": "rectangle", "meaning": "a rectangular shape or marked area"}
+  ],
+  "brush": [
+    {"sense": "tool", "meaning": "a tool with bristles for cleaning/painting"},
+    {"sense": "touch", "meaning": "to touch lightly in passing"},
+    {"sense": "shrubs", "meaning": "dense undergrowth or scrub vegetation"}
+  ],
+  "buck": [
+    {"sense": "deer", "meaning": "a male deer"},
+    {"sense": "dollar", "meaning": "a dollar (informal)"},
+    {"sense": "resist", "meaning": "to jump or buck like a horse; to resist"}
+  ],
+  "button": [
+    {"sense": "fastener", "meaning": "a disc fastening clothing"},
+    {"sense": "press", "meaning": "a knob pressed to operate a device"},
+    {"sense": "badge", "meaning": "a pin-on badge"}
+  ],
+  "cane": [
+    {"sense": "stick", "meaning": "a walking stick for support"},
+    {"sense": "plant", "meaning": "the stalk of plants like sugar or bamboo"},
+    {"sense": "beat", "meaning": "to beat or punish with a cane"}
+  ],
+  "cape": [
+    {"sense": "cloak", "meaning": "a sleeveless garment worn over the shoulders"},
+    {"sense": "land", "meaning": "a headland jutting into the sea"}
+  ],
+  "capital": [
+    {"sense": "city", "meaning": "the seat-of-government city"},
+    {"sense": "money", "meaning": "wealth or assets used in business"},
+    {"sense": "letter", "meaning": "an uppercase letter"},
+    {"sense": "punishment", "meaning": "involving the death penalty"}
+  ],
+  "case": [
+    {"sense": "container", "meaning": "a box or protective covering"},
+    {"sense": "legal", "meaning": "a matter decided in a court of law"},
+    {"sense": "instance", "meaning": "a particular situation or example"},
+    {"sense": "investigation", "meaning": "a matter under investigation"}
+  ],
+  "chest": [
+    {"sense": "body", "meaning": "the front of the upper torso"},
+    {"sense": "box", "meaning": "a large strong box for storage"}
+  ],
+  "coach": [
+    {"sense": "trainer", "meaning": "a person who trains an athlete or team"},
+    {"sense": "vehicle", "meaning": "a bus or horse-drawn carriage"},
+    {"sense": "tutor", "meaning": "to instruct or tutor someone"},
+    {"sense": "class", "meaning": "the economy seating on a plane/train"}
+  ],
+  "cobbler": [
+    {"sense": "shoemaker", "meaning": "a person who repairs shoes"},
+    {"sense": "dessert", "meaning": "a baked fruit dessert with a crust"}
+  ],
+  "apple": [
+    {"sense": "fruit", "meaning": "the round edible fruit of the apple tree"},
+    {"sense": "company", "meaning": "the technology company"}
+  ],
+  "amazon": [
+    {"sense": "river", "meaning": "the major South American river"},
+    {"sense": "rainforest", "meaning": "the tropical rainforest region"},
+    {"sense": "company", "meaning": "the e-commerce/technology company"},
+    {"sense": "warrior", "meaning": "a female warrior of Greek myth"}
+  ],
+  "mars": [
+    {"sense": "planet", "meaning": "the fourth planet from the Sun"},
+    {"sense": "god", "meaning": "the Roman god of war"},
+    {"sense": "candy", "meaning": "the candy/confectionery company"}
+  ],
+  "jaguar": [
+    {"sense": "animal", "meaning": "a large spotted wild cat"},
+    {"sense": "car", "meaning": "the luxury car brand"}
+  ],
+  "mustang": [
+    {"sense": "horse", "meaning": "a wild or free-roaming horse"},
+    {"sense": "car", "meaning": "the Ford sports car"}
+  ],
+  "cobra": [
+    {"sense": "snake", "meaning": "a venomous hooded snake"},
+    {"sense": "yoga", "meaning": "a backbend yoga pose"}
+  ],
+  "python": [
+    {"sense": "snake", "meaning": "a large constricting snake"},
+    {"sense": "language", "meaning": "the programming language"}
+  ],
+  "fox": [
+    {"sense": "animal", "meaning": "a small wild dog-like mammal"},
+    {"sense": "cunning", "meaning": "a sly or crafty person"},
+    {"sense": "network", "meaning": "the broadcasting/TV network"}
+  ],
+  "cardinal": [
+    {"sense": "bird", "meaning": "a red North American songbird"},
+    {"sense": "clergy", "meaning": "a senior Catholic church official"},
+    {"sense": "main", "meaning": "of chief importance; principal"},
+    {"sense": "number", "meaning": "a counting number (one, two, three)"}
+  ],
+  "ram": [
+    {"sense": "sheep", "meaning": "an adult male sheep"},
+    {"sense": "force", "meaning": "to crash or force into something"},
+    {"sense": "memory", "meaning": "a computer's random-access memory"}
+  ],
+  "paddle": [
+    {"sense": "oar", "meaning": "a short oar for propelling a boat"},
+    {"sense": "bat", "meaning": "a bat for table tennis"},
+    {"sense": "wade", "meaning": "to wade or splash in shallow water"}
+  ],
+  "staple": [
+    {"sense": "fastener", "meaning": "a metal wire clip joining papers"},
+    {"sense": "essential", "meaning": "a basic, main, or essential item"}
+  ],
+  "pitcher": [
+    {"sense": "baseball", "meaning": "the player who throws to the batter"},
+    {"sense": "jug", "meaning": "a container with a handle and spout for liquids"}
+  ],
+  "shuttle": [
+    {"sense": "transport", "meaning": "a vehicle running back and forth on a route"},
+    {"sense": "spacecraft", "meaning": "a reusable spacecraft (space shuttle)"},
+    {"sense": "badminton", "meaning": "the feathered birdie hit in badminton"},
+    {"sense": "weaving", "meaning": "the tool carrying thread in a loom"}
+  ],
+  "tap": [
+    {"sense": "faucet", "meaning": "a valve controlling flow of liquid"},
+    {"sense": "hit", "meaning": "to strike lightly"},
+    {"sense": "dance", "meaning": "a style of dance with metal-soled shoes"},
+    {"sense": "access", "meaning": "to draw from or secretly access (e.g. a phone)"}
+  ],
+  "drill": [
+    {"sense": "tool", "meaning": "a tool for boring holes"},
+    {"sense": "exercise", "meaning": "a repeated practice exercise"},
+    {"sense": "military", "meaning": "training in marching and maneuvers"}
+  ],
+  "pump": [
+    {"sense": "device", "meaning": "a device for moving fluids or air"},
+    {"sense": "shoe", "meaning": "a woman's high-heeled shoe"},
+    {"sense": "inflate", "meaning": "to inflate or force air/liquid in"}
+  ],
+  "socket": [
+    {"sense": "outlet", "meaning": "an electrical outlet for a plug"},
+    {"sense": "joint", "meaning": "a hollow into which something fits (e.g. eye socket)"},
+    {"sense": "tool", "meaning": "a fitting that attaches to a wrench"}
+  ],
+  "switch": [
+    {"sense": "control", "meaning": "a device to turn power on or off"},
+    {"sense": "change", "meaning": "to change or exchange"},
+    {"sense": "rod", "meaning": "a thin flexible rod or whip"}
+  ],
+  "iron": [
+    {"sense": "metal", "meaning": "the common metallic element"},
+    {"sense": "appliance", "meaning": "a heated device for pressing clothes"},
+    {"sense": "press", "meaning": "to smooth clothes with an iron"},
+    {"sense": "golf", "meaning": "a metal-headed golf club"}
+  ],
+  "crown": [
+    {"sense": "headwear", "meaning": "a royal head ornament"},
+    {"sense": "top", "meaning": "the top of the head or of a tooth"},
+    {"sense": "monarchy", "meaning": "the monarch or royal authority"}
+  ],
+  "scale": [
+    {"sense": "weigh", "meaning": "a device for measuring weight"},
+    {"sense": "skin", "meaning": "a small plate on fish/reptile skin"},
+    {"sense": "music", "meaning": "an ordered sequence of musical notes"},
+    {"sense": "size", "meaning": "relative size, proportion, or extent"},
+    {"sense": "climb", "meaning": "to climb up something steep"}
+  ],
+  "plane": [
+    {"sense": "aircraft", "meaning": "a powered flying vehicle"},
+    {"sense": "surface", "meaning": "a flat two-dimensional surface"},
+    {"sense": "tool", "meaning": "a tool for smoothing wood"}
+  ],
+  "fan": [
+    {"sense": "cooling", "meaning": "a device that moves air to cool"},
+    {"sense": "admirer", "meaning": "an enthusiast or devoted supporter"},
+    {"sense": "spread", "meaning": "to spread out in a fan shape"}
+  ],
+  "bridge": [
+    {"sense": "crossing", "meaning": "a structure spanning a river/gap"},
+    {"sense": "card game", "meaning": "a trick-taking card game"},
+    {"sense": "nose", "meaning": "the bony upper part of the nose"},
+    {"sense": "ship", "meaning": "the command deck of a ship"}
+  ],
+  "port": [
+    {"sense": "harbor", "meaning": "a harbor where ships dock"},
+    {"sense": "left", "meaning": "the left side of a ship"},
+    {"sense": "wine", "meaning": "a sweet fortified wine"},
+    {"sense": "connector", "meaning": "a socket on a computer for connections"}
+  ],
+  "lodge": [
+    {"sense": "cabin", "meaning": "a small cabin, inn, or country house"},
+    {"sense": "file", "meaning": "to formally submit (e.g. a complaint)"},
+    {"sense": "stuck", "meaning": "to become firmly fixed or stuck"}
+  ],
+  "mine": [
+    {"sense": "excavation", "meaning": "a site dug for extracting minerals"},
+    {"sense": "explosive", "meaning": "a buried or submerged explosive device"},
+    {"sense": "possessive", "meaning": "belonging to me"}
+  ],
+  "grave": [
+    {"sense": "burial", "meaning": "a place where a body is buried"},
+    {"sense": "serious", "meaning": "very serious or severe"}
+  ],
+  "cast": [
+    {"sense": "actors", "meaning": "the performers in a play or film"},
+    {"sense": "throw", "meaning": "to throw something"},
+    {"sense": "medical", "meaning": "a hard covering for a broken limb"},
+    {"sense": "mold", "meaning": "to shape molten material in a mold"}
+  ],
+  "press": [
+    {"sense": "media", "meaning": "the news media or journalists"},
+    {"sense": "push", "meaning": "to push or apply pressure"},
+    {"sense": "printing", "meaning": "a machine for printing"}
+  ],
+  "post": [
+    {"sense": "mail", "meaning": "the postal mail system"},
+    {"sense": "pole", "meaning": "an upright pole or stake"},
+    {"sense": "job", "meaning": "a job or position"},
+    {"sense": "publish", "meaning": "to publish content online"},
+    {"sense": "station", "meaning": "an assigned place of duty"}
+  ],
+  "tip": [
+    {"sense": "gratuity", "meaning": "money given for service"},
+    {"sense": "point", "meaning": "the pointed end of something"},
+    {"sense": "advice", "meaning": "a piece of helpful advice or hint"},
+    {"sense": "tilt", "meaning": "to tilt or overturn"}
+  ],
+  "will": [
+    {"sense": "volition", "meaning": "determination or the power of choice"},
+    {"sense": "testament", "meaning": "a legal document for distributing property"},
+    {"sense": "future", "meaning": "the auxiliary verb marking future tense"}
+  ],
+  "file": [
+    {"sense": "document", "meaning": "a collection of papers or data"},
+    {"sense": "submit", "meaning": "to formally submit or record"},
+    {"sense": "tool", "meaning": "a tool for smoothing or filing surfaces"},
+    {"sense": "line", "meaning": "a single line of people (single file)"}
+  ],
+  "mortar": [
+    {"sense": "cement", "meaning": "a paste that binds bricks together"},
+    {"sense": "bowl", "meaning": "a bowl for grinding (with a pestle)"},
+    {"sense": "weapon", "meaning": "a short-range artillery weapon"}
+  ],
+  "hide": [
+    {"sense": "conceal", "meaning": "to conceal or keep out of sight"},
+    {"sense": "skin", "meaning": "the skin of an animal"}
+  ],
+  "tank": [
+    {"sense": "container", "meaning": "a large container for liquid or gas"},
+    {"sense": "vehicle", "meaning": "an armored military combat vehicle"},
+    {"sense": "fail", "meaning": "to fail badly (informal)"}
+  ],
+  "seal": [
+    {"sense": "animal", "meaning": "a marine mammal with flippers"},
+    {"sense": "close", "meaning": "to close tightly or make airtight"},
+    {"sense": "stamp", "meaning": "an emblem or stamp confirming authenticity"}
+  ],
+  "strike": [
+    {"sense": "hit", "meaning": "to hit forcefully"},
+    {"sense": "labor", "meaning": "a work stoppage in protest"},
+    {"sense": "baseball", "meaning": "a missed or unswung pitch"},
+    {"sense": "bowling", "meaning": "knocking down all pins in one throw"}
+  ],
+  "stock": [
+    {"sense": "shares", "meaning": "ownership shares in a company"},
+    {"sense": "supply", "meaning": "a supply of goods or inventory"},
+    {"sense": "broth", "meaning": "a savory liquid base for cooking"},
+    {"sense": "livestock", "meaning": "farm animals"}
+  ],
+  "bug": [
+    {"sense": "insect", "meaning": "a small insect"},
+    {"sense": "defect", "meaning": "an error or fault in software"},
+    {"sense": "annoy", "meaning": "to annoy or bother"},
+    {"sense": "surveillance", "meaning": "a hidden listening device"}
+  ],
+  "fly": [
+    {"sense": "insect", "meaning": "a small winged insect"},
+    {"sense": "travel", "meaning": "to move through the air"},
+    {"sense": "zipper", "meaning": "the fastening flap on trousers"}
+  ],
+  "bat": [
+    {"sense": "animal", "meaning": "a nocturnal flying mammal"},
+    {"sense": "sports", "meaning": "a club for hitting a ball"},
+    {"sense": "hit", "meaning": "to hit, or to flutter (eyelashes)"}
+  ],
+  "pen": [
+    {"sense": "writing", "meaning": "an instrument for writing with ink"},
+    {"sense": "enclosure", "meaning": "a fenced enclosure for animals"},
+    {"sense": "prison", "meaning": "a prison (slang)"}
+  ],
+  "pool": [
+    {"sense": "swimming", "meaning": "a tank of water for swimming"},
+    {"sense": "billiards", "meaning": "a cue game with balls on a table"},
+    {"sense": "shared", "meaning": "a shared collection of resources/funds"},
+    {"sense": "puddle", "meaning": "a small body of still liquid"}
+  ],
+  "rock": [
+    {"sense": "stone", "meaning": "a solid mineral mass; stone"},
+    {"sense": "music", "meaning": "a genre of popular music"},
+    {"sense": "sway", "meaning": "to move gently back and forth"}
+  ],
+  "fire": [
+    {"sense": "flames", "meaning": "burning combustion producing heat and light"},
+    {"sense": "dismiss", "meaning": "to terminate someone's employment"},
+    {"sense": "shoot", "meaning": "to discharge a weapon"}
+  ],
+  "match": [
+    {"sense": "firestick", "meaning": "a stick that ignites by friction"},
+    {"sense": "contest", "meaning": "a sporting contest or game"},
+    {"sense": "pairing", "meaning": "a correspondence or equal counterpart"}
+  ],
+  "tie": [
+    {"sense": "necktie", "meaning": "a strip of cloth worn around the neck"},
+    {"sense": "fasten", "meaning": "to fasten or knot together"},
+    {"sense": "draw", "meaning": "an equal score; a draw"},
+    {"sense": "bond", "meaning": "a connection or relationship"}
+  ]
+}

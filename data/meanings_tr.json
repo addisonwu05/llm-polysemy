@@ -1,0 +1,115 @@
+{
+  "yüz": [
+    {"sense": "face",    "meaning": "the front of a person's head",            "meaning_tr": "bir kişinin yüzü, surat"},
+    {"sense": "hundred", "meaning": "the number 100",                          "meaning_tr": "100 sayısı"},
+    {"sense": "swim",    "meaning": "to swim (imperative 'swim!')",            "meaning_tr": "yüzmek (emir: 'yüz!')"},
+    {"sense": "surface", "meaning": "the surface or outer face of something",  "meaning_tr": "bir şeyin yüzeyi"}
+  ],
+  "yaz": [
+    {"sense": "summer", "meaning": "the warm season of the year",  "meaning_tr": "yaz mevsimi"},
+    {"sense": "write",  "meaning": "to write (imperative 'write!')","meaning_tr": "yazmak (emir: 'yaz!')"}
+  ],
+  "gül": [
+    {"sense": "rose",  "meaning": "the flower (a rose)",            "meaning_tr": "gül çiçeği"},
+    {"sense": "laugh", "meaning": "to laugh (imperative 'laugh!')", "meaning_tr": "gülmek (emir: 'gül!')"}
+  ],
+  "dolu": [
+    {"sense": "full", "meaning": "filled, not empty",        "meaning_tr": "dolu, boş değil"},
+    {"sense": "hail", "meaning": "frozen rain pellets (hail)","meaning_tr": "dolu (yağış türü)"}
+  ],
+  "ay": [
+    {"sense": "moon",  "meaning": "the Earth's moon",          "meaning_tr": "gökyüzündeki ay"},
+    {"sense": "month", "meaning": "a month of the calendar",   "meaning_tr": "takvim ayı"}
+  ],
+  "kaz": [
+    {"sense": "goose", "meaning": "the bird (a goose)",      "meaning_tr": "kaz (kuş)"},
+    {"sense": "dig",   "meaning": "to dig (imperative 'dig!')","meaning_tr": "kazmak (emir: 'kaz!')"}
+  ],
+  "bağ": [
+    {"sense": "vineyard", "meaning": "a field of grapevines, an orchard",        "meaning_tr": "üzüm bağı, bahçe"},
+    {"sense": "bond",     "meaning": "a tie or bond, an emotional connection",   "meaning_tr": "bağ, bağlılık, ilişki"},
+    {"sense": "tie",      "meaning": "a string or band used to fasten something","meaning_tr": "bağlamak için ip/şerit"}
+  ],
+  "kol": [
+    {"sense": "arm",    "meaning": "the human arm",                         "meaning_tr": "kol (vücut uzvu)"},
+    {"sense": "sleeve", "meaning": "the sleeve of a garment",               "meaning_tr": "giysi kolu"},
+    {"sense": "branch", "meaning": "a branch, division or unit of a group", "meaning_tr": "şube, birim, kol"}
+  ],
+  "baş": [
+    {"sense": "head",      "meaning": "the human head",              "meaning_tr": "baş (vücut)"},
+    {"sense": "beginning", "meaning": "the start or beginning of something","meaning_tr": "başlangıç"},
+    {"sense": "chief",     "meaning": "main, principal, leading",     "meaning_tr": "ana, başlıca, baş (lider)"}
+  ],
+  "ocak": [
+    {"sense": "january", "meaning": "the month of January",                 "meaning_tr": "Ocak ayı"},
+    {"sense": "stove",   "meaning": "a stove or hearth for cooking/heating","meaning_tr": "ocak, soba, ateş yeri"},
+    {"sense": "quarry",  "meaning": "a mine or quarry",                     "meaning_tr": "maden/taş ocağı"}
+  ],
+  "koy": [
+    {"sense": "bay", "meaning": "a small coastal bay or cove",  "meaning_tr": "deniz koyu"},
+    {"sense": "put", "meaning": "to put or place (imperative 'put!')","meaning_tr": "koymak (emir: 'koy!')"}
+  ],
+  "fiş": [
+    {"sense": "plug",    "meaning": "an electrical plug",            "meaning_tr": "elektrik fişi"},
+    {"sense": "receipt", "meaning": "a receipt or sales slip",       "meaning_tr": "satış fişi, makbuz"},
+    {"sense": "chip",    "meaning": "a token or counter (e.g. a casino chip)","meaning_tr": "jeton, marka, fiş"}
+  ],
+  "halka": [
+    {"sense": "ring",   "meaning": "a ring, loop or circle",         "meaning_tr": "halka, çember"},
+    {"sense": "public", "meaning": "the public, the people (the masses)","meaning_tr": "halka, kamuoyu, halk"}
+  ],
+  "yıldız": [
+    {"sense": "celestial", "meaning": "a star in the sky",              "meaning_tr": "gökyüzündeki yıldız"},
+    {"sense": "celebrity", "meaning": "a famous person, a star",        "meaning_tr": "ünlü kişi, yıldız"},
+    {"sense": "symbol",    "meaning": "a star symbol or shape (asterisk, rating star)","meaning_tr": "yıldız sembolü/şekli"}
+  ],
+  "aç": [
+    {"sense": "hungry", "meaning": "feeling hunger",               "meaning_tr": "aç, tok değil"},
+    {"sense": "open",   "meaning": "to open or turn on (imperative 'open!')","meaning_tr": "açmak (emir: 'aç!')"}
+  ],
+  "saç": [
+    {"sense": "hair",    "meaning": "hair on the head",            "meaning_tr": "saç (kıl)"},
+    {"sense": "scatter", "meaning": "to scatter or strew (imperative 'scatter!')","meaning_tr": "saçmak (emir: 'saç!')"},
+    {"sense": "sheet",   "meaning": "sheet metal",                 "meaning_tr": "saç (metal levha)"}
+  ],
+  "sağ": [
+    {"sense": "right", "meaning": "the right-hand side or direction","meaning_tr": "sağ (yön)"},
+    {"sense": "alive", "meaning": "alive, living, healthy",         "meaning_tr": "sağ, hayatta, sağlıklı"}
+  ],
+  "diz": [
+    {"sense": "knee",   "meaning": "the knee joint",                       "meaning_tr": "diz (eklem)"},
+    {"sense": "lineup", "meaning": "to line up or string together (imperative)","meaning_tr": "dizmek (sıraya koymak)"}
+  ],
+  "çalmak": [
+    {"sense": "steal", "meaning": "to steal",                       "meaning_tr": "çalmak (hırsızlık)"},
+    {"sense": "play",  "meaning": "to play a musical instrument",   "meaning_tr": "çalmak (enstrüman)"},
+    {"sense": "ring",  "meaning": "to ring (a bell) or knock (a door)","meaning_tr": "çalmak (zil/kapı)"}
+  ],
+  "boğaz": [
+    {"sense": "throat", "meaning": "the throat (body part)",            "meaning_tr": "boğaz (vücut)"},
+    {"sense": "strait", "meaning": "a narrow sea passage (a strait)",   "meaning_tr": "boğaz (deniz geçidi)"}
+  ],
+  "çene": [
+    {"sense": "chin",    "meaning": "the chin or jaw",                  "meaning_tr": "çene (vücut)"},
+    {"sense": "chatter", "meaning": "talkativeness, chatting",          "meaning_tr": "çene (gevezelik)"}
+  ],
+  "kök": [
+    {"sense": "root",   "meaning": "the root of a plant",          "meaning_tr": "kök (bitki)"},
+    {"sense": "origin", "meaning": "origin, source or foundation", "meaning_tr": "köken, kaynak"},
+    {"sense": "math",   "meaning": "a mathematical root (e.g. square root)","meaning_tr": "matematiksel kök"}
+  ],
+  "dal": [
+    {"sense": "branch", "meaning": "a branch of a tree",                "meaning_tr": "ağaç dalı"},
+    {"sense": "dive",   "meaning": "to dive or plunge (imperative 'dive!')","meaning_tr": "dalmak (emir: 'dal!')"},
+    {"sense": "field",  "meaning": "a branch or field of study/work",   "meaning_tr": "dal (alan, bölüm)"}
+  ],
+  "acı": [
+    {"sense": "pain",   "meaning": "pain or suffering",          "meaning_tr": "acı, ağrı, ızdırap"},
+    {"sense": "spicy",  "meaning": "spicy or hot (taste)",        "meaning_tr": "acı (baharatlı/yakıcı)"},
+    {"sense": "bitter", "meaning": "bitter (taste)",             "meaning_tr": "acı (acı tat)"}
+  ],
+  "kaymak": [
+    {"sense": "slip",  "meaning": "to slip or slide",                  "meaning_tr": "kaymak (kayma)"},
+    {"sense": "cream", "meaning": "clotted cream (the food, kaymak)",  "meaning_tr": "kaymak (süt kaymağı)"}
+  ]
+}

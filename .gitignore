@@ -1,0 +1,64 @@
+.env
+
+# OS / editor cruft
+.DS_Store
+**/.DS_Store
+.ipynb_checkpoints/
+
+# Nested Overleaf paper repo (its own git repo; not part of the code release)
+6a3587f32da2ed2246aa9667/
+
+# Internal release-prep audit doc (kept local, not shipped)
+RELEASE_MANIFEST.md
+
+data/outputs_image/
+data/outputs_text/
+data/outputs_text_imagine/
+# Large uploaded source folders for added models (raw repo/PNGs/exports);
+# their distilled labels live in the committed histograms/classifications.
+data/glm_image_distributions/
+*.log
+__pycache__/
+
+# macOS filename-collision copies (iCloud/AirDrop/unzip merge artifacts)
+* 2.*
+* 2/
+* 2
+* copy.*
+* copy/
+
+# Prolific study participant data
+prolific_study/responses/
+
+# Non-English generated output trees (large, like the English ones above)
+data/outputs_image_tr/
+data/outputs_text_tr/
+data/outputs_image_fr/
+data/outputs_text_fr/
+
+# Prolific participant data export (contains PIDs/responses — do not commit)
+Sheet1*.xlsx
+
+# Overnight-run local scratch (orchestration helpers, not part of the codebase)
+progress_tr.py
+run_pipeline.sh
+run_fr_after_tr.sh
+data/human_responses.json
+data/outputs_human_meaning/
+data/outputs_human_image/
+data/local_image_distributions/
+data/simplear_distributions/
+
+# staging tree built by upload_dataset.sh (hardlinks, not real data)
+.hf_staging/
+
+# SLURM job output + transient array state under models/ (scripts ARE tracked)
+models/**/*.out
+models/**/*.log
+models/**/.array_jobid*
+
+# cloned third-party inference code (SimpleAR); weights come from the Hub
+third_party/
+
+# download_dataset.sh local cache (hardlink source)
+.hf_cache/
